@@ -1,0 +1,21 @@
+﻿priority,audience,keyword,intent,working_title,target_page,candidate_tools,evidence_needed
+P1,small business owners,best ai tools for small business owners,Commercial / informational,Best AI tools for small business owners,/guides/best-ai-tools-for-small-business.html,"ChatGPT, Gemini, Zapier",Existing guide refresh
+P1,freelancers,best ai tools for freelancers,Commercial / informational,Best AI tools for freelancers,/guides/best-ai-tools-for-freelancers.html,"ChatGPT, Grammarly, Gamma",Existing guide refresh
+P1,students,free ai tools for students,Informational / practical,Free AI tools for students,/guides/free-ai-tools-for-students.html,"ChatGPT, Claude, QuillBot",Existing guide refresh
+P1,writers,ai writing tools for seo,Commercial / comparative,AI writing tools for SEO,/guides/ai-writing-tools-seo-comparison.html,"Jasper, Surfer SEO, Grammarly",Existing guide refresh
+P1,beginners,ai coding assistants for beginners,Informational / practical,AI coding assistants for beginners,/guides/ai-coding-assistants-for-beginners.html,"Cursor, GitHub Copilot, Replit",Existing guide refresh
+P1,small businesses,perplexity for small business competitor research,Informational / research,How small businesses use Perplexity for competitor research,/guides/perplexity-competitor-research.html,"Perplexity, ChatGPT, Gemini",New test required
+P1,content teams,free alternatives to Surfer SEO,Commercial / comparison,Free Surfer SEO alternatives,/guides/free-surfer-seo-alternatives.html,"Surfer SEO, ChatGPT, Grammarly",Pricing verification required
+P1,remote teams,best ai meeting note tools,Commercial / comparison,Best AI meeting note tools for remote teams,/guides/best-ai-meeting-note-tools.html,"Fathom, Otter.ai, Descript",New test recommended
+P1,small businesses,gamma vs canva presentations,Commercial / comparison,Gamma vs Canva for business presentations,/guides/gamma-vs-canva-presentations.html,"Gamma, Canva Magic Studio",New test required
+P2,freelancers,ai tools for freelance proposal writing,Commercial / practical,Best AI tools for freelance proposal writing,/guides/ai-tools-for-freelance-proposals.html,"ChatGPT, Claude, Gamma",New test required
+P2,researchers,chatgpt vs claude long document research,Commercial / comparative,ChatGPT vs Claude for long document research,/guides/chatgpt-vs-claude-long-documents.html,"ChatGPT, Claude, Perplexity",Access and test required
+P2,teachers,best ai tools for teacher lesson planning,Commercial / practical,Best AI tools for teacher lesson planning,/guides/best-ai-tools-for-teachers.html,"ChatGPT, Claude, Canva",Existing guide refresh
+P2,support teams,best ai tools for small business customer support,Commercial / practical,Best AI tools for small business customer support,/guides/best-ai-customer-support-tools.html,"Intercom Fin, ChatGPT, Zapier",New comparison required
+P2,social media teams,ai social media content repurposing tools,Commercial / practical,Best AI tools for social media repurposing,/guides/ai-social-media-repurposing.html,"Descript, Canva, Runway",New workflow test
+P2,analysts,ai data analysis tools without code,Commercial / practical,Best AI tools for data analysis without code,/guides/ai-data-analysis-without-code.html,"ChatGPT, Gemini, Airtable",New test required
+P2,nonprofits,best ai tools for nonprofit teams,Commercial / informational,Best AI tools for nonprofit teams,/guides/best-ai-tools-for-nonprofits.html,"Canva, Notion AI, Zapier",Budget research required
+P2,local businesses,best ai tools for local service businesses,Commercial / practical,Best AI tools for local service businesses,/guides/best-ai-tools-for-local-services.html,"ChatGPT, Canva, Zapier",New workflow test
+P1,video creators,ai video tools for creators,Commercial / comparison,AI video tools for creators,/guides/ai-video-tools-for-creators.html,"Runway, Descript, ElevenLabs",Existing guide refresh
+P1,remote teams,ai productivity tools for remote teams,Commercial / practical,AI productivity tools for remote teams,/guides/ai-productivity-tools-for-remote-teams.html,"Notion AI, ClickUp, Zapier",Existing guide refresh
+P1,founders,best ai tools for founders,Commercial / practical,Best AI tools for founders,/guides/best-ai-tools-for-founders.html,"ChatGPT, Gamma, Notion AI",Existing guide refresh

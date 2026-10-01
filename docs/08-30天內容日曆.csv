@@ -1,0 +1,31 @@
+﻿day,date,type,task,topic,article_or_goal,status,dependency
+1,2026-10-01,技術基線,確認 GSC 資源、canonical、robots、sitemap 與 59 個 URL 狀態,-,Technical indexing baseline,已完成,Research and review
+2,2026-10-02,技術基線,檢查內部連結、404、手機版與圖片載入；確認驗證檔與 security.txt,-,Technical QA pass,已完成,Research and review
+3,2026-10-03,內容刷新,加入實測框架、更新來源與內部連結,best ai tools for small business owners,Best AI tools for small business: a lean five-tool stack,待執行,Research and review
+4,2026-10-04,內容刷新,加入免費方案限制、引用與學生使用規範,free ai tools for students,Free AI tools for students: study better without hiding the work,待執行,Research and review
+5,2026-10-05,內容刷新,補充自由工作者實際工作流與工具比較,best ai tools for freelancers,"Best AI tools for freelancers: research, writing, meetings, and client-ready visuals",待執行,Research and review
+6,2026-10-06,新文章,研究搜尋意圖、建立比較表與內部連結,perplexity for small business competitor research,How Small Businesses Can Use Perplexity for Competitor Research,待執行,Research and review
+7,2026-10-07,索引檢查,檢查 GSC 新頁面收錄、Sitemap 狀態與曝光字詞,-,First indexing review,待執行,GSC data
+8,2026-10-08,新文章,比較免費與付費 SEO 工具，加入可驗證的替代方案,free alternatives to Surfer SEO,Free Surfer SEO Alternatives for Small Content Teams,待執行,Research and review
+9,2026-10-09,新文章,實測會議記錄流程與隱私限制,best ai meeting note tools for remote teams,Best AI Meeting Note Tools for Remote Teams,待執行,Research and review
+10,2026-10-10,內容刷新,更新 SEO 寫作策略、Google 指引與內部連結,ai writing tools for seo,AI writing tools for SEO: where each tool actually helps,待執行,Research and review
+11,2026-10-11,新文章,以同一份簡報任務比較 Gamma 與 Canva,gamma vs canva business presentations,Gamma vs Canva for Business Presentations: Which One Fits Your Workflow?,待執行,Research and review
+12,2026-10-12,內部連結,從高流量分類頁連到新文章與工具頁,-,Internal link sprint,待執行,Research and review
+13,2026-10-13,新文章,建立提案寫作測試與評分表,ai tools for freelance proposal writing,Best AI Tools for Freelance Proposal Writing,待執行,Research and review
+14,2026-10-14,索引檢查,用 GSC URL Inspection 檢查新文章、提交尚未收錄頁面,-,Indexing review and resubmission,待執行,GSC data
+15,2026-10-15,新文章,比較長文件研究、引用與查證負擔,chatgpt vs claude long document research,ChatGPT vs Claude for Long Document Research,待執行,Research and review
+16,2026-10-16,內容刷新,補充初學者測試與常見錯誤,ai coding assistants for beginners,AI coding assistants for beginners: how to learn without copy-paste debt,待執行,Research and review
+17,2026-10-17,新文章,建立教師工作流、隱私與學生資料規範,best ai tools for teachers lesson planning,Best AI Tools for Teachers Who Need Lesson Planning Help,待執行,Research and review
+18,2026-10-18,內容刷新,加入實際製作流程、影片長度與版權限制,ai video tools for creators,"AI video tools for creators: generation, editing, voice, and avatars",待執行,Research and review
+19,2026-10-19,新文章,比較客服自動化與人工接管流程,best ai tools for small business customer support,Best AI Tools for Small Business Customer Support,待執行,Research and review
+20,2026-10-20,成效檢查,檢查曝光、CTR、平均排名與需要更新的頁面,-,Mid-month Search Console review,待執行,GSC data
+21,2026-10-21,新文章,建立社群貼文再利用工作流,ai social media content repurposing tools,Best AI Tools for Social Media Repurposing,待執行,Research and review
+22,2026-10-22,內容刷新,更新遠端團隊會議、任務與自動化內容,ai productivity tools for remote teams,"AI productivity tools for remote teams: notes, tasks, and automation",待執行,Research and review
+23,2026-10-23,新文章,用無程式碼任務比較資料分析工具,ai data analysis tools without code,Best AI Tools for Data Analysis Without Code,待執行,Research and review
+24,2026-10-24,內部連結,補上 3 到 5 個主題叢集連結並消除孤島頁面,-,Topic cluster linking,待執行,Research and review
+25,2026-10-25,新文章,針對非營利團隊的預算、隱私與工作流,best ai tools for nonprofit teams,Best AI Tools for Nonprofit Teams,待執行,Research and review
+26,2026-10-26,內容刷新,更新行銷與創業者文章的來源與 CTA,ai tools for marketers founders,Best AI Tools for Marketers and Founders,待執行,Research and review
+27,2026-10-27,新文章,研究地方服務業的名單、評論與客戶回覆工作流,best ai tools for local service businesses,Best AI Tools for Local Service Businesses,待執行,Research and review
+28,2026-10-28,成效檢查,檢查 Sitemap、索引涵蓋範圍、曝光與查詢字詞,-,Final indexing and performance review,待執行,GSC data
+29,2026-10-29,優化,更新有曝光但 CTR 低的標題與描述,-,CTR optimization sprint,待執行,GSC data
+30,2026-10-30,下一週期,整理有效主題、停止低需求題目，建立下一批 10 篇題目,-,Next 30-day content brief,待執行,Research and review
