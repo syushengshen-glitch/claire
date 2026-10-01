@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
   page.on('pageerror', error => errors.push(error.message));
 
   await page.goto('http://127.0.0.1:4173/', { waitUntil:'networkidle' });
-  await page.screenshot({ path:'C:/Users/syush/Documents/ChatGPT/廣告收入設定/site-home.png', fullPage:true });
+  await page.screenshot({ path:'C:/Users/syush/Documents/ChatGPT/廣告收入設定/docs/site-home.png', fullPage:true });
   const home = await page.evaluate(() => ({ title:document.title, h1:document.querySelector('h1')?.textContent, overflow:document.documentElement.scrollWidth > window.innerWidth }));
 
   await page.goto('http://127.0.0.1:4173/directory.html', { waitUntil:'networkidle' });
@@ -37,7 +37,7 @@ const server = http.createServer((req, res) => {
   await page.locator('[data-filter-search]').fill('video');
   await page.getByRole('button', { name:'All tools' }).click();
   const videoCount = await page.locator('[data-tool-row]:visible').count();
-  await page.screenshot({ path:'C:/Users/syush/Documents/ChatGPT/廣告收入設定/site-directory.png', fullPage:true });
+  await page.screenshot({ path:'C:/Users/syush/Documents/ChatGPT/廣告收入設定/docs/site-directory.png', fullPage:true });
 
   await page.goto('http://127.0.0.1:4173/tools/chatgpt.html', { waitUntil:'networkidle' });
   const toolTitle = await page.locator('h1').first().textContent();
@@ -49,10 +49,11 @@ const server = http.createServer((req, res) => {
   await page.getByRole('button', { name:'Toggle navigation' }).click();
   const mobileNavOpen = await page.locator('[data-site-nav]').evaluate(element => element.classList.contains('is-open'));
   const mobileOverflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
-  await page.screenshot({ path:'C:/Users/syush/Documents/ChatGPT/廣告收入設定/site-mobile.png', fullPage:true });
+  await page.screenshot({ path:'C:/Users/syush/Documents/ChatGPT/廣告收入設定/docs/site-mobile.png', fullPage:true });
 
   console.log(JSON.stringify({ home, allCount, codingCount, videoCount, toolTitle, guideTitle, mobileNavOpen, mobileOverflow, errors }, null, 2));
   await browser.close();
   server.close();
 })().catch(error => { console.error(error); server.close(); process.exit(1); });
+
 
