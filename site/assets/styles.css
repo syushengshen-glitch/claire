@@ -14,8 +14,8 @@
   --radius-lg: 28px;
   --radius-md: 16px;
   --max: 1440px;
-  --font-display: "Newsreader", Georgia, serif;
-  --font-ui: "Instrument Sans", "Segoe UI", sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-ui: "Aptos", "Segoe UI", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -678,4 +678,8 @@ img { max-width: 100%; }
 
 .pick { padding: 8px 0 18px; }
 .pick + .pick { border-top: 1px solid var(--line); padding-top: 24px; }
+
+
+.text-button { padding: 0; border: 0; color: var(--muted); background: transparent; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
 

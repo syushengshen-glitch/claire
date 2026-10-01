@@ -1,0 +1,4 @@
+Contact: https://github.com/syushengshen-glitch/claire/security/advisories/new
+Expires: 2027-10-01T00:00:00Z
+Preferred-Languages: en, zh
+Canonical: https://claire-mu.vercel.app/.well-known/security.txt

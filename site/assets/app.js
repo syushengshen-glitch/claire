@@ -1,5 +1,14 @@
 // SignalShelf 前端互動：搜尋、篩選、排序、行動選單與廣告同意狀態。
 (() => {
+  // 先將廣告儲存預設為拒絕，只有使用者明確允許後才載入 AdSense。
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+  });
+
   const navToggle = document.querySelector('[data-nav-toggle]');
   const nav = document.querySelector('[data-site-nav]');
   navToggle?.addEventListener('click', () => {
@@ -83,8 +92,30 @@
     }
   });
 
+  let adScriptLoaded = false;
+  const getConsent = () => localStorage.getItem('signalshelf-consent');
+  const loadAdSense = () => {
+    if (!window.SIGNALSHELF_ADSENSE_CLIENT || getConsent() !== 'all' || adScriptLoaded) return;
+    adScriptLoaded = true;
+    gtag('consent', 'update', {
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted'
+    });
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(window.SIGNALSHELF_ADSENSE_CLIENT)}`;
+    script.crossOrigin = 'anonymous';
+    script.addEventListener('load', () => {
+      document.querySelectorAll('.adsbygoogle').forEach(() => {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      });
+    });
+    document.head.appendChild(script);
+  };
+
   const consent = document.querySelector('[data-consent]');
-  const consentDecision = localStorage.getItem('signalshelf-consent');
+  const consentDecision = getConsent();
   if (consent && !consentDecision) consent.classList.add('is-visible');
   consent?.querySelectorAll('[data-consent-choice]').forEach((button) => {
     button.addEventListener('click', () => {
@@ -92,24 +123,17 @@
       localStorage.setItem('signalshelf-consent', choice);
       window.signalshelfConsent = choice;
       consent.classList.remove('is-visible');
+      if (choice === 'all') loadAdSense();
     });
+  });
+
+  document.querySelector('[data-manage-consent]')?.addEventListener('click', () => {
+    consent?.classList.add('is-visible');
   });
 
   document.querySelectorAll('[data-year]').forEach((node) => {
     node.textContent = String(new Date().getFullYear());
   });
 
-  // 只有建置時填入 publisher ID，才會載入 AdSense。
-  if (window.SIGNALSHELF_ADSENSE_CLIENT) {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(window.SIGNALSHELF_ADSENSE_CLIENT)}`;
-    script.crossOrigin = 'anonymous';
-    document.head.appendChild(script);
-    script.addEventListener('load', () => {
-      document.querySelectorAll('.adsbygoogle').forEach(() => {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      });
-    });
-  }
+  loadAdSense();
 })();

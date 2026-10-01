@@ -49,18 +49,14 @@ def tool_by_slug(slug):
 
 
 def ad_slot(kind, publisher):
+    if not publisher:
+        return ''
     classes = 'ad-slot ' + ('rail' if kind == 'rail' else 'wide')
-    label = '<span class="ad-label">Advertisement</span>'
-    if publisher:
-        return (
-            f'<aside class="{classes}" aria-label="Advertisement">{label}'
-            f'<ins class="adsbygoogle" style="display:block;width:100%;min-height:90px" '
-            f'data-ad-client="{esc(publisher)}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
-            '</aside>'
-        )
     return (
-        f'<aside class="{classes}" aria-label="Advertisement placement preview">{label}'
-        '<div class="ad-preview">Responsive AdSense slot. Rebuild with <code>--adsense-publisher ca-pub-...</code> after approval.</div>'
+        f'<aside class="{classes}" aria-label="Advertisement">'
+        '<span class="ad-label">Advertisement</span>'
+        f'<ins class="adsbygoogle" style="display:block;width:100%;min-height:90px" '
+        f'data-ad-client="{esc(publisher)}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
         '</aside>'
     )
 
@@ -97,7 +93,7 @@ def footer(depth):
       <div><h2>Company</h2><a href="{prefix}about.html">About</a><a href="{prefix}contact.html">Contact</a><a href="{prefix}terms.html">Terms</a></div>
       <div><h2>Trust</h2><a href="{prefix}privacy.html">Privacy and cookies</a><a href="{prefix}disclosure.html">Affiliate disclosure</a></div>
     </div>
-    <div class="footer-bottom"><span>© <span data-year>2026</span> SignalShelf. Independent editorial project.</span><span>Some links may become affiliate links after disclosure.</span></div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> SignalShelf. Independent editorial project.</span><span>Some links may become affiliate links after disclosure.</span><button class="text-button" type="button" data-manage-consent>Privacy choices</button></div>
   </div>
 </footer>
 <div class="consent" data-consent role="dialog" aria-label="Privacy choices">
@@ -119,9 +115,8 @@ def page(title, description, body, depth=0, current='', canonical='', schema=Non
   <meta name="description" content="{esc(description)}">
   <meta name="robots" content="index,follow,max-image-preview:large">
   {canonical_html}
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;750&family=Newsreader:opsz,wght@6..72,400;6..72,560;6..72,650&display=swap" rel="stylesheet">
-  <link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml">`n  <link rel="stylesheet" href="{prefix}assets/styles.css">
+  <link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{prefix}assets/styles.css">
   {publisher_script}{schema_html}
 </head>
 <body>{header(depth, current)}<main id="main">{body}</main>{footer(depth)}<script src="{prefix}assets/app.js" defer></script></body>
@@ -241,48 +236,102 @@ def build_guide_page(guide, publisher, base_url):
     return page(guide['title'], guide['dek'], body, 1, 'guides', canonical, schema, publisher)
 
 
+def linkify(value):
+    escaped = esc(value)
+
+    def replace_url(match):
+        url = match.group(1)
+        trailing = ''
+        while url and url[-1] in '.,);':
+            trailing = url[-1] + trailing
+            url = url[:-1]
+        return f'<a href="{esc(url)}" rel="noopener">{esc(url)}</a>{trailing}'
+
+    return re.sub(r'(https?://[^\s<]+)', replace_url, escaped)
+
+
 def build_simple_page(title, description, heading, paragraphs, depth, current, base_url, publisher, path):
-    body = f'''<section class="site-shell page-hero"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{'../' if depth else ''}index.html">Home</a> / {esc(heading)}</nav><h1>{esc(heading)}</h1><p>{esc(description)}</p></section><section class="site-shell section" style="padding-top:0"><div class="content-grid"><article class="content-card prose">{''.join(f'<p>{esc(item)}</p>' for item in paragraphs)}</article><aside class="side-stack">{ad_slot('rail', publisher)}</aside></div></section>'''
+    body = f'''<section class="site-shell page-hero"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{'../' if depth else ''}index.html">Home</a> / {esc(heading)}</nav><h1>{esc(heading)}</h1><p>{esc(description)}</p></section><section class="site-shell section" style="padding-top:0"><div class="content-grid"><article class="content-card prose">{''.join(f'<p>{linkify(item)}</p>' for item in paragraphs)}</article><aside class="side-stack">{ad_slot('rail', publisher)}</aside></div></section>'''
     return page(title, description, body, depth, current, f'{base_url.rstrip("/")}/{path}', publisher=publisher)
 
 
 def write_static_pages(publisher, base_url):
     pages = {
-        'about.html': build_simple_page('About SignalShelf', 'SignalShelf is an editorial AI tools directory focused on practical use, transparent limits, and clearly separated advertising.', 'About SignalShelf', [
-            'SignalShelf exists to make AI buying decisions less noisy. A listing is not a ranking reward: it is a concise explanation of who the product helps, where it fits, and what a buyer should check before paying.',
-            'The site is designed as an editorial directory rather than a personal blog. Tool pages, category pages, and guides use the same evaluation criteria so readers can compare products without changing context.',
-            'Advertising may fund the site, but ad inventory is labeled and kept separate from editorial placement. Commercial relationships do not change the inclusion criteria or the limits listed on a page.',
-            'Before a public launch, add first-hand testing notes, screenshots, sources, and dates so each page carries information a reader cannot get from a product homepage alone.'
-        ], 0, 'about', base_url, publisher, 'about.html'),
-        'privacy.html': build_simple_page('Privacy and cookies', 'How SignalShelf handles storage, consent, advertising, analytics, and external links.', 'Privacy and cookies', [
-            'The starter site uses browser storage only to remember the visitor privacy choice. The included consent banner can be connected to your consent-management platform before enabling personalized advertising.',
-            'If you enable Google AdSense, Google and its partners may use cookies or other identifiers according to the choices a visitor makes. Add a current privacy policy, cookie table, retention details, and jurisdiction-specific disclosures before launch.',
-            'Do not enable advertising cookies for visitors in regions that require prior consent until your consent-management setup is verified. This template intentionally leaves ad cookies off unless the visitor allows advertising.',
-            'External tool links lead to third-party websites with their own privacy policies. Review those policies and remove or update a listing when its data practices are not clear.'
-        ], 0, '', base_url, publisher, 'privacy.html'),
-        'terms.html': build_simple_page('Terms of use', 'Terms for using SignalShelf, including informational content, external links, and limitation of liability.', 'Terms of use', [
-            'SignalShelf is provided for general information. Product features, prices, terms, and availability can change without notice, so confirm important details with the vendor before purchasing.',
-            'You may not scrape, republish, or mass-copy the directory content in a way that misrepresents its source or violates applicable law. Add your own jurisdiction-specific legal language before launch.',
-            'External links are provided for convenience. SignalShelf does not control third-party sites and is not responsible for their content, security, or business practices.',
-            'Replace this starter language with terms reviewed for your company, location, advertising setup, and data-processing practices.'
-        ], 0, '', base_url, publisher, 'terms.html'),
-        'contact.html': build_simple_page('Contact SignalShelf', 'Contact details for corrections, partnership questions, and editorial feedback.', 'Contact', [
-            'For corrections, send the page URL, the sentence you believe is inaccurate, a source, and the date you checked it.',
-            'For partnerships, include the product, the exact placement proposed, and whether the relationship is paid. Sponsored inventory must remain labeled and cannot be presented as an editorial result.',
-            'Starter email placeholder: hello@example.com. Replace it with a monitored address before applying for advertising or publishing the site publicly.'
-        ], 0, '', base_url, publisher, 'contact.html'),
-        'disclosure.html': build_simple_page('Affiliate and advertising disclosure', 'How SignalShelf labels affiliate links, sponsored placements, and advertising.', 'Affiliate and advertising disclosure', [
-            'Some outbound links may become affiliate links. When that happens, the relevant page should include a clear disclosure before the first affiliate link and use rel="sponsored" on those links.',
-            'Display advertising such as Google AdSense is labeled Advertisement and is visually separated from editorial recommendations. The presence of an ad does not imply an endorsement by SignalShelf.',
-            'Paid partnerships must not change evaluation text, category placement, or a tool limits section. Sponsored units should be identified as sponsored in the page copy and metadata.',
-            'Before launch, update this page with your legal entity, contact method, and the exact commercial relationships in use.'
-        ], 0, '', base_url, publisher, 'disclosure.html'),
-        'editorial-policy.html': build_simple_page('Editorial policy', 'The criteria used to include and review tools in the SignalShelf directory.', 'Editorial policy', [
-            'Every listing starts with a defined job, audience, pricing note, practical strengths, and material limits. A product is not included merely because it has a large audience or an affiliate program.',
-            'Reviews prioritize observable product information and clearly stated criteria. Claims about speed, quality, or cost should be dated and supported by a test, a source, or an explicit editorial judgment.',
-            'We do not publish unedited bulk AI content as original research. AI assistance may support research or structure, but a human editor remains responsible for accuracy, usefulness, sources, and the final publication decision.',
-            'Corrections are welcome. When a material fact changes, update the page, the review date, and the internal link context rather than silently changing the conclusion.'
-        ], 0, 'method', base_url, publisher, 'editorial-policy.html')
+        'about.html': build_simple_page(
+            'About SignalShelf',
+            'SignalShelf is an independent AI tools directory focused on practical use, transparent limitations, and clearly separated advertising.',
+            'About SignalShelf',
+            [
+                'SignalShelf helps readers compare AI products by the job they need to finish, the limitations they should verify, and the workflow around the tool. The directory is intentionally smaller and more structured than a general software marketplace.',
+                'Every listing is reviewed against the same criteria: intended user, practical strength, material limitation, pricing note, export and privacy considerations, and a realistic alternative. Product claims should be confirmed with the vendor because plans, features, availability, and commercial terms change.',
+                'The project uses public product information and editorial judgment. It does not claim that every tool has been purchased or benchmarked. When first-hand testing, screenshots, or expert review are added, the article should identify those materials and their date.',
+                'Advertising may fund the site. Ads are labeled and kept separate from editorial placement. A commercial relationship does not change the inclusion criteria, category, or limitations shown on a page.',
+                'Corrections and source-backed feedback are welcome through the monitored contact channel listed on the Contact page.'
+            ], 0, 'about', base_url, publisher, 'about.html'
+        ),
+        'privacy.html': build_simple_page(
+            'Privacy and cookies',
+            'How SignalShelf handles local storage, hosting data, advertising consent, external links, and privacy requests.',
+            'Privacy and cookies',
+            [
+                'Last updated: October 1, 2026. SignalShelf is an independent editorial website. The static site does not create user accounts and does not operate a server-side visitor database.',
+                'The browser stores one local preference named signalshelf-consent so the site can remember whether a visitor allowed advertising cookies. This preference stays in the browser and can be removed through browser settings. The site currently does not use analytics or advertising scripts until a publisher ID is configured and the visitor allows advertising.',
+                'SignalShelf is hosted by Vercel. Like most hosting providers, Vercel may process request information such as IP address, user agent, timestamps, and security logs to deliver and protect the service. Vercel privacy information is available at https://vercel.com/legal/privacy-policy.',
+                'If Google AdSense is enabled in the future, Google and its partners may use cookies or similar identifiers to measure and personalize advertising. Advertising storage remains denied until the visitor selects Allow advertising. Google partner-site information is available at https://policies.google.com/technologies/partner-sites and advertising controls are available at https://adssettings.google.com/.',
+                'External tool links lead to websites controlled by other companies. Those sites have their own privacy policies, cookies, accounts, and data practices. Review the destination policy before submitting personal or confidential information.',
+                'Privacy and security requests can be submitted privately through https://github.com/syushengshen-glitch/claire/security/advisories/new. Include the requested action, the relevant page, and a safe way to respond.',
+                'We may update this policy when the site adds advertising, analytics, forms, a custom domain, or a new service provider. The updated date at the top of this page will be revised when the policy changes.'
+            ], 0, '', base_url, publisher, 'privacy.html'
+        ),
+        'terms.html': build_simple_page(
+            'Terms of use',
+            'Terms for using SignalShelf, including informational content, external links, acceptable use, and limitations of liability.',
+            'Terms of use',
+            [
+                'Last updated: October 1, 2026. By using SignalShelf, you agree to these terms. If you do not agree, do not use the site.',
+                'SignalShelf provides general information about AI products. Product features, prices, availability, and legal terms can change without notice. Confirm important details directly with the vendor before purchase or commercial use.',
+                'The site is provided on an as-is and as-available basis. To the extent permitted by law, SignalShelf does not guarantee uninterrupted availability, completeness, accuracy, or suitability for a particular purpose and is not responsible for decisions made from the information.',
+                'You may link to public pages and quote short excerpts with attribution. You may not scrape, republish, misrepresent, or mass-copy the site content, or use the site in a way that violates law, interferes with security, or infringes another person\'s rights.',
+                'External links are provided for convenience. SignalShelf does not control third-party websites, products, security, or data practices and does not endorse every statement on a linked site.',
+                'Advertising and affiliate relationships, when present, will be labeled and disclosed. Sponsored inventory must not be presented as an independent editorial recommendation.',
+                'Questions about these terms can be submitted through the monitored contact channel listed on the Contact page.'
+            ], 0, '', base_url, publisher, 'terms.html'
+        ),
+        'contact.html': build_simple_page(
+            'Contact SignalShelf',
+            'Monitored contact channels for corrections, privacy requests, partnerships, and editorial feedback.',
+            'Contact',
+            [
+                'For corrections, open a correction request at https://github.com/syushengshen-glitch/claire/issues/new and include the page URL, the sentence you believe is inaccurate, a source, and the date you checked it.',
+                'For privacy or security matters, use the private advisory form at https://github.com/syushengshen-glitch/claire/security/advisories/new. Do not post personal, confidential, or account information in a public issue.',
+                'For partnerships, state the product, proposed placement, whether the relationship is paid, and the exact disclosure that would appear. Sponsored units must remain labeled and cannot be presented as editorial findings.',
+                'General editorial feedback can also be submitted through the same public issue form. Include enough context for the request to be verified without sharing sensitive data.'
+            ], 0, '', base_url, publisher, 'contact.html'
+        ),
+        'disclosure.html': build_simple_page(
+            'Affiliate and advertising disclosure',
+            'How SignalShelf labels affiliate links, sponsored placements, and advertising.',
+            'Affiliate and advertising disclosure',
+            [
+                'Last updated: October 1, 2026. SignalShelf currently does not have active affiliate links, paid placements, or display advertising on the live site.',
+                'If affiliate links are added, the affected page will disclose the relationship before the first affiliate link and the link will use rel="sponsored". Affiliate compensation will not change the stated limitations or editorial conclusion.',
+                'If display advertising is enabled, advertising units will be labeled Advertisement and kept visually separate from editorial recommendations. The presence of an ad does not imply that SignalShelf reviewed or endorsed the advertiser.',
+                'Paid partnerships must not change evaluation text, category placement, or a tool limitations section. Sponsored inventory will be identified as sponsored in the page copy.',
+                'Questions about a commercial relationship can be submitted through the Contact page.'
+            ], 0, '', base_url, publisher, 'disclosure.html'
+        ),
+        'editorial-policy.html': build_simple_page(
+            'Editorial policy',
+            'The criteria used to include, review, update, and correct tools in the SignalShelf directory.',
+            'Editorial policy',
+            [
+                'Every listing starts with a defined job, audience, pricing note, practical strengths, and material limits. A product is not included merely because it has a large audience or an affiliate program.',
+                'Reviews prioritize observable product information and clearly stated criteria. Claims about speed, quality, or cost should be dated and supported by a source, a test, or an explicit editorial judgment. The site does not claim that every tool was purchased or independently benchmarked.',
+                'AI assistance may support research, organization, drafting, or coding. A human editor remains responsible for accuracy, usefulness, sources, originality, and the final publication decision. Unedited bulk AI content is not presented as original research.',
+                'Corrections are welcome. When a material fact changes, update the page, the review date, and the internal link context rather than silently changing the conclusion. Significant corrections should identify what changed when that information helps readers.',
+                'Advertising and commercial relationships are separated from editorial decisions. Products are not ranked higher because of an ad or partnership.'
+            ], 0, 'method', base_url, publisher, 'editorial-policy.html'
+        )
     }
     for filename, content in pages.items():
         (SITE / filename).write_text(content, encoding='utf-8')
@@ -290,7 +339,9 @@ def write_static_pages(publisher, base_url):
 
 def build_404(publisher):
     body = '''<section class="site-shell page-hero"><h1>That signal dropped.</h1><p>The page may have moved, or the tool may no longer be in the index.</p><p><a class="button" href="index.html">Return home</a></p></section>'''
-    (SITE / '404.html').write_text(page('Page not found', 'The requested page could not be found.', body, publisher=publisher), encoding='utf-8')
+    output = page('Page not found', 'The requested page could not be found.', body, publisher=publisher)
+    output = output.replace('content="index,follow,max-image-preview:large"', 'content="noindex,follow"')
+    (SITE / '404.html').write_text(output, encoding='utf-8')
 
 
 def build_manifest():
@@ -336,7 +387,7 @@ def build_article_plan():
 
 def build_all(publisher, base_url):
     SITE.mkdir(parents=True, exist_ok=True)
-    for folder in ['tools', 'category', 'guides']:
+    for folder in ['tools', 'category', 'guides', '.well-known']:
         (SITE / folder).mkdir(parents=True, exist_ok=True)
     (SITE / 'index.html').write_text(build_home(publisher, base_url), encoding='utf-8')
     (SITE / 'directory.html').write_text(build_directory(publisher, base_url), encoding='utf-8')
@@ -351,6 +402,7 @@ def build_all(publisher, base_url):
     build_404(publisher)
     build_manifest()
     build_seo_files(publisher, base_url)
+    (SITE / '.well-known' / 'security.txt').write_text('Contact: https://github.com/syushengshen-glitch/claire/security/advisories/new\nExpires: 2027-10-01T00:00:00Z\nPreferred-Languages: en, zh\nCanonical: https://claire-mu.vercel.app/.well-known/security.txt\n', encoding='utf-8')
     build_article_plan()
     print(f'Built {len(TOOLS)} tool pages, {len(CATEGORIES)} category pages, {len(GUIDES)} guides, and 100 content-plan rows.')
 
