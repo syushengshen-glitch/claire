@@ -1,0 +1,187 @@
+[
+  {
+    "slug": "best-ai-tools-for-small-business",
+    "title": "Best AI tools for small business: a lean five-tool stack",
+    "dek": "A research-based stack for proposals, meetings, operations, automation, and presentations without buying a dozen overlapping subscriptions.",
+    "focus": "Run a small business with fewer repetitive handoffs, clearer approvals, and a review process that does not disappear when AI enters the workflow.",
+    "picks": [
+      {"slug":"chatgpt","note":"Use it as the flexible drafting layer for SOPs, customer emails, internal briefs, and first-pass analysis. It earns a place when one assistant can replace several small writing tasks, but every customer-facing claim still needs a human check."},
+      {"slug":"gamma","note":"Gamma is strongest when a founder or consultant needs a credible sales, training, or proposal deck quickly. Treat the first result as a visual outline, then replace generic wording with real numbers, client context, and your own positioning."},
+      {"slug":"notion-ai","note":"A small business accumulates decisions in notes, project pages, and meeting documents. Notion AI is most useful when that context already lives in Notion, because summarization and drafting can happen beside the source material instead of in a separate chat window."},
+      {"slug":"otter-ai","note":"Meetings create follow-up work. Otter can reduce note-taking effort and make past conversations searchable, but the team should publish a recording policy, get consent, and assign somebody to verify action items."},
+      {"slug":"zapier-ai","note":"Zapier connects the tools a business already uses. Start with a narrow workflow such as form submission to CRM to notification, measure how often it fails, and avoid automating a process that has not yet been standardized."}
+    ],
+    "introduction": [
+      "A small business does not need an AI tool for every department. It needs a small set of tools that reduce repeated work in the areas where mistakes are easy to spot and expensive to repeat: proposals, customer communication, meeting follow-up, internal knowledge, and routine handoffs.",
+      "This guide uses a workflow-first shortlist. Each tool must solve a recurring job, have a realistic free or entry-level option, and leave a human in control of pricing, legal commitments, customer promises, and final publication. Product features, plans, and regional availability should be confirmed with each vendor before purchase."
+    ],
+    "decision_factors": [
+      "Estimate the cost of the current process, including the time spent correcting AI output.",
+      "Choose tools that export data and do not trap important business records in a closed workflow.",
+      "Check privacy, retention, training, and administrative controls before sending customer data.",
+      "Start with one owner and one measurable workflow; do not roll out five tools at once.",
+      "Measure time saved and correction time separately. A fast draft is not a win if review takes longer."
+    ],
+    "workflow": [
+      "Map one recurring process and write down the current time, handoffs, and failure points.",
+      "Give the assistant real business context such as audience, offer, constraints, and approved terminology.",
+      "Keep a human approval step for prices, contracts, compliance claims, and customer commitments.",
+      "Test the workflow for two weeks and record output quality, corrections, and total cost.",
+      "Keep only the tools that improve the finished result without creating another unmanaged channel."
+    ],
+    "verdict": "A lean small-business stack is usually one general assistant plus one meeting, knowledge, presentation, or automation tool tied to a real bottleneck. Add complexity only after the manual process is stable and the corrected output is measurably better.",
+    "faq": [
+      {"q":"Can a small business run entirely on free AI tiers?","a":"It can test ideas on free tiers, but limits, privacy terms, and export controls vary. Use free plans to validate a workflow, then pay only when the workflow saves enough time to justify the upgrade."},
+      {"q":"Should AI write customer-facing content?","a":"AI can prepare a draft, but a person should verify facts, pricing, tone, legal claims, and promises before publication."},
+      {"q":"Where should a business start?","a":"Start with the most frequent, low-risk task that already has a clear reviewer. Meeting notes, internal summaries, and first-draft SOPs are usually easier starting points than legal or financial decisions."}
+    ]
+  },
+  {
+    "slug": "free-ai-tools-for-students",
+    "title": "Free AI tools for students: study better without hiding the work",
+    "dek": "Use free tiers for explanation, editing, visual revision, and research support while keeping citations, academic integrity, and original thinking intact.",
+    "focus": "Learn faster without outsourcing judgment, citations, or authorship.",
+    "picks": [
+      {"slug":"chatgpt","note":"Use it to ask for alternative explanations, practice questions, and feedback on an outline. Do not submit generated text as your own work; check the school policy and keep a record of how the tool was used."},
+      {"slug":"claude","note":"Claude is useful for reading long notes or public documents and asking for structured summaries. It can help you find themes, but it cannot verify whether a source is appropriate for your assignment."},
+      {"slug":"grammarly","note":"Grammarly works best as a final clarity and grammar pass after the argument is complete. Accept suggestions selectively so the paper continues to sound like you and not like generic assistant prose."},
+      {"slug":"quillbot","note":"QuillBot can help compare sentence structures or create flashcards, but paraphrasing someone else's idea without citation is still plagiarism. Use citations first, wording tools second."},
+      {"slug":"canva-magic-studio","note":"Canva is useful for turning a messy concept into a visual study guide or presentation outline. Check image rights and make sure the visual supports the argument rather than replacing it."}
+    ],
+    "introduction": [
+      "The useful question is not whether students should use AI. It is which parts of learning can be supported without replacing the thinking the assignment is meant to assess. Explanation, retrieval practice, outline feedback, and grammar review are different from generating a finished essay.",
+      "This guide prioritizes free tiers and low-cost entry points, but academic policy wins over product convenience. Before using any tool, check the course syllabus, school policy, and instructor instructions for disclosure, citation, and acceptable use."
+    ],
+    "decision_factors": [
+      "Read the academic integrity policy before using AI on graded work.",
+      "Use AI for questions and feedback, not for fabricated sources or undisclosed authorship.",
+      "Keep original notes, prompts, drafts, and citations so your process is recoverable.",
+      "Check whether the tool stores or trains on submitted material.",
+      "Prefer tools that explain reasoning instead of only producing a polished answer."
+    ],
+    "workflow": [
+      "Write your own research question and initial outline before opening an AI tool.",
+      "Use the assistant to test understanding with questions, counterarguments, and examples.",
+      "Read the original sources instead of treating a generated summary as evidence.",
+      "Draft in your own words and use editing tools only after the argument is complete.",
+      "Disclose AI assistance when required and keep a short record of how it was used."
+    ],
+    "verdict": "Free AI tools can improve study efficiency when they help you retrieve, question, and revise your own work. They become harmful when they replace reading, citation, authorship, or the struggle that produces durable understanding.",
+    "faq": [
+      {"q":"Is it cheating to use AI for studying?","a":"Policies differ. Using AI to practice questions or explain a concept may be allowed, while submitting generated text may not be. Follow the strictest applicable course or school rule."},
+      {"q":"Can AI find sources for me?","a":"It can suggest search terms and possible source names, but you must open and verify the actual source. Never cite a paper, statistic, quotation, or link you have not checked."},
+      {"q":"What is the safest student workflow?","a":"Do the reading and outline yourself, use AI for questions or feedback, verify every source, write in your own words, and disclose assistance when required."}
+    ]
+  },
+  {
+    "slug": "ai-writing-tools-seo-comparison",
+    "title": "AI writing tools for SEO: where each tool actually helps",
+    "dek": "Compare ideation, research, briefs, drafting, editing, and optimization. No tool should own the entire editorial process.",
+    "focus": "Build a human-reviewed SEO writing workflow with a measurable brief and a clear source of original value.",
+    "picks": [
+      {"slug":"jasper","note":"Jasper is most relevant when a marketing team needs repeatable campaign workflows and brand-voice controls. It does not remove the need for search intent research, original evidence, or a human editor."},
+      {"slug":"surfer-seo","note":"Surfer is useful for turning search results and on-page terms into a brief and optimization checklist. A score is a diagnostic, not an instruction to add every phrase or copy a competitor's structure."},
+      {"slug":"grammarly","note":"Grammarly belongs near the end of the workflow. It improves clarity and mechanics after the argument, evidence, and internal links are already correct."},
+      {"slug":"copy-ai","note":"Copy.ai can organize repeatable go-to-market tasks, but a workflow is only as good as the strategy behind it. Document the audience, offer, claims, and approval rules before automating output."},
+      {"slug":"chatgpt","note":"A general assistant is useful for outlining, challenging assumptions, and rewriting selected passages. It should not be allowed to invent statistics, quotations, product tests, or first-hand experience."}
+    ],
+    "introduction": [
+      "SEO writing tools solve different parts of the same process. One may help research a query, another creates an outline, another edits, and another checks on-page coverage. Treating any single tool as the whole content strategy produces generic pages that do not demonstrate experience or trust.",
+      "Google's helpful-content guidance focuses on people-first material, original information, clear sourcing, and pages written for a specific audience. The practical rule is simple: AI can assist the workflow, but the final page should contain something the reader cannot get from a generic summary."
+    ],
+    "decision_factors": [
+      "Identify the search intent before choosing a tool or keyword.",
+      "Check whether the topic needs first-hand testing, expert review, data, or current sources.",
+      "Use competitor data to understand gaps, not to rewrite the same headings.",
+      "Keep facts, quotations, product claims, and statistics linked to sources.",
+      "Review the final page for usefulness after removing the keyword-optimization layer."
+    ],
+    "workflow": [
+      "Start with a search query, audience, and one sentence stating what the page will help the reader do.",
+      "Collect primary sources, screenshots, product information, or expert input.",
+      "Use an SEO tool to create a structural brief and identify missing subtopics.",
+      "Draft with a general assistant, then add original evidence and examples.",
+      "Edit for accuracy, voice, and readability before running a final on-page check."
+    ],
+    "verdict": "The strongest SEO stack is a sequence, not a single product: research, evidence, brief, draft, human review, and on-page check. Optimize for a useful answer first, then measure whether the page earns impressions and trust.",
+    "faq": [
+      {"q":"Can AI-generated content rank in Google?","a":"Google focuses on helpful, reliable, people-first content regardless of how it is produced. The bigger risk is scaled, unoriginal content that provides little value."},
+      {"q":"Should I publish 100 AI articles at once?","a":"No. Validate search demand, create original value, and publish in batches with human review. Volume alone can create duplication and quality-control problems."},
+      {"q":"What should an SEO brief contain?","a":"A clear intent, audience, source material, required questions, internal links, evidence requirements, and a review checklist. Keyword terms are supporting data, not the whole brief."}
+    ]
+  },
+  {
+    "slug": "ai-coding-assistants-for-beginners",
+    "title": "AI coding assistants for beginners: how to learn without copy-paste debt",
+    "dek": "Choose between an editor, browser IDE, autocomplete, and automated review without skipping the fundamentals.",
+    "focus": "Ship small projects while understanding what the code is doing.",
+    "picks": [
+      {"slug":"cursor","note":"Cursor is useful when you need to ask questions about several files and make controlled edits. Beginners should inspect every change, run tests, and avoid accepting multi-file rewrites they cannot explain."},
+      {"slug":"github-copilot","note":"Copilot works well as an inline assistant in an editor you already understand. Use it for small functions, tests, and documentation, not as a reason to skip debugging and version control."},
+      {"slug":"replit","note":"Replit reduces setup friction, which helps a beginner finish a small project in the browser. The tradeoff is that hosted resources and plan limits can become confusing when the project grows."},
+      {"slug":"coderabbit","note":"Automated review can highlight risky changes and summarize a pull request, but it is not a teacher or a replacement for human review. Use its comments to ask better questions, then verify the code yourself."},
+      {"slug":"claude","note":"Claude can explain an error, compare approaches, and help design a small module. Paste only code you are allowed to share, and test the explanation with a minimal example before applying it."}
+    ],
+    "introduction": [
+      "AI coding tools shorten the distance between an idea and a first version. They do not remove the need to understand data flow, errors, security, and debugging. For a beginner, the safest target is a small project with tests and a clear boundary.",
+      "The right tool depends on the bottleneck. An editor helps with codebase context, autocomplete speeds up small changes, a browser IDE removes setup friction, and review tools create a second pass. No single category replaces reading documentation and running the code."
+    ],
+    "decision_factors": [
+      "Choose the tool that fits the current bottleneck instead of installing every assistant.",
+      "Keep code in version control and review every generated diff.",
+      "Run tests and manually reproduce the behavior before accepting a fix.",
+      "Do not paste secrets, customer data, or private code into tools that are not approved for it.",
+      "Ask the assistant to explain tradeoffs, not only to produce code."
+    ],
+    "workflow": [
+      "Write the smallest version of the feature and define how you will know it works.",
+      "Ask the assistant for an approach, then implement or review it one change at a time.",
+      "Run tests, inspect errors, and add a minimal reproduction when something fails.",
+      "Commit working changes with a message that explains the behavior.",
+      "Request review and document anything you still do not understand."
+    ],
+    "verdict": "For beginners, the best AI coding setup is the one that keeps feedback loops short and makes generated changes reviewable. Use AI to accelerate understanding, not to hide the parts of the project you cannot yet maintain.",
+    "faq": [
+      {"q":"Can I learn to code with AI?","a":"Yes, if you ask for explanations, write and modify code yourself, and test your understanding on smaller exercises. Copying complete solutions without comprehension slows long-term learning."},
+      {"q":"Which assistant is best for a first project?","a":"A browser IDE or familiar editor with inline suggestions is usually easier to start with. The best choice is the one with the least setup and the clearest review process."},
+      {"q":"Should beginners use AI-generated code in production?","a":"Only after tests, security review, dependency checks, and human understanding. Generated code can contain bugs, insecure patterns, or licensing issues."}
+    ]
+  },
+  {
+    "slug": "ai-video-tools-for-creators",
+    "title": "AI video tools for creators: generation, editing, voice, and avatars",
+    "dek": "A workflow-first comparison for short video, podcasts, narration, and training content.",
+    "focus": "Produce more video without losing control of pacing, rights, or brand quality.",
+    "picks": [
+      {"slug":"runway","note":"Runway is best for concept shots, effects, and visual experiments that would be slow or expensive to produce traditionally. Generated footage still needs editorial selection and a rights check."},
+      {"slug":"descript","note":"Descript turns spoken-word editing into a transcript workflow, which is efficient for interviews and podcasts. Review names, facts, and cuts because transcription mistakes can change meaning."},
+      {"slug":"elevenlabs","note":"ElevenLabs can speed up narration and dubbing, but voice cloning requires explicit rights and consent. Check commercial terms, disclosure rules, and whether the audience should be told that the voice is synthetic."},
+      {"slug":"synthesia","note":"Synthesia fits repeatable corporate or training videos where consistency matters more than cinematic production. A strong script and accurate on-screen text matter more than the avatar novelty."},
+      {"slug":"canva-magic-studio","note":"Canva helps package the finished video into thumbnails, captions, social cutdowns, and supporting graphics. Keep a consistent export checklist so formats and branding do not drift."}
+    ],
+    "introduction": [
+      "AI video tools can generate a shot, remove filler words, create narration, or turn a script into an avatar presentation. Those are different jobs, so the first decision is the production bottleneck rather than the tool category.",
+      "Rights, consent, disclosure, and factual accuracy matter more in video because voice and likeness are easy to misrepresent. Use synthetic media only where you have clear permission and a workflow for reviewing the final output."
+    ],
+    "decision_factors": [
+      "Decide whether the bottleneck is generation, editing, voice, localization, or packaging.",
+      "Check commercial rights, model training terms, and whether the plan permits the intended audience and region.",
+      "Confirm consent before cloning a voice or using a person's likeness.",
+      "Review every transcript, subtitle, pronunciation, and claim before publishing.",
+      "Keep a backup export and project file so the workflow does not depend on one subscription."
+    ],
+    "workflow": [
+      "Write the script and define the target platform, length, and viewer outcome.",
+      "Create or edit the core footage, then validate audio and visual continuity.",
+      "Generate only the missing assets that would otherwise block the video.",
+      "Review rights, captions, names, and factual claims with a human editor.",
+      "Export platform-specific versions and archive the source project."
+    ],
+    "verdict": "Use AI video tools to remove specific production bottlenecks, not to automate the entire creative judgment. The best result usually combines generated or assisted assets with human scripting, editing, and compliance review.",
+    "faq": [
+      {"q":"Can I use an AI voice for commercial videos?","a":"Only when the vendor terms and applicable law allow it, and when you have consent for any cloned voice. Disclosure may also be required depending on the audience and jurisdiction."},
+      {"q":"Are AI-generated videos ready to publish immediately?","a":"No. Review continuity, text, audio, rights, factual claims, captions, and platform requirements before publishing."},
+      {"q":"Which tool should a solo creator start with?","a":"Start with the bottleneck that costs the most time. If editing is the problem, use a transcript editor; if missing footage blocks the story, test a generation tool."}
+    ]
+  }
+]

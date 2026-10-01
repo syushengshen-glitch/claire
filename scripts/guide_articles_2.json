@@ -1,0 +1,187 @@
+[
+  {
+    "slug": "ai-productivity-tools-for-remote-teams",
+    "title": "AI productivity tools for remote teams: notes, tasks, and automation",
+    "dek": "Use AI to reduce status chasing and meeting overhead without creating another unmanaged tool stack.",
+    "focus": "Make remote work easier to coordinate and easier to audit.",
+    "picks": [
+      {"slug":"notion-ai","note":"Notion AI works when the team already documents decisions, project context, and owner information in Notion. If the workspace is chaotic, the assistant will summarize chaos faster."},
+      {"slug":"clickup-ai","note":"ClickUp AI can help summarize tasks and create updates inside a project-management system. The team still needs one source of truth for status, priority, and definition of done."},
+      {"slug":"zapier-ai","note":"Zapier is useful for stable triggers such as form submission, CRM update, or notification. Automate only after the manual process works consistently and someone owns failure handling."},
+      {"slug":"make","note":"Make gives operators more visual control over branching and multi-step workflows. That power introduces monitoring needs, so start with a low-risk process and log failures."},
+      {"slug":"otter-ai","note":"Otter can capture meetings and action items, but remote teams should decide what may be recorded, where transcripts live, and how long they are retained."}
+    ],
+    "introduction": [
+      "Remote teams lose time when status, decisions, and ownership live in different places. AI can summarize, draft, and automate, but it cannot repair an operating model that has no clear owner or definition of done.",
+      "The practical goal is to reduce coordination cost while keeping an auditable record. Choose tools that fit the communication system already in use, document what the automation may do, and review failures instead of assuming a workflow is reliable because it ran once."
+    ],
+    "decision_factors": [
+      "Identify whether the problem is documentation, task status, meeting follow-up, or handoff automation.",
+      "Choose one source of truth for each category of information.",
+      "Define who reviews AI-generated summaries and action items.",
+      "Check workspace permissions, retention, and data residency before processing sensitive material.",
+      "Start with a reversible workflow and keep a manual fallback."
+    ],
+    "workflow": [
+      "Document the current remote process and the point where work most often stalls.",
+      "Assign one owner and one source of truth for status and decisions.",
+      "Use AI for summaries, drafts, reminders, or routing, not for unapproved task changes.",
+      "Review automation logs weekly and fix the process before adding more steps.",
+      "Publish a short internal guide covering privacy, retention, and escalation."
+    ],
+    "verdict": "Remote teams benefit most when AI reduces information loss around meetings, decisions, and handoffs. Keep the stack small, make ownership visible, and measure whether the team spends less time chasing updates.",
+    "faq": [
+      {"q":"Should remote teams record every meeting?","a":"No. Record only when it serves a clear purpose, participants understand the policy, and the transcript is stored and deleted under an approved retention rule."},
+      {"q":"How many productivity tools does a team need?","a":"Usually one workspace, one project system, and one automation layer are enough to start. More tools increase integration and ownership problems."},
+      {"q":"Who should approve AI-generated task changes?","a":"A named process owner should review material changes to priorities, deadlines, customer commitments, or financial information."}
+    ]
+  },
+  {
+    "slug": "best-ai-tools-for-freelancers",
+    "title": "Best AI tools for freelancers: research, writing, meetings, and client-ready visuals",
+    "dek": "Build a small client-service stack that improves turnaround without making every proposal or deliverable sound generated.",
+    "focus": "Spend less time on repetitive preparation and more time on client-specific judgment.",
+    "picks": [
+      {"slug":"chatgpt","note":"Use ChatGPT for scoping questions, research summaries, and first-draft messages. Never send a proposal or client update before checking commitments, dates, and pricing."},
+      {"slug":"grammarly","note":"Grammarly is a practical final edit across email and documents. It should not erase your personality or make every client communication sound identical."},
+      {"slug":"canva-magic-studio","note":"Canva helps freelancers package a deliverable, create a case-study visual, or produce a social asset without opening a full design suite. Confirm font, image, and template licenses."},
+      {"slug":"fathom","note":"Fathom can turn client calls into summaries and follow-up drafts. Ask for consent, mask sensitive details when possible, and verify every action item before sending it."},
+      {"slug":"gamma","note":"Gamma speeds up first-draft proposals and presentation decks. Replace generic sections with specific scope, milestones, assumptions, exclusions, and client context."}
+    ],
+    "introduction": [
+      "Freelancers are paid for judgment, client relationships, and finished work, not for spending more hours formatting the same proposal. The right AI stack removes repetitive preparation while preserving the details that make a deliverable specific to one client.",
+      "This shortlist covers the common bottlenecks: understanding a request, drafting communication, editing, presenting work, packaging visuals, and recording meeting follow-ups. Every workflow ends with a human review because a generic or incorrect response can cost trust faster than it saves time."
+    ],
+    "decision_factors": [
+      "Choose tools that fit the service you sell, not the tools that are trending.",
+      "Use client data only in products whose privacy and retention terms you understand.",
+      "Keep proposal assumptions, exclusions, and scope in the human-controlled section.",
+      "Check output rights before using generated images, voice, or templates commercially.",
+      "Measure turnaround time and revision count, not only drafting speed."
+    ],
+    "workflow": [
+      "Capture the client goal, constraints, decision maker, and acceptance criteria.",
+      "Use AI to organize questions and prepare a first-draft structure.",
+      "Add original examples, recommendations, and scope boundaries.",
+      "Review the final deliverable for accuracy, rights, and tone.",
+      "Send a concise follow-up with decisions, owners, and next dates."
+    ],
+    "verdict": "A freelancer does not need a large AI stack. One general assistant, one writing editor, one presentation or design tool, and one meeting-notes tool can cover most client-service work when the final review stays human.",
+    "faq": [
+      {"q":"Can freelancers use AI without sounding generic?","a":"Yes, if the tool receives real context and the freelancer rewrites examples, recommendations, and conclusions. Generic output usually comes from generic input and no final editing."},
+      {"q":"Should I disclose AI use to clients?","a":"Disclose when it affects authorship, rights, confidentiality, or the agreed deliverable. A clear client policy prevents surprises and builds trust."},
+      {"q":"What is the best first AI tool for a freelancer?","a":"A general assistant plus an editor is usually the best starting point because it supports research, communication, and review across several services."}
+    ]
+  },
+  {
+    "slug": "best-ai-tools-for-marketers",
+    "title": "Best AI tools for marketers: campaign copy, SEO, visuals, and automation",
+    "dek": "Use AI for repeatable marketing production while keeping positioning, evidence, approval, and brand judgment human.",
+    "focus": "Increase campaign production without turning every channel into the same generic message.",
+    "picks": [
+      {"slug":"jasper","note":"Jasper fits teams that need repeatable campaign workflows and brand-voice controls. It still depends on a clear audience, offer, proof, and approval process."},
+      {"slug":"surfer-seo","note":"Surfer creates useful briefs and optimization checks for search content. Treat the score as evidence to investigate, not a mandate to mirror every competitor heading."},
+      {"slug":"copy-ai","note":"Copy.ai can organize sales and marketing workflows into repeatable steps. Document inputs and quality gates before allowing a workflow to publish at scale."},
+      {"slug":"canva-magic-studio","note":"Canva helps a small marketing team produce campaign variants and visual assets quickly. Brand templates and license checks matter more as volume increases."},
+      {"slug":"zapier-ai","note":"Zapier connects forms, CRM records, notifications, and reporting tasks. Start with one stable handoff and monitor failures instead of automating the whole funnel at once."}
+    ],
+    "introduction": [
+      "Marketing is a system of positioning, research, proof, distribution, and measurement. AI can accelerate individual steps, but it cannot decide what the company should stand for or which claim is defensible.",
+      "A useful marketing stack keeps the source material visible: audience research, customer language, product evidence, brand rules, and approval requirements. The more content a team generates, the more important it becomes to check originality and consistency."
+    ],
+    "decision_factors": [
+      "Start with a campaign objective, audience, offer, and proof rather than a content format.",
+      "Maintain one approved source of truth for product claims and legal language.",
+      "Keep a human editor responsible for positioning and final publication.",
+      "Track conversion and assisted outcomes, not only clicks or word count.",
+      "Check image, voice, template, and model-use rights before commercial publication."
+    ],
+    "workflow": [
+      "Create a brief with audience, insight, message, proof, channel, and success metric.",
+      "Use research and writing tools to draft variants and identify missing questions.",
+      "Add original customer language and evidence from approved sources.",
+      "Edit for brand, accuracy, and channel fit.",
+      "Measure results and update the reusable workflow only when the pattern repeats."
+    ],
+    "verdict": "AI can make marketing production faster, but the durable advantage comes from better positioning, evidence, distribution, and learning. Keep the creative and strategic decisions human and automate only stable handoffs.",
+    "faq": [
+      {"q":"Will AI content hurt SEO?","a":"The production method is not the main issue. Pages that are helpful, original, reliable, and people-first are more likely to perform than scaled content with little value."},
+      {"q":"Can AI replace a copywriter?","a":"It can reduce drafting time, but a strong writer brings audience understanding, judgment, positioning, and editing that a generic model does not possess."},
+      {"q":"What should marketing teams measure?","a":"Measure qualified traffic, conversion, assisted revenue, retention, and sales feedback rather than output volume alone."}
+    ]
+  },
+  {
+    "slug": "best-ai-tools-for-founders",
+    "title": "Best AI tools for founders: faster research, decks, meetings, and operating notes",
+    "dek": "A founder-focused stack for testing ideas, communicating with stakeholders, and keeping early company knowledge usable.",
+    "focus": "Move from idea to evidence faster without letting AI invent market proof or customer demand.",
+    "picks": [
+      {"slug":"chatgpt","note":"Use it to frame hypotheses, interview questions, and first-draft analysis. Customer conversations, market evidence, and financial assumptions still require primary research and verification."},
+      {"slug":"gamma","note":"Gamma helps turn a strategy outline into an investor, sales, or internal deck. Replace generic assertions with real milestones, risks, metrics, and evidence."},
+      {"slug":"fathom","note":"Fathom can capture customer or partner calls and create follow-up drafts. Get consent, protect sensitive information, and review every commitment before it leaves the company."},
+      {"slug":"notion-ai","note":"Notion AI is useful when the company already keeps decisions and operating notes in one workspace. An organized knowledge base makes summaries more useful and easier to audit."},
+      {"slug":"zapier-ai","note":"Zapier can connect forms, CRM, email, and reporting tools. Founders should start with a simple workflow that removes a real handoff and keep a manual fallback."}
+    ],
+    "introduction": [
+      "Founders face a constant shortage of time and an abundance of uncertainty. AI can help structure research, prepare communication, and summarize operations, but it cannot validate a market, replace customer conversations, or make a risky assumption true.",
+      "The best founder workflow separates exploration from evidence. Use AI to think faster and organize information; use customers, data, legal advice, and financial models to decide what is actually true."
+    ],
+    "decision_factors": [
+      "Distinguish brainstorming from evidence and label assumptions clearly.",
+      "Keep primary customer research separate from generated summaries.",
+      "Protect confidential product, customer, and financial information.",
+      "Use one operating workspace so decisions remain searchable.",
+      "Review every external commitment, metric, legal claim, and investor statement."
+    ],
+    "workflow": [
+      "Write the decision to be made, the evidence required, and the deadline.",
+      "Use AI to organize hypotheses, interview questions, and counterarguments.",
+      "Collect primary evidence from customers, data, and experts.",
+      "Prepare the deck or memo from verified evidence only.",
+      "Record the decision, assumptions, owner, and next review date."
+    ],
+    "verdict": "AI is most useful to founders as a thinking and communication layer, not as a source of certainty. Use it to test reasoning faster, then validate the important conclusions with real people and data.",
+    "faq": [
+      {"q":"Can AI validate a startup idea?","a":"It can help structure questions and research, but it cannot prove demand. Talk to target customers, test behavior, and measure real commitment."},
+      {"q":"Should founders use AI for investor decks?","a":"Use it for structure and first drafts, but verify every metric, market claim, roadmap date, and financial assumption."},
+      {"q":"How should a small team manage AI knowledge?","a":"Keep decisions and source material in one workspace, label generated summaries, and assign owners for updates and corrections."}
+    ]
+  },
+  {
+    "slug": "best-ai-tools-for-teachers",
+    "title": "Best AI tools for teachers: lesson planning, explanation, visuals, and accessible media",
+    "dek": "Use AI to reduce preparation time while protecting student privacy, academic integrity, and teacher judgment.",
+    "focus": "Prepare clearer learning materials without automating assessment or exposing student information.",
+    "picks": [
+      {"slug":"chatgpt","note":"Use it to brainstorm lesson activities, differentiate examples, and draft quiz questions, then review difficulty, bias, accuracy, and alignment with the curriculum."},
+      {"slug":"claude","note":"Claude can help summarize long public documents and reorganize lesson notes. Do not upload student records or private school material without approved safeguards."},
+      {"slug":"canva-magic-studio","note":"Canva helps create worksheets, slides, and visual explanations quickly. Check image rights and make sure visual design does not reduce readability for learners who need accessible formats."},
+      {"slug":"descript","note":"Descript can turn recorded lessons or interviews into transcript-based edits and captions. Review captions carefully and follow school policy on recording students."},
+      {"slug":"otter-ai","note":"Otter can support teacher meetings and planning notes, but student or parent conversations require consent, retention, and access controls before recording."}
+    ],
+    "introduction": [
+      "Teachers use AI to save preparation time, create alternative explanations, and adapt materials for different learners. The highest-risk uses involve student data, grading, discipline, and confidential school information.",
+      "A safe classroom workflow starts with the school policy and the learning objective. AI can generate options, but the teacher remains responsible for accuracy, accessibility, age appropriateness, bias, and the final assessment decision."
+    ],
+    "decision_factors": [
+      "Follow school, district, and data-protection rules before entering any student information.",
+      "Keep the learning objective and curriculum standard visible in every prompt.",
+      "Review generated questions for accuracy, bias, difficulty, and unintended clues.",
+      "Provide accessible formats and do not rely on AI captions without human review.",
+      "Never let an AI tool make a high-impact grading or discipline decision without teacher review."
+    ],
+    "workflow": [
+      "Write the learning objective, audience, and accessibility needs first.",
+      "Use AI to generate activity options, examples, or explanation variants.",
+      "Check subject accuracy and remove content that does not fit the curriculum.",
+      "Review language, reading level, bias, and accessibility.",
+      "Collect student work under the school's normal privacy and assessment rules."
+    ],
+    "verdict": "AI can be a useful preparation assistant for teachers when it remains inside approved privacy boundaries and supports teacher-designed learning. It should not become an unsupervised grader or a shortcut around student data rules.",
+    "faq": [
+      {"q":"Can teachers upload student work to an AI tool?","a":"Only if the school permits that tool and the data terms are approved. Many student records and assignments are confidential or regulated."},
+      {"q":"Should AI grade assignments?","a":"AI may assist with feedback drafts or rubric checks, but a teacher should review high-impact grades and any decision that affects a student's record."},
+      {"q":"How can teachers use AI responsibly?","a":"Protect student data, verify content, cite sources, follow curriculum and accessibility requirements, and keep the teacher responsible for the final decision."}
+    ]
+  }
+]

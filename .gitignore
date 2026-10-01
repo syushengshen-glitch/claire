@@ -1,0 +1,14 @@
+# 影片與本機分析產物，不提交到 Git。
+.deps/
+.models/
+video_frames/
+video_frames_1s/
+*.pyc
+__pycache__/
+.venv/
+.env
+
+# 作業系統檔案。
+Thumbs.db
+Desktop.ini
+.DS_Store
