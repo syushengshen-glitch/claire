@@ -43,3 +43,32 @@ Google Trends 提供的是一個地區與時間區間內的相對熱度，不是
 - 每個網站都要獨立驗證與審查。
 - 新站目前只有 starter 內容，應先補上原創實測，再提交審查。
 - Vercel Hobby 條款限制為 personal 或 non-commercial；商業廣告應先升級 Pro 或改用允許商業用途的主機。
+
+
+## 實際部署結果
+
+所有 10 個網站已部署到獨立的 Vercel 專案：
+
+- `https://signalstack-coding-lab.vercel.app/`
+- `https://signalstack-voice-lab.vercel.app/`
+- `https://signalstack-support-lab.vercel.app/`
+- `https://signalstack-meeting-lab.vercel.app/`
+- `https://signalstack-website-lab.vercel.app/`
+- `https://signalstack-image-lab.vercel.app/`
+- `https://signalstack-career-lab.vercel.app/`
+- `https://signalstack-visual-lab.vercel.app/`
+- `https://signalstack-seo-lab.vercel.app/`
+- `https://signalstack-chatbot-lab.vercel.app/`
+
+每一站均已加入同一個 AdSense 帳戶，publisher ID 為 `ca-pub-1837836558769995`。所有站的 `ads.txt` 均已通過授權驗證，網站狀態均已送交「正在接受審查」，Auto Ads 也已全部開啟。
+
+## 關鍵字工具選擇
+
+目前選擇使用 **Google Trends 官方網頁**：
+
+- 免費，不需要 Google Ads 帳單
+- 可查看 Rising / Breakout 相對熱度
+- 不提供絕對月搜尋量
+- 已記錄實際相關查詢，例如 `opencode +90%`、`fish audio +1,400%`、`figma ai website builder +550%`、`rezi +110%`、`chatbot +800%`
+
+Ahrefs 與 Semrush 是付費服務；Google Ads Keyword Planner 需要 Google Ads 帳戶，可能涉及帳單或廣告帳戶設定，因此沒有在未經確認下建立。
