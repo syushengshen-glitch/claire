@@ -43,6 +43,9 @@ const server = http.createServer((req, res) => {
   const toolTitle = await page.locator('h1').first().textContent();
   await page.goto('http://127.0.0.1:4173/guides/best-ai-tools-for-small-business.html', { waitUntil:'networkidle' });
   const guideTitle = await page.locator('h1').first().textContent();
+  await page.goto('http://127.0.0.1:4173/guides/chatgpt-vs-gemini-editorial-plan-test.html', { waitUntil:'networkidle' });
+  const experimentTitle = await page.locator('h1').first().textContent();
+  const experimentImages = await page.locator('.content-card img').count();
 
   await page.setViewportSize({ width:390, height:844 });
   await page.goto('http://127.0.0.1:4173/', { waitUntil:'networkidle' });
@@ -51,7 +54,7 @@ const server = http.createServer((req, res) => {
   const mobileOverflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
   await page.screenshot({ path:'C:/Users/syush/Documents/ChatGPT/廣告收入設定/docs/site-mobile.png', fullPage:true });
 
-  console.log(JSON.stringify({ home, allCount, codingCount, videoCount, toolTitle, guideTitle, mobileNavOpen, mobileOverflow, errors }, null, 2));
+  console.log(JSON.stringify({ home, allCount, codingCount, videoCount, toolTitle, guideTitle, experimentTitle, experimentImages, mobileNavOpen, mobileOverflow, errors }, null, 2));
   await browser.close();
   server.close();
 })().catch(error => { console.error(error); server.close(); process.exit(1); });

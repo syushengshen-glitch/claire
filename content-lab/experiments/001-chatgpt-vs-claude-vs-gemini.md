@@ -95,3 +95,14 @@ Gemini：總分 X/10，第一次可用 X 分鐘
 我的觀察：
 截圖位置：
 ```
+
+## 已完成結果
+
+- 測試日期：2026-10-01
+- ChatGPT：8/10，第一次可用時間約 37 秒
+- Gemini Flash：6/10，第一次可用時間約 37 秒
+- 勝出者：ChatGPT
+- 主要原因：ChatGPT 的內部頁面名稱較接近網站實際結構；Gemini 產生多個不存在的路徑。
+- 排除工具：Claude 需要登入、Arena AI 需要 reCAPTCHA，兩者都沒有列入分數。
+- 發布文章：https://claire-mu.vercel.app/guides/chatgpt-vs-gemini-editorial-plan-test.html
+- 原始輸出：content-lab/captures/001-chatgpt-response.txt、content-lab/captures/001-gemini-response.txt

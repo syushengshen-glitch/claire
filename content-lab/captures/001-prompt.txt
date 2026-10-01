@@ -1,0 +1,23 @@
+You are helping plan a 7-day editorial sprint for an English-language AI tools directory.
+
+Audience: freelancers, small business owners, and remote teams.
+Website pages available:
+- ChatGPT, Claude, Gemini, Perplexity, Microsoft Copilot tool reviews
+- Coding, Writing and SEO, Productivity, and Business category pages
+- Guides about small business, freelancers, remote teams, and SEO writing
+
+Create a 7-day content plan in a table with:
+1. Day
+2. Primary keyword
+3. Search intent
+4. Article title
+5. Three questions the article must answer
+6. Three relevant internal links
+7. Facts that need verification
+
+Rules:
+- Do not invent search volume.
+- Mark uncertain assumptions as [VERIFY].
+- Prioritize long-tail topics over broad topics such as "best AI tools".
+- Keep each article practical for the named audience.
+- Return only the table and a short rationale.

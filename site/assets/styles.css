@@ -683,3 +683,11 @@ img { max-width: 100%; }
 .text-button { padding: 0; border: 0; color: var(--muted); background: transparent; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 
 
+
+.table-wrap { margin: 24px 0; overflow-x: auto; }
+.table-wrap table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 0.9rem; }
+.table-wrap th, .table-wrap td { padding: 11px 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.table-wrap th { background: var(--paper-deep); }
+.prose pre { margin: 24px 0; padding: 18px; overflow-x: auto; color: var(--white); background: var(--ink); border-radius: 12px; }
+.prose pre code { color: inherit; }
+

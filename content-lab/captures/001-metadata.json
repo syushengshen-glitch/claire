@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-01",
+  "experiment": "001",
+  "tools": [
+    "ChatGPT web",
+    "Google Gemini web (Flash)"
+  ],
+  "bothResponsesObservedBySeconds": 37,
+  "chatResponseChars": 4571,
+  "geminiResponseChars": 5813,
+  "notes": "Arena AI and Claude were excluded because Arena required reCAPTCHA and Claude required authentication. No paid features were used."
+}

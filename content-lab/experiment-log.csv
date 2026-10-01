@@ -1,2 +1,2 @@
 experiment_id,date,task,tools,winner,total_minutes,first_usable_minutes,clarity,specificity,originality,internal_links,verification,notes,published_url
-001,2026-10-01,Create a 7-day content plan for SignalShelf,"ChatGPT; Claude; Gemini",,,,,,,,,,
+001,2026-10-01,"Create a 7-day content plan for SignalShelf","ChatGPT web; Google Gemini Flash",ChatGPT,1,1,2,2,1,1,2,"Gemini produced more detail but used several internal paths that do not exist. Claude required authentication and Arena AI required reCAPTCHA, so both were excluded rather than reported as tested.",https://claire-mu.vercel.app/guides/chatgpt-vs-gemini-editorial-plan-test.html

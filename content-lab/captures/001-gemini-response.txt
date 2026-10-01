@@ -1,0 +1,275 @@
+Day	Primary Keyword	Search Intent	Article Title	Three Questions the Article Must Answer	Three Relevant Internal Links	Facts That Need Verification
+Day 1	chatgpt vs claude for freelance writers	Commercial / Comparative	ChatGPT vs Claude for Freelance Writers: Which AI Assistant Drafts and Edits Better?	
+
+1. Which model handles long-form tone matching and client guidelines better?
+
+
+
+
+2. How do pricing tiers compare for heavy daily usage?
+
+
+
+
+3. What are the key privacy and data retention differences for client work?
+
+	
+
+• /tools/chatgpt
+
+
+
+
+• /tools/claude
+
+
+
+
+• /categories/writing-and-seo
+
+	
+
+[VERIFY] Current context window limits and token pricing tier changes for ChatGPT Plus vs. Claude Pro in 2026.
+
+
+
+
+[VERIFY] Up-to-date data training opt-out policies for free vs. paid plans.
+
+
+Day 2	perplexity for small business market research	Informational / Practical	How Small Business Owners Can Use Perplexity AI for Fast Competitor Analysis	
+
+1. How do Perplexity’s real-time web citations compare to standard search engines?
+
+
+
+
+2. What specific prompts yield clean, actionable competitor comparison tables?
+
+
+
+
+3. How can small teams export and organize Perplexity research for pitch decks?
+
+	
+
+• /tools/perplexity
+
+
+
+
+• /categories/business
+
+
+
+
+• /guides/small-business
+
+	
+
+[VERIFY] Perplexity Pro file upload size/type limits and search query caps per day.
+
+
+
+
+[VERIFY] Integration capabilities with export tools or Google Docs/Notion.
+
+
+Day 3	how to write seo articles with claude	Informational / Instructional	How to Write SEO-Optimized Articles with Claude Without Sounding Generic	
+
+1. How do you inject real-world context and brand voice into Claude prompts?
+
+
+
+
+2. How can you use Claude to map search intent and build structured outlines?
+
+
+
+
+3. How do you format output to integrate seamlessly with internal site links?
+
+	
+
+• /tools/claude
+
+
+
+
+• /categories/writing-and-seo
+
+
+
+
+• /guides/seo-writing
+
+	
+
+[VERIFY] Latest benchmark accuracy on citation hallucination in long-form generation.
+
+
+
+
+[VERIFY] Current markdown/HTML export behavior in Claude's UI.
+
+
+Day 4	copilot vs gemini remote team productivity	Commercial / Comparative	Microsoft Copilot vs Google Gemini: Which Workspace AI Fits Your Remote Team?	
+
+1. How do Copilot and Gemini handle document summarize/draft features in Word vs Docs?
+
+
+
+
+2. What are the seat pricing and minimum user requirements for small business plans?
+
+
+
+
+3. Which ecosystem provides safer admin controls and permissions for remote teams?
+
+	
+
+• /tools/microsoft-copilot
+
+
+
+
+• /tools/gemini
+
+
+
+
+• /guides/remote-teams
+
+	
+
+[VERIFY] Current seat licensing costs for Microsoft 365 Copilot vs Google Workspace Gemini add-ons.
+
+
+
+
+[VERIFY] Availability of native cross-tenant admin features on basic business tiers.
+
+
+Day 5	chatgpt prompts for freelance client outreach	Informational / Practical	10 ChatGPT Prompts for Freelancers to Write Winning Cold Emails & Proposals	
+
+1. How do you customize prompts to avoid generic spam-sounding outreach?
+
+
+
+
+2. What details must freelancers input to get tailored, conversion-focused drafts?
+
+
+
+
+3. How can ChatGPT assist in generating scope-of-work outlines and proposal follow-ups?
+
+	
+
+• /tools/chatgpt
+
+
+
+
+• /categories/productivity
+
+
+
+
+• /guides/freelancers
+
+	
+
+[VERIFY] Maximum recommended prompt input lengths for optimal responses without truncation.
+
+
+
+
+[VERIFY] Best practices regarding client personal identifiable information (PII) inputs.
+
+
+Day 6	ai coding tools for non technical founders	Commercial / Informational	AI Coding Tools for Non-Technical Business Owners: ChatGPT vs Claude vs Copilot	
+
+1. Can non-coders reliably use chat-based AI to build simple site scripts or macros?
+
+
+
+
+2. Which AI tool offers the clearest explanations for debugging code snippets?
+
+
+
+
+3. What safety risks should small business owners know before deploying AI-generated code?
+
+	
+
+• /tools/chatgpt
+
+
+
+
+• /tools/microsoft-copilot
+
+
+
+
+• /categories/coding
+
+	
+
+[VERIFY] Code interpreter / execution capabilities natively supported in ChatGPT vs Copilot.
+
+
+
+
+[VERIFY] Code snippet upload file size restrictions for free vs paid accounts.
+
+
+Day 7	remote team workflow automation using perplexity and copilot	Informational / Practical	How Remote Teams Can Combine Perplexity and Microsoft Copilot for Daily Operations	
+
+1. How do you divide tasks between Perplexity (external search) and Copilot (internal docs)?
+
+
+
+
+2. What is the step-by-step workflow for turning market research into internal meeting briefs?
+
+
+
+
+3. How does this stack reduce manual synthesis time for remote team leads?
+
+	
+
+• /tools/perplexity
+
+
+
+
+• /tools/microsoft-copilot
+
+
+
+
+• /guides/remote-teams
+
+	
+
+[VERIFY] Current cross-app sync capabilities or manual copy-paste requirements between Perplexity and Microsoft Office tools.
+
+
+
+
+[VERIFY] Data protection compliance (e.g., SOC2, GDPR) for Enterprise/Business accounts.
+
+Rationale
+
+Audience Alignment: Every topic targets specific, practical pain points for freelancers (client outreach, writing efficiency), small business owners (competitor research, code/scripting solutions), and remote teams (workspace integration, operational synthesis).
+
+Internal Link Strategy: Each piece connects 2 tool reviews and 1 directory page (Category or Guide) available on the site, building tight internal topic clusters and driving traffic deeper into monetization pages.
+
+Long-Tail Focus: Rather than targeting high-competition broad terms ("best AI tools"), the sprint focuses on high-intent long-tail keywords ("chatgpt vs claude for freelance writers", "copilot vs gemini remote team productivity").
+
+Editorial Accuracy: Explicit [VERIFY] tags isolate volatile details—such as pricing, seat minimums, feature limits, and data retention policies—ensuring the team double-checks current facts prior to publication.

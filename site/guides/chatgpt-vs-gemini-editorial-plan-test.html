@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT vs Gemini: the same 7-day editorial planning task | SignalShelf</title>
+  <meta name="description" content="A first-hand ChatGPT vs Gemini test with the exact prompt, screenshots, scoring, and link-accuracy lessons.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://claire-mu.vercel.app/guides/chatgpt-vs-gemini-editorial-plan-test.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "We gave ChatGPT and Gemini the same 7-day editorial planning task", "description": "A first-hand comparison of ChatGPT and Gemini on the same AI content-planning prompt, including scoring, screenshots, and link accuracy.", "datePublished": "2026-10-01", "dateModified": "2026-10-01", "articleSection": "AI experiments", "author": {"@type": "Organization", "name": "SignalShelf Editorial Team"}, "publisher": {"@type": "Organization", "name": "SignalShelf"}, "mainEntityOfPage": "https://claire-mu.vercel.app/guides/chatgpt-vs-gemini-editorial-plan-test.html"}</script>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-shell header-inner">
+    <a class="brand" href="../index.html" aria-label="SignalShelf home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SignalShelf</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav" data-site-nav aria-label="Primary navigation">
+      <a href="../directory.html">Directory</a>
+      <a href="../guides/index.html" aria-current="page">Guides</a>
+      <a href="../editorial-policy.html">Method</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header><main id="main"><article>
+  <header class="site-shell article-header">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Guides</a> / Experiment 001</nav>
+    <h1>We gave ChatGPT and Gemini the same 7-day editorial planning task</h1>
+    <p class="dek">This is a real browser test, not a synthetic comparison. Both tools received the same prompt, at the same time, with no paid features and no follow-up instructions.</p>
+    <p class="article-meta">Tested October 1, 2026 · ChatGPT web and Google Gemini web (Flash) · One prompt · Both responses observed within 37 seconds</p>
+  </header>
+  <div class="site-shell content-grid">
+    <div class="content-card prose">
+      <div class="callout"><strong>Result:</strong> ChatGPT produced the more deployable plan for this specific website because its internal links used page names that already exist. Gemini produced more verification notes but invented several site paths.</div>
+
+      <h2 id="why">Why we ran this test</h2>
+      <p>AI tool reviews often claim that one assistant is better without showing the actual task. We wanted a narrower question: if both tools receive the same editorial brief, which response can a small content team use with the least correction?</p>
+      <p>The test used an English-language AI tools directory as the context. This matters because a useful answer must understand the existing pages, avoid invented search volume, and propose topics that connect naturally to the site.</p>
+
+      <h2 id="method">The test method</h2>
+      <ul>
+        <li>ChatGPT used the default web chat interface.</li>
+        <li>Gemini used the Flash mode available in the web interface.</li>
+        <li>Both tools received the same prompt in separate new conversations.</li>
+        <li>No paid feature, file upload, custom instruction, or follow-up prompt was used.</li>
+        <li>Both outputs were visible within 37 seconds of submission.</li>
+        <li>Claude required authentication and Arena AI required reCAPTCHA, so neither was scored or represented as tested.</li>
+      </ul>
+      <p>This is a focused editorial-planning test, not a general benchmark of writing quality, reasoning, coding, or safety.</p>
+
+      <h2 id="prompt">The exact prompt</h2>
+      <pre><code>You are helping plan a 7-day editorial sprint for an English-language AI tools directory.
+
+Audience: freelancers, small business owners, and remote teams.
+Website pages available:
+- ChatGPT, Claude, Gemini, Perplexity, Microsoft Copilot tool reviews
+- Coding, Writing and SEO, Productivity, and Business category pages
+- Guides about small business, freelancers, remote teams, and SEO writing
+
+Create a 7-day content plan in a table with:
+1. Day
+2. Primary keyword
+3. Search intent
+4. Article title
+5. Three questions the article must answer
+6. Three relevant internal links
+7. Facts that need verification
+
+Rules:
+- Do not invent search volume.
+- Mark uncertain assumptions as [VERIFY].
+- Prioritize long-tail topics over broad topics such as &quot;best AI tools&quot;.
+- Keep each article practical for the named audience.
+- Return only the table and a short rationale.</code></pre>
+
+      <h2 id="results">What each tool produced</h2>
+      <h3>ChatGPT</h3>
+      <p>ChatGPT returned seven rows and a rationale. The plan used practical long-tail topics such as client-email writing, long-document summaries, competitor research, freelance writing comparisons, meeting notes, SEO workflows, and remote-team reporting.</p>
+      <p>Its strongest feature was link context: it referred to existing page names such as the ChatGPT, Claude, Perplexity, Business, Productivity, Writing and SEO, freelancer, and remote-team pages. Those still need to be converted into exact URLs, but the content map is easier to validate.</p>
+      <p><img src="../assets/experiments/001-chatgpt.png" alt="ChatGPT response to the shared 7-day editorial planning prompt" loading="lazy"></p>
+
+      <h3>Gemini</h3>
+      <p>Gemini returned a longer answer with more [VERIFY] flags. It surfaced useful questions around pricing, data retention, workspace administration, PII, and current product limits.</p>
+      <p>Its material weakness was internal-link accuracy. It proposed paths such as <code>/categories/writing-and-seo</code>, <code>/guides/small-business</code>, <code>/guides/remote-teams</code>, <code>/guides/seo-writing</code>, and <code>/guides/freelancers</code>. Those are not the actual paths on this site, so the output would create broken links if published without review.</p>
+      <p><img src="../assets/experiments/001-gemini.png" alt="Gemini response to the shared 7-day editorial planning prompt" loading="lazy"></p>
+
+      <h2 id="score">How we scored the outputs</h2>
+      <p>Each category is scored from 0 to 2. The scoring criteria were written before comparing the outputs.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tool</th><th>Clarity</th><th>Specificity</th><th>Non-template</th><th>Internal links</th><th>Verification</th><th>Total</th></tr></thead>
+        <tbody>
+          <tr><td>ChatGPT</td><td>2</td><td>2</td><td>1</td><td>1</td><td>2</td><td>8/10</td></tr>
+          <tr><td>Gemini</td><td>2</td><td>2</td><td>1</td><td>0</td><td>1</td><td>6/10</td></tr>
+        </tbody>
+      </table></div>
+      <p>Gemini received a lower verification score because the incorrect internal paths create tangible editorial work. More words and more warnings do not compensate for links that do not exist.</p>
+
+      <h2 id="lessons">What this changes for our workflow</h2>
+      <ol>
+        <li>Never trust generated internal links without checking the live sitemap and local page paths.</li>
+        <li>Use a general assistant for a first content map, but keep the site structure in the prompt.</li>
+        <li>Treat [VERIFY] as a task list, not evidence that the fact is correct.</li>
+        <li>Do not write a tool review until the team has actually tested the tool or clearly labels the review as research-based.</li>
+        <li>Score the output against the work that remains, not the confidence of the response.</li>
+      </ol>
+
+      <h2 id="verdict">Verdict</h2>
+      <p>For this specific job, ChatGPT produced the more usable editorial map because its internal references were closer to the real site. Gemini produced a useful risk checklist and more detailed questions, but it would have introduced broken paths if copied directly.</p>
+      <p>The practical recommendation is to use ChatGPT for the first structural draft and Gemini for a second-pass verification checklist. A human editor still has to validate every link, source, keyword assumption, and product claim.</p>
+
+      <h2 id="sources">Sources and limits</h2>
+      <p>The original prompt and full text outputs are stored in <code>content-lab/captures/</code>. Screenshots are from the browser sessions on October 1, 2026. Product interfaces, model names, limits, and outputs can change.</p>
+      <ul>
+        <li><a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT official site</a></li>
+        <li><a href="https://gemini.google.com/" target="_blank" rel="noopener">Google Gemini official site</a></li>
+        <li><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener">Google Search Central: helpful, reliable, people-first content</a></li>
+      </ul>
+    </div>
+    <aside class="side-stack">
+      <nav class="toc" aria-label="On this page"><strong>On this page</strong><ol>
+        <li><a href="#why">Why we tested</a></li><li><a href="#method">Method</a></li><li><a href="#prompt">Prompt</a></li><li><a href="#results">Results</a></li><li><a href="#score">Score</a></li><li><a href="#verdict">Verdict</a></li>
+      </ol></nav>
+      <div class="side-panel compact"><h2>Experiment rule</h2><p>If a tool could not be used, it is excluded from the score. It is never described as tested.</p></div>
+    </aside>
+  </div>
+</article></main><footer class="site-footer">
+  <div class="site-shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SignalShelf</span></a>
+        <p>An editorial index of AI tools, built around practical work and clearly labeled advertising.</p>
+      </div>
+      <div><h2>Explore</h2><a href="../directory.html">Tool directory</a><a href="../guides/index.html">Practical guides</a><a href="../editorial-policy.html">Editorial method</a></div>
+      <div><h2>Company</h2><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../terms.html">Terms</a></div>
+      <div><h2>Trust</h2><a href="../privacy.html">Privacy and cookies</a><a href="../disclosure.html">Affiliate disclosure</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> SignalShelf. Independent editorial project.</span><span>Some links may become affiliate links after disclosure.</span><button class="text-button" type="button" data-manage-consent>Privacy choices</button></div>
+  </div>
+</footer>
+<div class="consent" data-consent role="dialog" aria-label="Privacy choices">
+  <p>We use essential storage for site preferences. Advertising and analytics cookies stay off until you allow them.</p>
+  <div class="consent-actions"><button class="button secondary" type="button" data-consent-choice="essential">Essential only</button><button class="button" type="button" data-consent-choice="all">Allow advertising</button></div>
+</div><script src="../assets/app.js" defer></script></body>
+</html>
