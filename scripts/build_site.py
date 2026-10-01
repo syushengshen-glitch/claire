@@ -49,16 +49,8 @@ def tool_by_slug(slug):
 
 
 def ad_slot(kind, publisher):
-    if not publisher:
-        return ''
-    classes = 'ad-slot ' + ('rail' if kind == 'rail' else 'wide')
-    return (
-        f'<aside class="{classes}" aria-label="Advertisement">'
-        '<span class="ad-label">Advertisement</span>'
-        f'<ins class="adsbygoogle" style="display:block;width:100%;min-height:90px" '
-        f'data-ad-client="{esc(publisher)}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
-        '</aside>'
-    )
+    # 使用 Google Auto Ads，廣告位置由認證 CMP 與 AdSense 設定管理。
+    return ''
 
 
 def header(depth, current):
@@ -96,10 +88,7 @@ def footer(depth):
     <div class="footer-bottom"><span>© <span data-year>2026</span> SignalShelf. Independent editorial project.</span><span>Some links may become affiliate links after disclosure.</span><button class="text-button" type="button" data-manage-consent>Privacy choices</button></div>
   </div>
 </footer>
-<div class="consent" data-consent role="dialog" aria-label="Privacy choices">
-  <p>We use essential storage for site preferences. Advertising and analytics cookies stay off until you allow them.</p>
-  <div class="consent-actions"><button class="button secondary" type="button" data-consent-choice="essential">Essential only</button><button class="button" type="button" data-consent-choice="all">Allow advertising</button></div>
-</div>'''
+'''
 
 
 def page(title, description, body, depth=0, current='', canonical='', schema=None, publisher=None):
@@ -400,9 +389,9 @@ def write_static_pages(publisher, base_url):
             'Privacy and cookies',
             [
                 'Last updated: October 1, 2026. SignalShelf is an independent editorial website. The static site does not create user accounts and does not operate a server-side visitor database.',
-                'The browser stores one local preference named signalshelf-consent so the site can remember whether a visitor allowed advertising cookies. This preference stays in the browser and can be removed through browser settings. The site currently does not use analytics or advertising scripts until a publisher ID is configured and the visitor allows advertising.',
+                'The site uses Google Consent Mode. Advertising storage, user data, and personalization signals are set to denied by default. When a visitor is in a region that requires consent, Google-certified consent messaging collects and updates the visitor preference before personalized advertising is used. The site does not use analytics.',
                 'SignalShelf is hosted by Vercel. Like most hosting providers, Vercel may process request information such as IP address, user agent, timestamps, and security logs to deliver and protect the service. Vercel privacy information is available at https://vercel.com/legal/privacy-policy.',
-                'If Google AdSense is enabled in the future, Google and its partners may use cookies or similar identifiers to measure and personalize advertising. Advertising storage remains denied until the visitor selects Allow advertising. Google partner-site information is available at https://policies.google.com/technologies/partner-sites and advertising controls are available at https://adssettings.google.com/.',
+                'Google AdSense and its partners may use cookies or similar identifiers to measure and personalize advertising. Google Consent Mode is configured with advertising storage denied by default, and the Google-certified consent message manages choices where required by law. Google partner-site information is available at https://policies.google.com/technologies/partner-sites and advertising controls are available at https://adssettings.google.com/.',
                 'External tool links lead to websites controlled by other companies. Those sites have their own privacy policies, cookies, accounts, and data practices. Review the destination policy before submitting personal or confidential information.',
                 'Privacy and security requests can be submitted privately through https://github.com/syushengshen-glitch/claire/security/advisories/new. Include the requested action, the relevant page, and a safe way to respond.',
                 'We may update this policy when the site adds advertising, analytics, forms, a custom domain, or a new service provider. The updated date at the top of this page will be revised when the policy changes.'
