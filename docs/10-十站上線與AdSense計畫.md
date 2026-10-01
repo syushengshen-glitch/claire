@@ -72,3 +72,18 @@ Google Trends 提供的是一個地區與時間區間內的相對熱度，不是
 - 已記錄實際相關查詢，例如 `opencode +90%`、`fish audio +1,400%`、`figma ai website builder +550%`、`rezi +110%`、`chatbot +800%`
 
 Ahrefs 與 Semrush 是付費服務；Google Ads Keyword Planner 需要 Google Ads 帳戶，可能涉及帳單或廣告帳戶設定，因此沒有在未經確認下建立。
+
+
+## 第一批內容擴充
+
+`signalstack-coding-lab` 與 `signalstack-career-lab` 已完成第一輪擴充：
+
+- 每站 50 篇文章
+- 每站 5 個工具頁
+- 每站 sitemap 共 64 個網址（含靜態頁、工具頁與 50 篇文章）
+- Coding 使用深色工程台、終端機與藍圖網格風格
+- Career 使用履歷檔案、編輯手冊與成長時間軸風格
+- 內文包含工具選擇、工作流、FAQ、來源與人工審查提醒
+- 所有文章仍需要在正式長期營利前補上第一手截圖、實測結果與人工事實查核
+
+`multisite/priority-build-report.json` 與 `multisite/build_multisite.py` 可用來重建兩站。AdSense 的網站審查會看到新內容，若審查未通過，先修正內容後再要求複查。

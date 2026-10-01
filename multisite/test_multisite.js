@@ -15,7 +15,12 @@ const server = http.createServer((req,res)=>{
   await new Promise(r=>server.listen(4180,'127.0.0.1',r));
   const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
   const page=await browser.newPage({viewport:{width:1280,height:900}});
-  await page.route('**/*',route=>route.request().url().includes('127.0.0.1:4180')?route.continue():route.abort());
+  await page.route('**/*',route=>{
+    const url=route.request().url();
+    if(url.includes('127.0.0.1:4180')) return route.continue();
+    if(url.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')) return route.fulfill({status:200,contentType:'application/javascript',body:'window.adsbygoogle=window.adsbygoogle||[];'});
+    return route.abort();
+  });
   const results=[];
   const sites=fs.readdirSync(root,{withFileTypes:true}).filter(x=>x.isDirectory()).map(x=>x.name);
   for(const site of sites){

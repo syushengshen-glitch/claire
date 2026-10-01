@@ -1,0 +1,39 @@
+/* CodingSignal 主題：深色工程台、終端機與藍圖網格。 */
+body.theme-coding {
+  --paper: #071923;
+  --paper-deep: #0b2b38;
+  --ink: #e9f8f6;
+  --muted: #9bb8bf;
+  --line: #245864;
+  --blue: #29d3c2;
+  --blue-dark: #1ca99c;
+  --coral: #ff8a5b;
+  --sun: #b8f25b;
+  --white: #0b222d;
+  --shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+  --font-display: "Cascadia Code", Consolas, monospace;
+  --font-ui: "Segoe UI Variable", "Segoe UI", sans-serif;
+  background: var(--paper);
+}
+body.theme-coding::before { opacity: .35; background-image: linear-gradient(rgba(41,211,194,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(41,211,194,.08) 1px,transparent 1px); background-size: 34px 34px; }
+body.theme-coding .site-header { background: rgba(7,25,35,.94); border-bottom-color: var(--line); }
+body.theme-coding .brand-mark { border-radius: 5px; border-color: var(--blue); }
+body.theme-coding .brand-mark::before, body.theme-coding .brand-mark::after { background: var(--blue); }
+body.theme-coding .site-nav a:hover, body.theme-coding .site-nav a[aria-current="page"] { color: var(--ink); background: var(--paper-deep); }
+body.theme-coding .hero-note { color: var(--blue); }
+body.theme-coding .radar { background: linear-gradient(rgba(41,211,194,.05),rgba(41,211,194,.05)), repeating-radial-gradient(circle at 50% 50%,transparent 0 77px,rgba(41,211,194,.2) 78px 79px), var(--paper-deep); border-color: var(--blue); }
+body.theme-coding .radar-center { color: #06151d; background: var(--sun); border-color: var(--blue); }
+body.theme-coding .radar-node { color: var(--ink); background: #0d3340; border-color: var(--blue); box-shadow: 4px 4px 0 rgba(41,211,194,.22); }
+body.theme-coding .signal-strip { border-color: var(--line); }
+body.theme-coding .tool-row, body.theme-coding .article-card, body.theme-coding .side-panel, body.theme-coding .content-card, body.theme-coding .search-panel { color: var(--ink); background: var(--white); border-color: var(--line); border-radius: 4px; }
+body.theme-coding .tool-row:hover { background: #10313d; border-color: var(--blue); }
+body.theme-coding .tool-mark { color: var(--blue); background: #0c2a34; border-color: var(--blue); border-radius: 4px; font-family: var(--font-display); }
+body.theme-coding .section-heading h2, body.theme-coding .article-card h3 { color: var(--ink); }
+body.theme-coding .article-card:nth-child(2) { transform: none; background: #0d3340; }
+body.theme-coding .article-card:nth-child(3n) { border-left: 5px solid var(--sun); }
+body.theme-coding .article-card:nth-child(5n) { border-top: 5px solid var(--coral); }
+body.theme-coding .text-link, body.theme-coding .prose a { color: var(--blue); }
+body.theme-coding .callout { color: var(--ink); background: #102f39; border-color: var(--sun); }
+body.theme-coding .toc, body.theme-coding .fact { background: var(--paper-deep); border-color: var(--line); }
+body.theme-coding .site-footer { border-color: var(--line); }
+body.theme-coding .footer-grid p, body.theme-coding .footer-grid a, body.theme-coding .footer-bottom { color: var(--muted); }

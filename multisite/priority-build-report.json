@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "coding",
+    "project": "signalstack-coding-lab",
+    "domain": "signalstack-coding-lab.vercel.app",
+    "pages": 23,
+    "tools": 5,
+    "articles": 50
+  },
+  {
+    "slug": "career",
+    "project": "signalstack-career-lab",
+    "domain": "signalstack-career-lab.vercel.app",
+    "pages": 23,
+    "tools": 5,
+    "articles": 50
+  }
+]

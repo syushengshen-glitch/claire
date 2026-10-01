@@ -1,0 +1,1752 @@
+[
+  {
+    "slug": "best-ai-coding-agents-for-beginners",
+    "title": "Best AI coding agents for beginners",
+    "dek": "Choose an agent that explains code and keeps changes reviewable.",
+    "focus": "Choose an agent that explains code and keeps changes reviewable.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "getting started",
+    "intro": "Best AI coding agents for beginners is a practical guide for beginner developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For beginner developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "beginner developers"
+  },
+  {
+    "slug": "copilot-vs-cursor-for-small-teams",
+    "title": "GitHub Copilot vs Cursor for small teams",
+    "dek": "Compare inline assistance with an AI-first editor workflow.",
+    "focus": "Compare inline assistance with an AI-first editor workflow.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "tool comparison",
+    "intro": "GitHub Copilot vs Cursor for small teams is a practical guide for small engineering teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For small engineering teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "small engineering teams"
+  },
+  {
+    "slug": "review-ai-generated-code",
+    "title": "How to review AI-generated code",
+    "dek": "Use tests, diffs, security checks, and ownership before merging.",
+    "focus": "Use tests, diffs, security checks, and ownership before merging.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "code review",
+    "intro": "How to review AI-generated code is a practical guide for developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "developers"
+  },
+  {
+    "slug": "cursor-vs-windsurf-for-multi-file-edits",
+    "title": "Cursor vs Windsurf for multi-file edits",
+    "dek": "Compare project context, agent control, and review overhead.",
+    "focus": "Compare project context, agent control, and review overhead.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "tool comparison",
+    "intro": "Cursor vs Windsurf for multi-file edits is a practical guide for developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "developers"
+  },
+  {
+    "slug": "github-copilot-code-review-checklist",
+    "title": "GitHub Copilot code review checklist",
+    "dek": "Build a repeatable checklist for AI-assisted pull requests.",
+    "focus": "Build a repeatable checklist for AI-assisted pull requests.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "code review",
+    "intro": "GitHub Copilot code review checklist is a practical guide for reviewers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For reviewers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "reviewers"
+  },
+  {
+    "slug": "how-to-debug-code-with-ai-without-wasting-time",
+    "title": "How to debug code with AI without wasting time",
+    "dek": "Turn vague errors into reproducible test cases before asking for fixes.",
+    "focus": "Turn vague errors into reproducible test cases before asking for fixes.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "debugging",
+    "intro": "How to debug code with AI without wasting time is a practical guide for developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "developers"
+  },
+  {
+    "slug": "best-ai-tools-for-writing-unit-tests",
+    "title": "Best AI tools for writing unit tests",
+    "dek": "Use AI for test ideas while keeping assertions meaningful.",
+    "focus": "Use AI for test ideas while keeping assertions meaningful.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "testing",
+    "intro": "Best AI tools for writing unit tests is a practical guide for test engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For test engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "test engineers"
+  },
+  {
+    "slug": "how-to-review-ai-generated-sql-safely",
+    "title": "How to review AI-generated SQL safely",
+    "dek": "Check joins, filters, permissions, performance, and destructive operations.",
+    "focus": "Check joins, filters, permissions, performance, and destructive operations.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "security",
+    "intro": "How to review AI-generated SQL safely is a practical guide for data developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For data developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "data developers"
+  },
+  {
+    "slug": "ai-coding-assistant-privacy-checklist",
+    "title": "AI coding assistant privacy checklist",
+    "dek": "Review code sharing, retention, training, and access controls.",
+    "focus": "Review code sharing, retention, training, and access controls.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "security",
+    "intro": "AI coding assistant privacy checklist is a practical guide for engineering leaders. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For engineering leaders, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "engineering leaders"
+  },
+  {
+    "slug": "best-ai-tools-for-legacy-code-refactoring",
+    "title": "Best AI tools for legacy code refactoring",
+    "dek": "Modernize code in small, tested steps instead of large rewrites.",
+    "focus": "Modernize code in small, tested steps instead of large rewrites.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "refactoring",
+    "intro": "Best AI tools for legacy code refactoring is a practical guide for senior developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For senior developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "senior developers"
+  },
+  {
+    "slug": "how-to-use-ai-for-codebase-onboarding",
+    "title": "How to use AI for codebase onboarding",
+    "dek": "Map architecture, conventions, entry points, and risky areas.",
+    "focus": "Map architecture, conventions, entry points, and risky areas.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "onboarding",
+    "intro": "How to use AI for codebase onboarding is a practical guide for new developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For new developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "new developers"
+  },
+  {
+    "slug": "how-to-write-better-prompts-for-coding-agents",
+    "title": "How to write better prompts for coding agents",
+    "dek": "Provide constraints, examples, acceptance criteria, and file context.",
+    "focus": "Provide constraints, examples, acceptance criteria, and file context.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "prompting",
+    "intro": "How to write better prompts for coding agents is a practical guide for developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "developers"
+  },
+  {
+    "slug": "best-ai-tools-for-frontend-development",
+    "title": "Best AI tools for frontend development",
+    "dek": "Compare component generation, accessibility, styling, and review.",
+    "focus": "Compare component generation, accessibility, styling, and review.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "frontend",
+    "intro": "Best AI tools for frontend development is a practical guide for frontend developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For frontend developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "frontend developers"
+  },
+  {
+    "slug": "best-ai-tools-for-backend-development",
+    "title": "Best AI tools for backend development",
+    "dek": "Compare API, database, authentication, and test workflows.",
+    "focus": "Compare API, database, authentication, and test workflows.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "backend",
+    "intro": "Best AI tools for backend development is a practical guide for backend developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For backend developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "backend developers"
+  },
+  {
+    "slug": "how-to-use-ai-for-api-documentation",
+    "title": "How to use AI for API documentation",
+    "dek": "Generate a first draft without losing examples and version history.",
+    "focus": "Generate a first draft without losing examples and version history.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "documentation",
+    "intro": "How to use AI for API documentation is a practical guide for API teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For API teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "API teams"
+  },
+  {
+    "slug": "ai-assisted-accessibility-testing-for-developers",
+    "title": "AI-assisted accessibility testing for developers",
+    "dek": "Combine automated checks with keyboard and screen-reader review.",
+    "focus": "Combine automated checks with keyboard and screen-reader review.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "accessibility",
+    "intro": "AI-assisted accessibility testing for developers is a practical guide for frontend teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For frontend teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "frontend teams"
+  },
+  {
+    "slug": "best-ai-tools-for-javascript-debugging",
+    "title": "Best AI tools for JavaScript debugging",
+    "dek": "Compare editor, browser, and code-review workflows.",
+    "focus": "Compare editor, browser, and code-review workflows.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "debugging",
+    "intro": "Best AI tools for JavaScript debugging is a practical guide for JavaScript developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For JavaScript developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "JavaScript developers"
+  },
+  {
+    "slug": "best-ai-tools-for-python-developers",
+    "title": "Best AI tools for Python developers",
+    "dek": "Compare notebook, script, package, and test workflows.",
+    "focus": "Compare notebook, script, package, and test workflows.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "python",
+    "intro": "Best AI tools for Python developers is a practical guide for Python developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For Python developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "Python developers"
+  },
+  {
+    "slug": "ai-coding-agent-security-risks-to-check",
+    "title": "AI coding agent security risks to check",
+    "dek": "Review secrets, prompt injection, dependencies, and generated commands.",
+    "focus": "Review secrets, prompt injection, dependencies, and generated commands.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "security",
+    "intro": "AI coding agent security risks to check is a practical guide for security engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For security engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "security engineers"
+  },
+  {
+    "slug": "how-to-use-ai-for-pull-request-summaries",
+    "title": "How to use AI for pull request summaries",
+    "dek": "Write useful summaries that preserve decisions and risk.",
+    "focus": "Write useful summaries that preserve decisions and risk.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "collaboration",
+    "intro": "How to use AI for pull request summaries is a practical guide for developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "developers"
+  },
+  {
+    "slug": "best-ai-tools-for-ci-cd-troubleshooting",
+    "title": "Best AI tools for CI/CD troubleshooting",
+    "dek": "Investigate failing pipelines without hiding root causes.",
+    "focus": "Investigate failing pipelines without hiding root causes.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "devops",
+    "intro": "Best AI tools for CI/CD troubleshooting is a practical guide for DevOps engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For DevOps engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "DevOps engineers"
+  },
+  {
+    "slug": "ai-coding-tools-for-solo-founders",
+    "title": "AI coding tools for solo founders",
+    "dek": "Ship small features while preserving maintainability and tests.",
+    "focus": "Ship small features while preserving maintainability and tests.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "founders",
+    "intro": "AI coding tools for solo founders is a practical guide for technical founders. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For technical founders, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "technical founders"
+  },
+  {
+    "slug": "best-ai-tools-for-learning-algorithms",
+    "title": "Best AI tools for learning algorithms",
+    "dek": "Use explanations, examples, and complexity analysis without copying answers.",
+    "focus": "Use explanations, examples, and complexity analysis without copying answers.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "education",
+    "intro": "Best AI tools for learning algorithms is a practical guide for computer science students. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For computer science students, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "computer science students"
+  },
+  {
+    "slug": "how-to-use-ai-to-understand-an-unfamiliar-repository",
+    "title": "How to use AI to understand an unfamiliar repository",
+    "dek": "Create a map of files, dependencies, tests, and change boundaries.",
+    "focus": "Create a map of files, dependencies, tests, and change boundaries.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "onboarding",
+    "intro": "How to use AI to understand an unfamiliar repository is a practical guide for developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "developers"
+  },
+  {
+    "slug": "best-ai-coding-tools-for-typescript",
+    "title": "Best AI coding tools for TypeScript",
+    "dek": "Compare type-aware suggestions, refactors, and test generation.",
+    "focus": "Compare type-aware suggestions, refactors, and test generation.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "typescript",
+    "intro": "Best AI coding tools for TypeScript is a practical guide for TypeScript developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For TypeScript developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "TypeScript developers"
+  },
+  {
+    "slug": "how-to-use-ai-for-database-migrations",
+    "title": "How to use AI for database migrations",
+    "dek": "Plan reversible migrations with backups, checks, and rollback criteria.",
+    "focus": "Plan reversible migrations with backups, checks, and rollback criteria.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "database",
+    "intro": "How to use AI for database migrations is a practical guide for backend teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For backend teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "backend teams"
+  },
+  {
+    "slug": "best-ai-tools-for-software-testing",
+    "title": "Best AI tools for software testing",
+    "dek": "Compare test planning, generation, maintenance, and triage.",
+    "focus": "Compare test planning, generation, maintenance, and triage.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "testing",
+    "intro": "Best AI tools for software testing is a practical guide for QA engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For QA engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "QA engineers"
+  },
+  {
+    "slug": "how-to-use-ai-for-performance-optimization",
+    "title": "How to use AI for performance optimization",
+    "dek": "Measure first, then test one hypothesis at a time.",
+    "focus": "Measure first, then test one hypothesis at a time.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "performance",
+    "intro": "How to use AI for performance optimization is a practical guide for engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "engineers"
+  },
+  {
+    "slug": "ai-tools-for-technical-writing-and-docs",
+    "title": "AI tools for technical writing and docs",
+    "dek": "Use AI for structure and consistency while preserving accuracy.",
+    "focus": "Use AI for structure and consistency while preserving accuracy.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "documentation",
+    "intro": "AI tools for technical writing and docs is a practical guide for technical writers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For technical writers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "technical writers"
+  },
+  {
+    "slug": "best-ai-tools-for-code-refactoring",
+    "title": "Best AI tools for code refactoring",
+    "dek": "Compare safe refactoring, diff review, and regression testing.",
+    "focus": "Compare safe refactoring, diff review, and regression testing.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "refactoring",
+    "intro": "Best AI tools for code refactoring is a practical guide for software engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For software engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "software engineers"
+  },
+  {
+    "slug": "how-to-use-ai-for-regex-and-parsing-tasks",
+    "title": "How to use AI for regex and parsing tasks",
+    "dek": "Build examples first and test edge cases before shipping.",
+    "focus": "Build examples first and test edge cases before shipping.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "utility",
+    "intro": "How to use AI for regex and parsing tasks is a practical guide for developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "developers"
+  },
+  {
+    "slug": "best-ai-tools-for-api-development",
+    "title": "Best AI tools for API development",
+    "dek": "Compare schema design, implementation, tests, and documentation.",
+    "focus": "Compare schema design, implementation, tests, and documentation.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "api",
+    "intro": "Best AI tools for API development is a practical guide for backend developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For backend developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "backend developers"
+  },
+  {
+    "slug": "how-to-use-ai-to-review-authentication-code",
+    "title": "How to use AI to review authentication code",
+    "dek": "Check session handling, secrets, permissions, and failure modes.",
+    "focus": "Check session handling, secrets, permissions, and failure modes.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "security",
+    "intro": "How to use AI to review authentication code is a practical guide for security teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For security teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "security teams"
+  },
+  {
+    "slug": "best-ai-tools-for-mobile-app-development",
+    "title": "Best AI tools for mobile app development",
+    "dek": "Compare UI generation, platform APIs, testing, and store constraints.",
+    "focus": "Compare UI generation, platform APIs, testing, and store constraints.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "mobile",
+    "intro": "Best AI tools for mobile app development is a practical guide for mobile developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For mobile developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "mobile developers"
+  },
+  {
+    "slug": "how-to-use-ai-for-game-development-prototypes",
+    "title": "How to use AI for game development prototypes",
+    "dek": "Prototype mechanics quickly while separating throwaway code.",
+    "focus": "Prototype mechanics quickly while separating throwaway code.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "gamedev",
+    "intro": "How to use AI for game development prototypes is a practical guide for game developers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For game developers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "game developers"
+  },
+  {
+    "slug": "best-ai-tools-for-data-engineering",
+    "title": "Best AI tools for data engineering",
+    "dek": "Compare SQL, pipeline, validation, and orchestration support.",
+    "focus": "Compare SQL, pipeline, validation, and orchestration support.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "data",
+    "intro": "Best AI tools for data engineering is a practical guide for data engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For data engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "data engineers"
+  },
+  {
+    "slug": "how-to-use-ai-for-infrastructure-as-code",
+    "title": "How to use AI for infrastructure as code",
+    "dek": "Review generated Terraform and cloud changes before apply.",
+    "focus": "Review generated Terraform and cloud changes before apply.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "devops",
+    "intro": "How to use AI for infrastructure as code is a practical guide for platform engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For platform engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "platform engineers"
+  },
+  {
+    "slug": "best-ai-tools-for-open-source-maintainers",
+    "title": "Best AI tools for open-source maintainers",
+    "dek": "Use AI for triage and summaries without automating trust.",
+    "focus": "Use AI for triage and summaries without automating trust.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "open-source",
+    "intro": "Best AI tools for open-source maintainers is a practical guide for maintainers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For maintainers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "maintainers"
+  },
+  {
+    "slug": "how-to-use-ai-for-release-notes",
+    "title": "How to use AI for release notes",
+    "dek": "Convert merged changes into accurate, user-facing notes.",
+    "focus": "Convert merged changes into accurate, user-facing notes.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "documentation",
+    "intro": "How to use AI for release notes is a practical guide for product engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For product engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "product engineers"
+  },
+  {
+    "slug": "best-ai-tools-for-code-migration-projects",
+    "title": "Best AI tools for code migration projects",
+    "dek": "Plan migrations by dependency, test coverage, and rollback risk.",
+    "focus": "Plan migrations by dependency, test coverage, and rollback risk.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "migration",
+    "intro": "Best AI tools for code migration projects is a practical guide for engineering teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For engineering teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "engineering teams"
+  },
+  {
+    "slug": "how-to-use-ai-for-monorepo-development",
+    "title": "How to use AI for monorepo development",
+    "dek": "Manage context, ownership, and affected-project changes.",
+    "focus": "Manage context, ownership, and affected-project changes.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "monorepo",
+    "intro": "How to use AI for monorepo development is a practical guide for platform teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For platform teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "platform teams"
+  },
+  {
+    "slug": "best-ai-tools-for-cli-development",
+    "title": "Best AI tools for CLI development",
+    "dek": "Compare command design, tests, documentation, and packaging.",
+    "focus": "Compare command design, tests, documentation, and packaging.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "cli",
+    "intro": "Best AI tools for CLI development is a practical guide for developer-tool teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For developer-tool teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "developer-tool teams"
+  },
+  {
+    "slug": "how-to-use-ai-for-architecture-reviews",
+    "title": "How to use AI for architecture reviews",
+    "dek": "Use AI to surface tradeoffs, not to make the decision.",
+    "focus": "Use AI to surface tradeoffs, not to make the decision.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "architecture",
+    "intro": "How to use AI for architecture reviews is a practical guide for staff engineers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For staff engineers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "staff engineers"
+  },
+  {
+    "slug": "best-ai-coding-agents-for-data-privacy",
+    "title": "Best AI coding agents for data privacy",
+    "dek": "Compare controls for code retention, training, and access.",
+    "focus": "Compare controls for code retention, training, and access.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "privacy",
+    "intro": "Best AI coding agents for data privacy is a practical guide for privacy-conscious teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For privacy-conscious teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "privacy-conscious teams"
+  },
+  {
+    "slug": "how-to-evaluate-an-ai-coding-assistant",
+    "title": "How to evaluate an AI coding assistant",
+    "dek": "Score completion, correction time, review risk, and total cost.",
+    "focus": "Score completion, correction time, review risk, and total cost.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "evaluation",
+    "intro": "How to evaluate an AI coding assistant is a practical guide for engineering leaders. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For engineering leaders, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "engineering leaders"
+  },
+  {
+    "slug": "best-ai-tools-for-test-data-generation",
+    "title": "Best AI tools for test data generation",
+    "dek": "Create realistic synthetic data without copying production records.",
+    "focus": "Create realistic synthetic data without copying production records.",
+    "picks": [
+      "cursor",
+      "github-copilot",
+      "windsurf"
+    ],
+    "cluster": "testing",
+    "intro": "Best AI tools for test data generation is a practical guide for QA teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For QA teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "QA teams"
+  },
+  {
+    "slug": "how-to-use-ai-for-incident-summaries",
+    "title": "How to use AI for incident summaries",
+    "dek": "Reconstruct the timeline and preserve unresolved uncertainty.",
+    "focus": "Reconstruct the timeline and preserve unresolved uncertainty.",
+    "picks": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
+    "cluster": "incident-response",
+    "intro": "How to use AI for incident summaries is a practical guide for incident responders. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For incident responders, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "incident responders"
+  },
+  {
+    "slug": "best-ai-tools-for-frontend-accessibility-reviews",
+    "title": "Best AI tools for frontend accessibility reviews",
+    "dek": "Combine AI checks with manual testing and assistive technology.",
+    "focus": "Combine AI checks with manual testing and assistive technology.",
+    "picks": [
+      "windsurf",
+      "replit",
+      "coderabbit"
+    ],
+    "cluster": "accessibility",
+    "intro": "Best AI tools for frontend accessibility reviews is a practical guide for accessibility teams. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For accessibility teams, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "accessibility teams"
+  },
+  {
+    "slug": "how-to-use-ai-for-legacy-documentation",
+    "title": "How to use AI for legacy documentation",
+    "dek": "Recover knowledge in small, source-linked increments.",
+    "focus": "Recover knowledge in small, source-linked increments.",
+    "picks": [
+      "replit",
+      "coderabbit",
+      "cursor"
+    ],
+    "cluster": "documentation",
+    "intro": "How to use AI for legacy documentation is a practical guide for technical writers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For technical writers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "technical writers"
+  },
+  {
+    "slug": "ai-coding-agent-metrics-every-team-should-track",
+    "title": "AI coding agent metrics every team should track",
+    "dek": "Measure accepted changes, correction time, escaped bugs, and cost.",
+    "focus": "Measure accepted changes, correction time, escaped bugs, and cost.",
+    "picks": [
+      "coderabbit",
+      "cursor",
+      "github-copilot"
+    ],
+    "cluster": "metrics",
+    "intro": "AI coding agent metrics every team should track is a practical guide for engineering managers. It focuses on decisions that affect the final result: setup time, correction effort, privacy, export control, cost, and the human review step. Product details should be checked against each vendor before publication.",
+    "workflow": [
+      "Define the behavior, constraints, and tests before asking the tool to change code.",
+      "Give the agent the smallest relevant code and file context.",
+      "Review the diff, run tests, and inspect security-sensitive changes.",
+      "Commit a small reversible change and document anything still uncertain."
+    ],
+    "verdict": "For engineering managers, start with one narrow task and compare the shortlisted tools using the same evidence. Keep the smallest workflow that improves the final result after corrections.",
+    "faq": [
+      {
+        "q": "Can AI-generated code be used in production?",
+        "a": "Only after tests, security review, dependency checks, and human understanding. AI output should be treated as an unreviewed draft."
+      },
+      {
+        "q": "Should teams share private code with an AI tool?",
+        "a": "Only when the tool and plan meet the organization policy for retention, training, access, and sensitive data."
+      },
+      {
+        "q": "What is the best way to measure an AI coding assistant?",
+        "a": "Track completion time, correction effort, review findings, escaped bugs, and total cost rather than only suggestion acceptance."
+      }
+    ],
+    "audience": "engineering managers"
+  }
+]

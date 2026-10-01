@@ -1,0 +1,38 @@
+/* CareerSignal 主題：履歷檔案、編輯手冊與成長時間軸。 */
+body.theme-career {
+  --paper: #f5efe4;
+  --paper-deep: #e8dfd0;
+  --ink: #27362f;
+  --muted: #6b726b;
+  --line: #c5b9a5;
+  --blue: #2a6f63;
+  --blue-dark: #1f544b;
+  --coral: #c85c43;
+  --sun: #ddb64d;
+  --white: #fffaf1;
+  --shadow: 0 18px 44px rgba(71, 54, 35, .14);
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-ui: "Aptos", "Segoe UI", sans-serif;
+  background: var(--paper);
+}
+body.theme-career::before { opacity: .22; background-image: linear-gradient(rgba(39,54,47,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(39,54,47,.05) 1px,transparent 1px); background-size: 54px 54px; }
+body.theme-career .site-header { background: rgba(245,239,228,.94); border-bottom: 2px solid var(--ink); }
+body.theme-career .brand-mark { border-radius: 0; transform: rotate(45deg); background: var(--sun); }
+body.theme-career .brand-mark > span { transform: rotate(-45deg); background: var(--ink); }
+body.theme-career .site-nav a[href*="directory"] { border-bottom: 2px solid var(--coral); border-radius: 0; }
+body.theme-career .search-panel { box-shadow: 8px 8px 0 var(--coral); }
+body.theme-career .radar { border-radius: 2px; background: radial-gradient(circle at 50% 50%,rgba(200,92,67,.22) 0 2px,transparent 3px), repeating-radial-gradient(circle at 50% 50%,transparent 0 77px,rgba(39,54,47,.17) 78px 79px), var(--white); }
+body.theme-career .radar-center { background: var(--blue); border-color: var(--sun); }
+body.theme-career .radar-node { background: #efe4d2; border-radius: 2px; box-shadow: 4px 4px 0 rgba(39,54,47,.12); }
+body.theme-career .tool-row { border-left: 7px solid var(--coral); border-radius: 2px; box-shadow: 10px 10px 0 rgba(39,54,47,.06); }
+body.theme-career .tool-row:nth-child(even) { border-left-color: var(--blue); }
+body.theme-career .tool-mark { border-radius: 0; transform: rotate(-4deg); background: var(--sun); color: var(--ink); }
+body.theme-career .article-card { border-radius: 2px; box-shadow: 8px 8px 0 rgba(39,54,47,.08); }
+body.theme-career .article-card:nth-child(odd) { transform: rotate(-.35deg); background: #fffaf0; }
+body.theme-career .article-card:nth-child(even) { transform: rotate(.35deg); background: #e5efe9; }
+body.theme-career .content-card { border-radius: 2px; border-top: 7px solid var(--blue); box-shadow: var(--shadow); }
+body.theme-career .callout { background: #fff4d6; border-color: var(--coral); }
+body.theme-career .toc, body.theme-career .fact, body.theme-career .side-panel { border-radius: 2px; }
+body.theme-career .prose h2 { color: var(--blue-dark); }
+body.theme-career .prose blockquote { border-left-color: var(--sun); background: #efe7d8; }
+body.theme-career .site-footer { border-top: 2px solid var(--ink); }
