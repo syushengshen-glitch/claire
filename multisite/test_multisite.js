@@ -27,7 +27,7 @@ const server = http.createServer((req,res)=>{
     const errors=[]; page.removeAllListeners('console'); page.removeAllListeners('pageerror');
     page.on('console',m=>{if(m.type()==='error')errors.push(m.text())}); page.on('pageerror',e=>errors.push(e.message));
     await page.goto(`http://127.0.0.1:4180/${site}/`,{waitUntil:'domcontentloaded'});
-    const data=await page.evaluate(()=>({title:document.title,h1:document.querySelector('h1')?.textContent,client:window.SIGNALSHELF_ADSENSE_CLIENT||null,links:document.querySelectorAll('.tool-row a').length,overflow:document.documentElement.scrollWidth>window.innerWidth}));
+    const data=await page.evaluate(()=>({title:document.title,h1:document.querySelector('h1')?.textContent,client:window.SIGNALSHELF_ADSENSE_CLIENT||null,links:document.querySelectorAll('.tool-row a').length,overflow:document.documentElement.scrollWidth>window.innerWidth,themeClass:document.body.className,background:getComputedStyle(document.body).backgroundColor,font:getComputedStyle(document.body).fontFamily,radius:getComputedStyle(document.querySelector('.tool-row')).borderRadius}));
     results.push({site,...data,errors});
   }
   console.log(JSON.stringify(results,null,2));
