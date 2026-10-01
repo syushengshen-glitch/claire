@@ -2,6 +2,12 @@
 
 這個專案依照使用者提供影片中的商業模式重建，但不採用「零內容、無審核大量 AI 文章」這種高風險做法。
 
+## 正式網站
+
+- Vercel：https://claire-mu.vercel.app/
+- GitHub：https://github.com/syushengshen-glitch/claire
+- Google Search Console：已驗證 URL prefix property，並提交 sitemap
+
 核心模式：
 
 - 英文 AI 工具導航網站
@@ -52,6 +58,8 @@ docs/
   02-content-plan.csv      100 篇文章規劃
   03-AdSense合規清單.md    申請與上線前檢查
   04-AI提示詞.md           建站、文章與審稿提示詞
+  05-前十篇文章清單.md       前 10 篇內容與字數
+  06-Search Console與上線狀態.md  Search Console、Sitemap 與後續檢查
 ```
 
 ## 本機預覽
