@@ -87,3 +87,9 @@ Ahrefs 與 Semrush 是付費服務；Google Ads Keyword Planner 需要 Google Ad
 - 所有文章仍需要在正式長期營利前補上第一手截圖、實測結果與人工事實查核
 
 `multisite/priority-build-report.json` 與 `multisite/build_multisite.py` 可用來重建兩站。AdSense 的網站審查會看到新內容，若審查未通過，先修正內容後再要求複查。
+
+## 主題預覽
+
+- Coding：`docs/coding-theme.png`
+- Career：`docs/career-theme.png`
+
