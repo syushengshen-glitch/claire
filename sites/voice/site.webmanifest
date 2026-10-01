@@ -1,0 +1,8 @@
+{
+  "name": "VoiceSignal Lab",
+  "short_name": "VoiceSignal Lab",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf4f2",
+  "theme_color": "#8b3fd1"
+}

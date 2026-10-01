@@ -1,0 +1,8 @@
+{
+  "name": "MeetingSignal Lab",
+  "short_name": "MeetingSignal Lab",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf4f2",
+  "theme_color": "#2f6f4e"
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://signalstack-meeting-lab.vercel.app/sitemap.xml

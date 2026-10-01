@@ -1,0 +1,85 @@
+{
+  "publisher": "ca-pub-1837836558769995",
+  "built": [
+    {
+      "slug": "coding",
+      "project": "signalstack-coding-lab",
+      "domain": "signalstack-coding-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "voice",
+      "project": "signalstack-voice-lab",
+      "domain": "signalstack-voice-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "support",
+      "project": "signalstack-support-lab",
+      "domain": "signalstack-support-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "meetings",
+      "project": "signalstack-meeting-lab",
+      "domain": "signalstack-meeting-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "websites",
+      "project": "signalstack-website-lab",
+      "domain": "signalstack-website-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "images",
+      "project": "signalstack-image-lab",
+      "domain": "signalstack-image-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "career",
+      "project": "signalstack-career-lab",
+      "domain": "signalstack-career-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "visual",
+      "project": "signalstack-visual-lab",
+      "domain": "signalstack-visual-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "seo",
+      "project": "signalstack-seo-lab",
+      "domain": "signalstack-seo-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    },
+    {
+      "slug": "chatbot",
+      "project": "signalstack-chatbot-lab",
+      "domain": "signalstack-chatbot-lab.vercel.app",
+      "pages": 23,
+      "tools": 5,
+      "articles": 3
+    }
+  ]
+}

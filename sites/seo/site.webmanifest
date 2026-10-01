@@ -1,0 +1,8 @@
+{
+  "name": "SearchSignal Lab",
+  "short_name": "SearchSignal Lab",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf4f2",
+  "theme_color": "#0f766e"
+}

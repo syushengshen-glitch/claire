@@ -1,0 +1,8 @@
+{
+  "name": "BotSignal Lab",
+  "short_name": "BotSignal Lab",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf4f2",
+  "theme_color": "#4338ca"
+}

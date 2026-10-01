@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://signalstack-seo-lab.vercel.app/sitemap.xml

@@ -1,0 +1,8 @@
+{
+  "name": "ImageSignal Lab",
+  "short_name": "ImageSignal Lab",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf4f2",
+  "theme_color": "#e11d48"
+}

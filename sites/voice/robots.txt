@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://signalstack-voice-lab.vercel.app/sitemap.xml
