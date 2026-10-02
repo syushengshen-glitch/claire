@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-02",
+  "experiment": "002",
+  "tools": [
+    "ChatGPT web",
+    "Google Gemini web (Flash)"
+  ],
+  "test": "JavaScript debugging",
+  "notes": "Same prompt and same code sample. Responses completed in one turn without follow-up."
+}

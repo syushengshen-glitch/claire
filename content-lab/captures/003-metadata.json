@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-02",
+  "experiment": "003",
+  "tools": [
+    "ChatGPT web",
+    "Google Gemini web (Flash)"
+  ],
+  "test": "CSV data-quality review",
+  "notes": "Same malformed revenue CSV and same prompt. No values were filled or invented by the editor."
+}

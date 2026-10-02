@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT vs Gemini: the same JavaScript bug-fix test | SignalShelf</title>
+  <meta name="description" content="Both tools received the same broken order-summary function. We compared bug detection, corrected code, tests, edge cases, and assumptions.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://claire-mu.vercel.app/guides/chatgpt-vs-gemini-javascript-debugging-test.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script>window.SIGNALSHELF_ADSENSE_CLIENT="ca-pub-1837836558769995";</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ChatGPT vs Gemini: the same JavaScript bug-fix test", "description": "Both tools received the same broken order-summary function. We compared bug detection, corrected code, tests, edge cases, and assumptions.", "datePublished": "2026-10-02", "dateModified": "2026-10-02", "articleSection": "AI experiments", "author": {"@type": "Organization", "name": "SignalShelf Editorial Team"}, "publisher": {"@type": "Organization", "name": "SignalShelf"}, "mainEntityOfPage": "https://claire-mu.vercel.app/guides/chatgpt-vs-gemini-javascript-debugging-test.html"}</script>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-shell header-inner">
+    <a class="brand" href="../index.html" aria-label="SignalShelf home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SignalShelf</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav" data-site-nav aria-label="Primary navigation">
+      <a href="../directory.html">Directory</a>
+      <a href="../guides/index.html" aria-current="page">Guides</a>
+      <a href="../editorial-policy.html">Method</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header><main id="main"><article>
+  <header class="site-shell article-header">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Guides</a> / AI experiment</nav>
+    <h1>ChatGPT vs Gemini: the same JavaScript bug-fix test</h1>
+    <p class="dek">Both tools received the same broken order-summary function. We compared bug detection, corrected code, tests, edge cases, and assumptions.</p>
+    <p class="article-meta">Tested October 2, 2026 · ChatGPT web and Google Gemini web (Flash) · One prompt · No paid features</p>
+  </header>
+  <div class="site-shell content-grid">
+    <div class="content-card prose">
+      <div class="callout"><strong>Result:</strong> Both tools found the off-by-one loop, empty-array division, and missing amount contamination. ChatGPT produced the safer return contract for a revenue-related function: null when no valid amounts exist. Gemini was slightly more detailed about floating-point currency precision, but returned 0 for empty or fully invalid data, which can hide a data-quality problem.</div>
+      <h2 id="method">Test method</h2>
+      <p>Review the same JavaScript function and return a corrected version with at least four tests.</p>
+      <ul><li>Same code sample and prompt in separate new conversations.</li><li>No paid feature, file upload, custom instruction, or follow-up prompt.</li><li>Scored by bug detection, corrected code, test coverage, edge-case semantics, and explanation.</li><li>The editor checked the responses against JavaScript array and number behavior.</li></ul>
+      <h2 id="prompt">The exact prompt</h2>
+      <pre><code>You are a senior JavaScript reviewer. Review the code below.
+
+function summarizeOrders(orders) {
+  let total = 0;
+  for (let i = 0; i &lt;= orders.length; i++) {
+    total += orders[i].amount;
+  }
+  return {
+    total,
+    average: total / orders.length,
+    highest: Math.max(...orders.map(order =&gt; order.amount))
+  };
+}
+
+Return:
+1. Bugs and why they happen
+2. Corrected code
+3. At least four test cases, including empty input and missing amount
+4. The expected output for each test
+5. Any assumptions or limitations
+
+Do not use external libraries.</code></pre>
+      <h2 id="results">What the tools produced</h2>
+      <h3>ChatGPT</h3>
+      <p><img src="../assets/experiments/002-chatgpt.png" alt="ChatGPT response to the shared test prompt" loading="lazy"></p>
+      <h3>Gemini</h3>
+      <p><img src="../assets/experiments/002-gemini.png" alt="Gemini response to the shared test prompt" loading="lazy"></p>
+      <h2 id="score">Score</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tool</th><th>Bugs</th><th>Code</th><th>Tests</th><th>Edges</th><th>Explanation</th><th>Total</th><th>Editorial note</th></tr></thead>
+        <tbody><tr><td>ChatGPT</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>10/10</td><td>Used null for average and highest when no valid amounts exist; explicitly avoided Math.max spread limits.</td></tr><tr><td>Gemini</td><td>2</td><td>2</td><td>2</td><td>1</td><td>2</td><td>9/10</td><td>Returned 0 for empty or all-invalid data and added a useful floating-point currency warning.</td></tr></tbody>
+      </table></div>
+      <h2 id="findings">What we found</h2>
+      <ul><li>Both tools correctly identified i &lt;= orders.length as an off-by-one error.</li><li>Both tools detected NaN contamination from missing amounts.</li><li>Both tools found 0 / 0 and Math.max(...[]) problems on empty input.</li><li>ChatGPT&#x27;s null result is safer for analytics because zero and unknown are different states.</li><li>Gemini&#x27;s currency precision warning was useful and more explicit than ChatGPT&#x27;s limitation section.</li></ul>
+      <h2 id="verdict">Verdict</h2>
+      <p>ChatGPT wins narrowly for a revenue-related function because null communicates that no valid amount exists instead of silently returning zero. Gemini is a strong alternative when floating-point currency guidance and strict numeric type checks matter.</p>
+      <h2 id="limits">Limits</h2>
+      <p>This is a focused single-task test, not a general benchmark of writing quality, reasoning, coding, safety, or long-term reliability. Product interfaces, models, limits, and outputs can change.</p>
+      <h2 id="sources">Sources</h2>
+      <ul>
+        <li><a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT official site</a></li>
+        <li><a href="https://gemini.google.com/" target="_blank" rel="noopener">Google Gemini official site</a></li>
+        <li><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener">Google Search Central: helpful, reliable, people-first content</a></li>
+      </ul>
+    </div>
+    <aside class="side-stack">
+      <nav class="toc" aria-label="On this page"><strong>On this page</strong><ol>
+        <li><a href="#method">Method</a></li><li><a href="#prompt">Prompt</a></li><li><a href="#results">Results</a></li><li><a href="#score">Score</a></li><li><a href="#verdict">Verdict</a></li>
+      </ol></nav>
+      <div class="side-panel compact"><h2>Evidence rule</h2><p>Excluded tools are not scored. Responses are saved before the article is written.</p></div>
+    </aside>
+  </div>
+</article></main><footer class="site-footer">
+  <div class="site-shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SignalShelf</span></a>
+        <p>An editorial index of AI tools, built around practical work and clearly labeled advertising.</p>
+      </div>
+      <div><h2>Explore</h2><a href="../directory.html">Tool directory</a><a href="../guides/index.html">Practical guides</a><a href="../editorial-policy.html">Editorial method</a></div>
+      <div><h2>Company</h2><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../terms.html">Terms</a></div>
+      <div><h2>Trust</h2><a href="../privacy.html">Privacy and cookies</a><a href="../disclosure.html">Affiliate disclosure</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> SignalShelf. Independent editorial project.</span><span>Some links may become affiliate links after disclosure.</span><button class="text-button" type="button" data-manage-consent>Privacy choices</button></div>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script></body>
+</html>

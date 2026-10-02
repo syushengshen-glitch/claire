@@ -1,0 +1,189 @@
+Code Review: summarizeOrders
+1. Bugs and Vulnerabilities
+
+Off-By-One Index Bug (TypeError: Cannot read properties of undefined)
+
+Cause: The loop condition i <= orders.length attempts to access orders[orders.length], which evaluates to undefined.
+
+Consequence: Accessing orders[i].amount on the last iteration throws a runtime TypeError.
+
+Division by Zero (NaN Average)
+
+Cause: Passing an empty array [] sets orders.length to 0, resulting in 0 / 0.
+
+Consequence: average evaluates to NaN.
+
+Spread Operator on Empty Array (-Infinity Highest)
+
+Cause: Math.max(...[]) evaluates to Math.max(), which equals -Infinity.
+
+Consequence: highest evaluates to -Infinity when orders is empty.
+
+Unhandled Missing/Invalid amount Properties (NaN Contamination)
+
+Cause: If an order object is missing the amount property or contains undefined/null/NaN, total += orders[i].amount turns total into NaN, corrupting average and highest.
+
+Non-Array or Null/Undefined Input Failure
+
+Cause: If orders is null, undefined, or not an array, accessing orders.length or calling .map() throws a TypeError.
+
+2. Corrected Code
+JavaScript
+function summarizeOrders(orders) {
+  // Guard against non-array or empty input
+  if (!Array.isArray(orders) || orders.length === 0) {
+    return {
+      total: 0,
+      average: 0,
+      highest: 0
+    };
+  }
+
+  let total = 0;
+  let highest = -Infinity;
+  let validCount = 0;
+
+  for (let i = 0; i < orders.length; i++) {
+    const order = orders[i];
+    
+    // Safely extract and validate amount
+    if (order && typeof order.amount === 'number' && !isNaN(order.amount)) {
+      const amount = order.amount;
+      total += amount;
+      if (amount > highest) {
+        highest = amount;
+      }
+      validCount++;
+    }
+  }
+
+  // Handle case where array had items, but no valid numeric amounts
+  if (validCount === 0) {
+    return {
+      total: 0,
+      average: 0,
+      highest: 0
+    };
+  }
+
+  return {
+    total,
+    average: total / validCount,
+    highest
+  };
+}
+
+3 & 4. Test Cases and Expected Outputs
+Test 1: Standard Valid Input
+JavaScript
+summarizeOrders([
+  { id: 1, amount: 100 },
+  { id: 2, amount: 250 },
+  { id: 3, amount: 50 }
+]);
+
+
+Expected Output:
+
+JavaScript
+{
+  total: 400,
+  average: 133.33333333333334,
+  highest: 250
+}
+
+Test 2: Empty Array Input
+JavaScript
+summarizeOrders([]);
+
+
+Expected Output:
+
+JavaScript
+{
+  total: 0,
+  average: 0,
+  highest: 0
+}
+
+Test 3: Missing or Invalid amount Properties
+JavaScript
+summarizeOrders([
+  { id: 1, amount: 100 },
+  { id: 2 },                  // missing amount
+  { id: 3, amount: null },    // null amount
+  { id: 4, amount: "200" },   // non-number type
+  { id: 5, amount: 300 }
+]);
+
+
+Expected Output:
+
+JavaScript
+{
+  total: 400,
+  average: 200, // Calculates average based on valid items (400 / 2)
+  highest: 300
+}
+
+Test 4: Single Item Input
+JavaScript
+summarizeOrders([
+  { id: 1, amount: 75.5 }
+]);
+
+
+Expected Output:
+
+JavaScript
+{
+  total: 75.5,
+  average: 75.5,
+  highest: 75.5
+}
+
+Test 5: All Negative Amounts
+JavaScript
+summarizeOrders([
+  { id: 1, amount: -50 },
+  { id: 2, amount: -20 }
+]);
+
+
+Expected Output:
+
+JavaScript
+{
+  total: -70,
+  average: -35,
+  highest: -20
+}
+
+Test 6: Invalid/Null/Undefined Input
+JavaScript
+summarizeOrders(null);
+
+
+Expected Output:
+
+JavaScript
+{
+  total: 0,
+  average: 0,
+  highest: 0
+}
+
+5. Assumptions and Limitations
+
+Floating-Point Precision: Uses native JavaScript IEEE 754 floating-point numbers. Sums/averages with decimal currency values may exhibit precision artifacts (e.g., 0.1 + 0.2 = 0.30000000000000004). In a production setting involving real currency, amounts should be handled in cents/integers or formatted with Number.prototype.toFixed() / Intl.NumberFormat.
+
+Strict Type Checking: String representation of numbers (e.g., amount: "100") are ignored rather than coerced to avoid unpredictable type conversions ("100" + 50 = "10050").
+
+Invalid Item Exclusion: Orders without a valid numeric amount are excluded from both the total sum and the average count. If an array contains 3 objects but only 2 have valid amounts, average is divided by 2.
+
+Default Safe Values: Returns { total: 0, average: 0, highest: 0 } for invalid or empty inputs to ensure callers always receive a predictable object shape.
+
+Where would you like to take this review next?
+Convert currency calculations to use integer cents/bigint
+Add TypeScript types and modern ES module exports
+Write unit test suites using Node.js native runner

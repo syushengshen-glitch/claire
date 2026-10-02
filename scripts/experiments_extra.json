@@ -1,0 +1,97 @@
+[
+  {
+    "slug": "chatgpt-vs-gemini-javascript-debugging-test",
+    "title": "ChatGPT vs Gemini: the same JavaScript bug-fix test",
+    "dek": "Both tools received the same broken order-summary function. We compared bug detection, corrected code, tests, edge cases, and assumptions.",
+    "date": "October 2, 2026",
+    "tools": "ChatGPT web and Google Gemini web (Flash)",
+    "task": "Review the same JavaScript function and return a corrected version with at least four tests.",
+    "summary": "Both tools found the off-by-one loop, empty-array division, and missing amount contamination. ChatGPT produced the safer return contract for a revenue-related function: null when no valid amounts exist. Gemini was slightly more detailed about floating-point currency precision, but returned 0 for empty or fully invalid data, which can hide a data-quality problem.",
+    "prompt": "You are a senior JavaScript reviewer. Review the code below.\n\nfunction summarizeOrders(orders) {\n  let total = 0;\n  for (let i = 0; i <= orders.length; i++) {\n    total += orders[i].amount;\n  }\n  return {\n    total,\n    average: total / orders.length,\n    highest: Math.max(...orders.map(order => order.amount))\n  };\n}\n\nReturn:\n1. Bugs and why they happen\n2. Corrected code\n3. At least four test cases, including empty input and missing amount\n4. The expected output for each test\n5. Any assumptions or limitations\n\nDo not use external libraries.",
+    "method": [
+      "Same code sample and prompt in separate new conversations.",
+      "No paid feature, file upload, custom instruction, or follow-up prompt.",
+      "Scored by bug detection, corrected code, test coverage, edge-case semantics, and explanation.",
+      "The editor checked the responses against JavaScript array and number behavior."
+    ],
+    "scores": [
+      {
+        "tool": "ChatGPT",
+        "bugs": 2,
+        "code": 2,
+        "tests": 2,
+        "edges": 2,
+        "explanation": 2,
+        "total": 10,
+        "note": "Used null for average and highest when no valid amounts exist; explicitly avoided Math.max spread limits."
+      },
+      {
+        "tool": "Gemini",
+        "bugs": 2,
+        "code": 2,
+        "tests": 2,
+        "edges": 1,
+        "explanation": 2,
+        "total": 9,
+        "note": "Returned 0 for empty or all-invalid data and added a useful floating-point currency warning."
+      }
+    ],
+    "findings": [
+      "Both tools correctly identified i <= orders.length as an off-by-one error.",
+      "Both tools detected NaN contamination from missing amounts.",
+      "Both tools found 0 / 0 and Math.max(...[]) problems on empty input.",
+      "ChatGPT's null result is safer for analytics because zero and unknown are different states.",
+      "Gemini's currency precision warning was useful and more explicit than ChatGPT's limitation section."
+    ],
+    "verdict": "ChatGPT wins narrowly for a revenue-related function because null communicates that no valid amount exists instead of silently returning zero. Gemini is a strong alternative when floating-point currency guidance and strict numeric type checks matter.",
+    "screenshot_prefix": "002"
+  },
+  {
+    "slug": "chatgpt-vs-gemini-csv-data-quality-test",
+    "title": "ChatGPT vs Gemini: the same broken revenue CSV test",
+    "dek": "We gave both tools an order CSV with duplicates, a missing amount, an extreme outlier, malformed dates, invalid emails, and a negative value.",
+    "date": "October 2, 2026",
+    "tools": "ChatGPT web and Google Gemini web (Flash)",
+    "task": "Identify revenue-reporting issues, produce a cleaned CSV, and define validation rules without inventing missing values.",
+    "summary": "Both tools found the major anomalies. ChatGPT produced the more defensible cleaned dataset by removing the duplicate and holding out rows that could not be safely interpreted. Gemini listed many of the same issues but still called a CSV containing blank amounts, invalid emails, a huge outlier, and a negative value cleaned.",
+    "prompt": "You are a data quality analyst. Review this CSV and identify every problem that could affect revenue reporting.\n\norder_id,date,amount,email,consent\n1001,2026-10-01,49.99,alice@example.com,yes\n1002,2026/10/02,$79.50,bob@@example.com,yes\n1003,2026-10-03,-29.00,carol@example.com,no\n1004,2026-10-04,120.00,dave@example.com,yes\n1004,2026-10-04,120.00,dave@example.com,yes\n1006,2026-10-06,,erin@example.com,yes\n1007,2026-10-07,999999,not-an-email,\n1008,10/08/2026,15.25,frank@example.com,yes\n\nReturn:\n1. A table of issues with severity and affected rows\n2. A cleaned CSV\n3. Validation rules that should run before reporting\n4. Ambiguous cases that require a human decision\n5. Any assumptions or limitations\n\nDo not invent missing values.",
+    "method": [
+      "Same malformed CSV and prompt in separate new conversations.",
+      "No paid feature, file upload, custom instruction, or follow-up prompt.",
+      "Scored by issue discovery, cleaned-data safety, validation rules, ambiguity handling, and explanation.",
+      "The editor checked that no missing amount was invented and that the duplicate was evaluated correctly."
+    ],
+    "scores": [
+      {
+        "tool": "ChatGPT",
+        "issues": 2,
+        "cleaning": 2,
+        "rules": 2,
+        "ambiguity": 2,
+        "explanation": 2,
+        "total": 10,
+        "note": "Held out duplicate, negative, missing, and outlier rows; reported a conservative $264.74 subtotal instead of inventing values."
+      },
+      {
+        "tool": "Gemini",
+        "issues": 2,
+        "cleaning": 1,
+        "rules": 1,
+        "ambiguity": 2,
+        "explanation": 2,
+        "total": 8,
+        "note": "Found the main issues but retained invalid and ambiguous rows in the cleaned CSV; also applied an arbitrary <10000 upper bound."
+      }
+    ],
+    "findings": [
+      "Both tools found duplicate order 1004 and missing amount in 1006.",
+      "Both flagged 999999 as an outlier and -29.00 as a possible refund or error.",
+      "Both identified inconsistent date formats and invalid emails.",
+      "ChatGPT avoided claiming that the missing amount could be reconstructed.",
+      "Gemini incorrectly treated the dataset as cleaned while retaining values that still require review.",
+      "Both tools recognized that the missing order ID 1005 is not automatically an error."
+    ],
+    "verdict": "ChatGPT wins the CSV test because its cleaned output separates unambiguous transactions from rows requiring human review. Gemini's issue checklist is useful, but its cleaned CSV would be unsafe to use without another manual pass.",
+    "screenshot_prefix": "003"
+  }
+]

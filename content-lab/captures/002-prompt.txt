@@ -1,0 +1,22 @@
+You are a senior JavaScript reviewer. Review the code below.
+
+function summarizeOrders(orders) {
+  let total = 0;
+  for (let i = 0; i <= orders.length; i++) {
+    total += orders[i].amount;
+  }
+  return {
+    total,
+    average: total / orders.length,
+    highest: Math.max(...orders.map(order => order.amount))
+  };
+}
+
+Return:
+1. Bugs and why they happen
+2. Corrected code
+3. At least four test cases, including empty input and missing amount
+4. The expected output for each test
+5. Any assumptions or limitations
+
+Do not use external libraries.

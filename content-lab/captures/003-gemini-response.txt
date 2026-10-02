@@ -1,0 +1,83 @@
+1. Data Quality Issues
+Issue Type	Severity	Affected Order ID(s)	Description & Revenue Impact
+Duplicate Record	High	1004	Order 1004 is duplicated identically. Overstates revenue by $120.00 if aggregated without deduplication.
+Extreme Outlier / Dummy Value	High	1007	Amount is 999999. Distorts total revenue by +$999,999.00 and severely skews average order value (AOV).
+Missing Revenue Amount	High	1006	amount field is blank (NULL). Understates total revenue or causes aggregation queries to fail/return nulls.
+Non-Numeric Currency Formatting	Medium	1002	Amount contains a dollar sign ($79.50). Causes type cast errors in database queries or converts the column to a string type.
+Negative Revenue Value	Medium	1003	Amount is -29.00. Distorts gross vs. net revenue metrics if unclassified (e.g., refund vs. data entry error).
+Inconsistent Date Formatting	Medium	1002, 1008	Dates use YYYY/MM/DD (1002) and MM/DD/YYYY (1008) instead of ISO standard YYYY-MM-DD. Breaks date parsing and time-series aggregation.
+Invalid Email Format	Low	1002, 1007	Invalid email syntax (bob@@example.com, not-an-email). Prevents customer-level revenue attribution and Lifetime Value (LTV) calculations.
+Missing / Negative Consent	Low	1003, 1007	Consent is no (1003) or missing (1007). Creates compliance risks if email addresses are used in revenue attribution or marketing analytics.
+Missing Order ID Sequence	Low	1005	Order ID 1005 is missing from the sequential run (1001–1008), indicating a potential missing upstream record.
+2. Cleaned CSV
+程式碼片段
+order_id,date,amount,email,consent
+1001,2026-10-01,49.99,alice@example.com,yes
+1002,2026-10-02,79.50,bob@@example.com,yes
+1003,2026-10-03,-29.00,carol@example.com,no
+1004,2026-10-04,120.00,dave@example.com,yes
+1006,2026-10-06,,erin@example.com,yes
+1007,2026-10-07,999999,not-an-email,
+1008,2026-10-08,15.25,frank@example.com,yes
+
+3. Pre-Reporting Validation Rules
+
+Primary Key Uniqueness: COUNT(order_id) == COUNT(DISTINCT order_id)
+
+Action: Reject batch or quarantine duplicate records prior to ingestion.
+
+Completeness Check: amount IS NOT NULL
+
+Action: Flag transactions with missing monetary values for billing audit.
+
+Range & Sanity Bounds: amount > 0 AND amount < 10000.00
+
+Action: Route negative values to a dedicated Returns/Refunds pipeline and quarantine values exceeding upper bounds for manual audit.
+
+Date Format Standardization: date MATCHES '^\d{4}-\d{2}-\d{2}$'
+
+Action: Enforce ISO-8601 formatting at the point of entry or during ingestion transformation.
+
+Numeric Format Enforcement: amount MATCHES '^\d+(\.\d{2})?$'
+
+Action: Strip currency symbols ($, ,) prior to type casting as DECIMAL(10,2).
+
+Email Format Validation: email MATCHES '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'
+
+Action: Nullify invalid email strings to prevent bad joins on customer attribution models.
+
+Sequential Integrity: order_id - LAG(order_id) == 1
+
+Action: Alert pipeline administrators to dropped or delayed upstream records.
+
+4. Ambiguous Cases Requiring Human Decision
+
+Order 1007 (amount = 999999): Confirm whether this is a placeholder/test transaction to be purged, or an enterprise invoice requiring manual adjustment.
+
+Order 1003 (amount = -29.00): Clarify accounting logic. Should negative values be categorized as refunds and subtracted from Net Revenue, or treated as input errors and excluded from Gross Revenue?
+
+Order 1006 (amount = missing): Check upstream payment processor logs to determine whether this order was a $0.00 promotional transaction, an incomplete payment, or an unbilled order.
+
+Missing Order 1005: Query the production database to verify if Order 1005 was canceled prior to export, stored in a separate batch, or skipped due to an pipeline failure.
+
+Order 1002 (bob@@example.com) & 1007 (not-an-email): Decide whether to attempt fuzzy email matching against customer CRM records or attribute revenue to an Unattributed / Guest bucket.
+
+5. Assumptions and Limitations
+
+Assumptions:
+
+The dataset uses standard USD formatting where 10/08/2026 represents October 8, 2026.
+
+date represents the recognized transaction date for accounting purposes.
+
+Duplicate Order 1004 rows represent an ingestion failure rather than two distinct orders sharing the same identifier.
+
+Missing consent values are treated as no for compliance purposes.
+
+Limitations:
+
+Missing revenue values (Order 1006) cannot be calculated without upstream source data.
+
+Customer lifetime value (LTV) and cohort reporting are degraded by unparseable email strings.
+
+Single-currency homogeneity is assumed; multi-currency conversions cannot be verified without currency code fields.

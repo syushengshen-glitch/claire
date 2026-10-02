@@ -1,0 +1,20 @@
+You are a data quality analyst. Review this CSV and identify every problem that could affect revenue reporting.
+
+order_id,date,amount,email,consent
+1001,2026-10-01,49.99,alice@example.com,yes
+1002,2026/10/02,$79.50,bob@@example.com,yes
+1003,2026-10-03,-29.00,carol@example.com,no
+1004,2026-10-04,120.00,dave@example.com,yes
+1004,2026-10-04,120.00,dave@example.com,yes
+1006,2026-10-06,,erin@example.com,yes
+1007,2026-10-07,999999,not-an-email,
+1008,10/08/2026,15.25,frank@example.com,yes
+
+Return:
+1. A table of issues with severity and affected rows
+2. A cleaned CSV
+3. Validation rules that should run before reporting
+4. Ambiguous cases that require a human decision
+5. Any assumptions or limitations
+
+Do not invent missing values.

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT vs Gemini: the same broken revenue CSV test | SignalShelf</title>
+  <meta name="description" content="We gave both tools an order CSV with duplicates, a missing amount, an extreme outlier, malformed dates, invalid emails, and a negative value.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://claire-mu.vercel.app/guides/chatgpt-vs-gemini-csv-data-quality-test.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script>window.SIGNALSHELF_ADSENSE_CLIENT="ca-pub-1837836558769995";</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ChatGPT vs Gemini: the same broken revenue CSV test", "description": "We gave both tools an order CSV with duplicates, a missing amount, an extreme outlier, malformed dates, invalid emails, and a negative value.", "datePublished": "2026-10-02", "dateModified": "2026-10-02", "articleSection": "AI experiments", "author": {"@type": "Organization", "name": "SignalShelf Editorial Team"}, "publisher": {"@type": "Organization", "name": "SignalShelf"}, "mainEntityOfPage": "https://claire-mu.vercel.app/guides/chatgpt-vs-gemini-csv-data-quality-test.html"}</script>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-shell header-inner">
+    <a class="brand" href="../index.html" aria-label="SignalShelf home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SignalShelf</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav" data-site-nav aria-label="Primary navigation">
+      <a href="../directory.html">Directory</a>
+      <a href="../guides/index.html" aria-current="page">Guides</a>
+      <a href="../editorial-policy.html">Method</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header><main id="main"><article>
+  <header class="site-shell article-header">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Guides</a> / AI experiment</nav>
+    <h1>ChatGPT vs Gemini: the same broken revenue CSV test</h1>
+    <p class="dek">We gave both tools an order CSV with duplicates, a missing amount, an extreme outlier, malformed dates, invalid emails, and a negative value.</p>
+    <p class="article-meta">Tested October 2, 2026 · ChatGPT web and Google Gemini web (Flash) · One prompt · No paid features</p>
+  </header>
+  <div class="site-shell content-grid">
+    <div class="content-card prose">
+      <div class="callout"><strong>Result:</strong> Both tools found the major anomalies. ChatGPT produced the more defensible cleaned dataset by removing the duplicate and holding out rows that could not be safely interpreted. Gemini listed many of the same issues but still called a CSV containing blank amounts, invalid emails, a huge outlier, and a negative value cleaned.</div>
+      <h2 id="method">Test method</h2>
+      <p>Identify revenue-reporting issues, produce a cleaned CSV, and define validation rules without inventing missing values.</p>
+      <ul><li>Same malformed CSV and prompt in separate new conversations.</li><li>No paid feature, file upload, custom instruction, or follow-up prompt.</li><li>Scored by issue discovery, cleaned-data safety, validation rules, ambiguity handling, and explanation.</li><li>The editor checked that no missing amount was invented and that the duplicate was evaluated correctly.</li></ul>
+      <h2 id="prompt">The exact prompt</h2>
+      <pre><code>You are a data quality analyst. Review this CSV and identify every problem that could affect revenue reporting.
+
+order_id,date,amount,email,consent
+1001,2026-10-01,49.99,alice@example.com,yes
+1002,2026/10/02,$79.50,bob@@example.com,yes
+1003,2026-10-03,-29.00,carol@example.com,no
+1004,2026-10-04,120.00,dave@example.com,yes
+1004,2026-10-04,120.00,dave@example.com,yes
+1006,2026-10-06,,erin@example.com,yes
+1007,2026-10-07,999999,not-an-email,
+1008,10/08/2026,15.25,frank@example.com,yes
+
+Return:
+1. A table of issues with severity and affected rows
+2. A cleaned CSV
+3. Validation rules that should run before reporting
+4. Ambiguous cases that require a human decision
+5. Any assumptions or limitations
+
+Do not invent missing values.</code></pre>
+      <h2 id="results">What the tools produced</h2>
+      <h3>ChatGPT</h3>
+      <p><img src="../assets/experiments/003-chatgpt.png" alt="ChatGPT response to the shared test prompt" loading="lazy"></p>
+      <h3>Gemini</h3>
+      <p><img src="../assets/experiments/003-gemini.png" alt="Gemini response to the shared test prompt" loading="lazy"></p>
+      <h2 id="score">Score</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tool</th><th>Issues</th><th>Cleaning</th><th>Rules</th><th>Ambiguity</th><th>Explanation</th><th>Total</th><th>Editorial note</th></tr></thead>
+        <tbody><tr><td>ChatGPT</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>10/10</td><td>Held out duplicate, negative, missing, and outlier rows; reported a conservative $264.74 subtotal instead of inventing values.</td></tr><tr><td>Gemini</td><td>2</td><td>1</td><td>1</td><td>2</td><td>2</td><td>8/10</td><td>Found the main issues but retained invalid and ambiguous rows in the cleaned CSV; also applied an arbitrary &lt;10000 upper bound.</td></tr></tbody>
+      </table></div>
+      <h2 id="findings">What we found</h2>
+      <ul><li>Both tools found duplicate order 1004 and missing amount in 1006.</li><li>Both flagged 999999 as an outlier and -29.00 as a possible refund or error.</li><li>Both identified inconsistent date formats and invalid emails.</li><li>ChatGPT avoided claiming that the missing amount could be reconstructed.</li><li>Gemini incorrectly treated the dataset as cleaned while retaining values that still require review.</li><li>Both tools recognized that the missing order ID 1005 is not automatically an error.</li></ul>
+      <h2 id="verdict">Verdict</h2>
+      <p>ChatGPT wins the CSV test because its cleaned output separates unambiguous transactions from rows requiring human review. Gemini&#x27;s issue checklist is useful, but its cleaned CSV would be unsafe to use without another manual pass.</p>
+      <h2 id="limits">Limits</h2>
+      <p>This is a focused single-task test, not a general benchmark of writing quality, reasoning, coding, safety, or long-term reliability. Product interfaces, models, limits, and outputs can change.</p>
+      <h2 id="sources">Sources</h2>
+      <ul>
+        <li><a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT official site</a></li>
+        <li><a href="https://gemini.google.com/" target="_blank" rel="noopener">Google Gemini official site</a></li>
+        <li><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener">Google Search Central: helpful, reliable, people-first content</a></li>
+      </ul>
+    </div>
+    <aside class="side-stack">
+      <nav class="toc" aria-label="On this page"><strong>On this page</strong><ol>
+        <li><a href="#method">Method</a></li><li><a href="#prompt">Prompt</a></li><li><a href="#results">Results</a></li><li><a href="#score">Score</a></li><li><a href="#verdict">Verdict</a></li>
+      </ol></nav>
+      <div class="side-panel compact"><h2>Evidence rule</h2><p>Excluded tools are not scored. Responses are saved before the article is written.</p></div>
+    </aside>
+  </div>
+</article></main><footer class="site-footer">
+  <div class="site-shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SignalShelf</span></a>
+        <p>An editorial index of AI tools, built around practical work and clearly labeled advertising.</p>
+      </div>
+      <div><h2>Explore</h2><a href="../directory.html">Tool directory</a><a href="../guides/index.html">Practical guides</a><a href="../editorial-policy.html">Editorial method</a></div>
+      <div><h2>Company</h2><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../terms.html">Terms</a></div>
+      <div><h2>Trust</h2><a href="../privacy.html">Privacy and cookies</a><a href="../disclosure.html">Affiliate disclosure</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> SignalShelf. Independent editorial project.</span><span>Some links may become affiliate links after disclosure.</span><button class="text-button" type="button" data-manage-consent>Privacy choices</button></div>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script></body>
+</html>

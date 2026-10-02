@@ -1,0 +1,125 @@
+Below is a revenue-focused data-quality review. I’m treating amount as the revenue measure, and I will not infer or fill missing values.
+
+1. Issues
+Severity	Affected row(s)	Issue	Revenue impact
+Critical	1004 (appears twice)	Exact duplicate transaction	Overstates revenue by $120.00 if both rows are summed
+Critical	1006	Missing amount	Revenue cannot be calculated for this order
+High	1003	Negative amount -29.00	Could be a refund/credit, or an invalid negative sale; treatment changes reported revenue by $58 depending on interpretation
+High	1007	Amount 999999 is an extreme outlier	Could massively overstate revenue if erroneous
+High	1002	Amount contains $ and date uses /	Can cause parsing/type failures or inconsistent reporting
+Medium	1008	Date format differs from other rows (10/08/2026)	Could be misparsed depending on locale; potentially wrong reporting period
+Medium	1002	Invalid email bob@@example.com	Doesn't directly change revenue, but can corrupt customer/order joins and downstream attribution
+Medium	1007	Invalid email not-an-email	Same downstream attribution risk
+Low	1007	Missing consent value	Doesn't change revenue itself, but may affect permitted customer-level reporting/marketing workflows
+Low	Dataset	Date format is inconsistent	Increases risk of incorrect date parsing/grouping
+Low	Dataset	No explicit currency field	amount is assumed to use one currency, but this is not represented in the data
+
+Important: order_id 1005 is absent, but a missing sequence number is not automatically a data error. Order IDs do not necessarily have to be consecutive.
+
+2. Cleaned CSV
+
+For a strict revenue-reporting dataset, I would retain only records that can be safely interpreted without inventing information. I removed the exact duplicate 1004 and excluded rows requiring human review rather than guessing.
+
+csv
+order_id,date,amount,email,consent
+1001,2026-10-01,49.99,alice@example.com,yes
+1002,2026-10-02,79.50,bob@@example.com,yes
+1004,2026-10-04,120.00,dave@example.com,yes
+1008,2026-10-08,15.25,frank@example.com,yes
+
+I did not silently change the invalid email on 1002 because that would be modifying customer data rather than cleaning a revenue value.
+
+The following rows are held out pending review:
+
+1003 → negative amount
+1006 → missing amount
+1007 → extreme amount
+
+The duplicate copy of 1004 is removed because the two records are identical.
+
+The resulting unambiguous revenue subtotal is:
+
+$264.74
+
+That is not necessarily the final true revenue, because the three held-out rows could represent legitimate transactions.
+
+3. Validation rules before reporting
+
+I would implement at least these checks:
+
+Rule	Validation
+order_id required	Must be non-null
+order_id uniqueness	One reportable transaction per order_id, unless multiple line items are explicitly supported
+date required	Must parse successfully
+Date format	Normalize to ISO YYYY-MM-DD
+Date range	Reject dates outside the reporting period
+amount required	No null/blank amounts
+Amount type	Must parse as a numeric decimal
+Currency formatting	Strip currency symbols only through an explicit currency/parser rule
+Negative amounts	Reject or classify separately as refunds/credits; never silently treat as sales
+Extreme values	Flag amounts above a defined business threshold for review
+Currency	Require an explicit currency or documented single-currency assumption
+Email	Validate basic email syntax
+Consent	Must be one of an approved set such as yes/no if this field is required
+Duplicate detection	Detect exact duplicate rows and duplicate order_ids
+Reconciliation	Compare transaction totals against the source system/control total
+Missing records	Investigate unexpected gaps or discrepancies in expected transaction counts
+Precision	Store monetary values as decimal/fixed-point, not binary floating point
+
+For the outlier check, I would not hard-code $999,999 as automatically wrong. The threshold should come from the business's normal transaction range.
+
+4. Ambiguous cases requiring human decision
+
+Row 1003 — -29.00
+
+Possible interpretations:
+
+legitimate refund → should reduce net revenue
+
+credit/adjustment → may belong in a separate accounting category
+
+erroneous negative sale → should be corrected/rejected
+
+The dataset doesn't tell us which one it is.
+
+Row 1007 — 999999
+
+This could be:
+
+a legitimate high-value order
+
+a misplaced decimal
+
+a corrupted/imported value
+
+It should be checked against the source transaction rather than automatically changed.
+
+Row 1006 — missing amount
+
+There is no defensible way to reconstruct the amount from the supplied data. It should remain missing until the source system is checked.
+
+Currency
+
+The data doesn't specify whether these amounts are USD, TWD, or another currency. The $ on one record suggests USD, but that alone isn't sufficient evidence to establish the currency for the entire dataset.
+
+5. Assumptions and limitations
+
+I assume each order_id represents one revenue transaction.
+
+I assume the duplicate 1004 is accidental because the two records are completely identical.
+
+I normalized dates that are unambiguously interpretable as October 2026.
+
+I did not invent an amount for 1006.
+
+I did not convert 1003's negative amount into a positive value or assume it is a refund.
+
+I did not alter 1007's 999999.
+
+I did not treat invalid emails as revenue errors, although they can affect downstream customer attribution.
+
+I cannot determine the correct currency from the supplied CSV alone.
+
+The $264.74 subtotal is therefore a conservative, review-ready subtotal, not a claim about the dataset's actual final revenue.
+
+A useful additional control would be to maintain separate gross sales, refunds/credits, and net revenue fields rather than mixing positive and negative transactions into one undifferentiated amount column.
