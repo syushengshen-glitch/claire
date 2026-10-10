@@ -11,9 +11,10 @@
 核心模式：
 
 - 英文 AI 工具導航網站
-- 32 個工具評測頁
+- 32 個來源查核、適用情境與 30 分鐘實測步驟完整的工具證據頁
 - 7 個分類頁
 - 10 篇可發佈的研究型工作流文章及 3 篇真實工具實測
+- 4 個原創研究與決策頁：證據稽核、成本計算器、評估計分板、研究方法
 - 100 篇 SEO 主題規劃
 - Google AdSense 預留位
 - AdSense、隱私、Cookie、揭露、條款頁面
@@ -33,9 +34,10 @@
 site/                      可直接部署的靜態網站
   assets/styles.css        視覺系統
   assets/app.js            搜尋、篩選、排序、同意提示
-  tools/                   32 個工具頁
+  tools/                   32 個工具證據頁
   category/                7 個分類頁
   guides/                  10 篇指南 + 3 篇原創實測
+  research/                證據稽核、成本計算器與評估計分板
   index.html
   directory.html
   privacy.html

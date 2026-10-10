@@ -1,0 +1,802 @@
+{
+  "chatgpt": {
+    "research_question": "Can ChatGPT turn messy source material into a structured first draft without losing the source trail?",
+    "best_job": "Turn notes, files, and open questions into a structured first draft that a human can verify.",
+    "good_fit": [
+      "You need one workspace for research, drafting, brainstorming, and file analysis.",
+      "You will keep a human review step for facts, citations, and final tone.",
+      "You want a broad assistant before paying for a narrower specialist."
+    ],
+    "not_fit": [
+      "You need a guaranteed citation trail without checking every source.",
+      "You require a reproducible, auditable output across many team members with no review step.",
+      "You only need one narrow task that a cheaper or purpose-built tool already handles."
+    ],
+    "trial": [
+      "Use one real source pack: notes, a PDF, and two questions with a known answer.",
+      "Run the same task twice: once with a vague prompt and once with a schema that asks for sources, uncertainties, and review flags.",
+      "Time the first usable output, then separately time fact-checking, link validation, and tone edits.",
+      "Ask the tool to identify what it could not verify; if it invents certainty, reject that output."
+    ],
+    "checks": [
+      "Confirm current plan names, regional availability, and usage limits on the official pricing page.",
+      "Test the exact file type, context length, and collaboration feature your workflow needs before upgrading.",
+      "Open every cited source and verify that the quotation or statistic exists."
+    ]
+  },
+  "claude": {
+    "research_question": "Does Claude reduce the cost of editing a long document when the instructions and source boundaries are explicit?",
+    "best_job": "Work through long documents, nuanced edits, and structured analysis while preserving a clear review trail.",
+    "good_fit": [
+      "You edit long documents where context and tone matter.",
+      "You want a careful first pass on structure, argument, and consistency.",
+      "You can provide source material and clear boundaries in the prompt."
+    ],
+    "not_fit": [
+      "You need the cheapest possible high-volume drafting tool.",
+      "You want automatic publication without checking claims or permissions.",
+      "Your workflow depends on a feature or integration that is not available in your region or plan."
+    ],
+    "trial": [
+      "Choose one document with a known factual error, an inconsistent heading, and a paragraph that should be removed.",
+      "Give both the source document and the editing rules, then ask for a change log rather than a rewrite.",
+      "Check whether the tool preserves meaning, removes only what was requested, and explains uncertain edits.",
+      "Count the minutes needed to verify the change log and restore any lost nuance."
+    ],
+    "checks": [
+      "Verify current plan features, usage limits, regional availability, and data controls on the official site.",
+      "Test the longest document and the exact file format you expect to use.",
+      "Keep a human editor accountable for factual changes and final publication."
+    ]
+  },
+  "gemini": {
+    "research_question": "Can Gemini connect research, files, and Google-style productivity tasks without creating hidden verification work?",
+    "best_job": "Research and transform information when the work already involves Google services, files, or multimodal inputs.",
+    "good_fit": [
+      "Your team already works primarily in Google Workspace and Android.",
+      "You need multimodal input or research support across text, images, and web material.",
+      "You can inspect the current regional and plan limitations before adopting it."
+    ],
+    "not_fit": [
+      "You need every generated link or citation to be correct without validation.",
+      "Your organization restricts third-party AI processing or external model access.",
+      "You need a stable feature set that is available identically in every country on day one."
+    ],
+    "trial": [
+      "Give Gemini one image, one document, and one research question with a verifiable answer.",
+      "Ask for a source table, a confidence note, and a list of facts that require a human check.",
+      "Open every source and compare the response with the original files rather than with another summary.",
+      "Measure the correction time for links, dates, names, and product claims."
+    ],
+    "checks": [
+      "Confirm the current plan, regional availability, and Workspace data controls on Google official pages.",
+      "Check whether the feature you need is available to your account type and administrator settings.",
+      "Verify any generated URL, quotation, or statistic against the original source."
+    ]
+  },
+  "perplexity": {
+    "research_question": "Does Perplexity shorten source discovery enough to justify its place before a manual research pass?",
+    "best_job": "Find candidate sources and compare what several sources say before opening and verifying the originals.",
+    "good_fit": [
+      "You need a fast first map of sources for a research question.",
+      "You will click through and inspect the cited originals.",
+      "You value a question-first interface more than long-form document editing."
+    ],
+    "not_fit": [
+      "You treat a generated answer as a finished research report.",
+      "You need deep document editing, long-form drafting, or private file analysis.",
+      "You cannot accept variability in source coverage across regions or query types."
+    ],
+    "trial": [
+      "Ask one narrow question with a known answer and one contested question with credible sources on both sides.",
+      "Record the sources it returns, then replace the answer with a three-source evidence table.",
+      "Open each source and mark whether it is primary, secondary, outdated, or irrelevant.",
+      "Compare the time spent discovering sources with the time spent verifying them."
+    ],
+    "checks": [
+      "Confirm current plan limits, source controls, and regional availability on the official site.",
+      "Check whether cited pages are accessible without a paywall or login and whether dates are visible.",
+      "Do not cite a source that you have not opened yourself."
+    ]
+  },
+  "microsoft-copilot": {
+    "research_question": "Does Microsoft Copilot improve a Microsoft 365 task enough to justify the governance and plan requirements?",
+    "best_job": "Draft, summarize, and search inside an organization that already uses Microsoft 365 and has clear data governance.",
+    "good_fit": [
+      "Your organization already uses Word, Excel, Outlook, Teams, or SharePoint.",
+      "You need assistance inside familiar Microsoft workflows rather than another destination app.",
+      "An administrator can verify tenant, data, and feature controls."
+    ],
+    "not_fit": [
+      "You need the same experience on every device and account type without administration.",
+      "You cannot confirm which data is in scope for the assistant.",
+      "You only need a general chatbot and do not benefit from Microsoft 365 context."
+    ],
+    "trial": [
+      "Choose one low-risk Microsoft 365 task with a known expected output, such as a status summary or meeting recap.",
+      "Test it with a work document that contains no sensitive or client data.",
+      "Check whether the result respects permissions, retains the right names and dates, and exports cleanly.",
+      "Ask the administrator which logs, retention rules, and tenant controls apply before expanding use."
+    ],
+    "checks": [
+      "Verify current licensing, tenant requirements, and feature availability on Microsoft official pages.",
+      "Confirm retention, permissions, and admin controls with your organization before uploading real data.",
+      "Test in a controlled account before rolling it out to a team."
+    ]
+  },
+  "midjourney": {
+    "research_question": "Can Midjourney produce a consistent visual direction quickly enough to justify a paid creative workflow?",
+    "best_job": "Explore high-quality visual directions and iterate on composition, style, and lighting before final production.",
+    "good_fit": [
+      "You need exploratory visual directions rather than final legal or brand assets.",
+      "You can iterate on prompts, references, and variations.",
+      "You have a human designer or reviewer for rights, brand, and final selection."
+    ],
+    "not_fit": [
+      "You need editable vector output or exact brand-controlled geometry.",
+      "You need documented provenance for every pixel without additional review.",
+      "You need a low-cost, no-subscription workflow for occasional images."
+    ],
+    "trial": [
+      "Create one brief with subject, framing, lighting, material, and forbidden elements.",
+      "Generate a small set and rate consistency, usability, and correction effort instead of beauty alone.",
+      "Try one iteration that changes only a single variable so you can identify what caused the change.",
+      "Check the current commercial terms and whether the output can support your intended use."
+    ],
+    "checks": [
+      "Confirm current subscription tiers and commercial terms on the official site.",
+      "Review the output at final size and inspect hands, text, reflections, and brand marks.",
+      "Check whether a designer still needs to edit, license, or recreate the asset."
+    ]
+  },
+  "adobe-firefly": {
+    "research_question": "Does Firefly fit a production workflow where editing, asset rights, and brand controls matter more than novelty?",
+    "best_job": "Create or edit visual material inside an Adobe workflow where brand and asset controls matter.",
+    "good_fit": [
+      "Your team already works in Adobe Creative Cloud.",
+      "You need generated or edited assets that can move into a controlled design process.",
+      "You care about commercially safer sourcing and documented workflow controls."
+    ],
+    "not_fit": [
+      "You need a completely free, standalone image generator.",
+      "You expect generative output to replace art direction, retouching, or licensing review.",
+      "You need a workflow that does not depend on an Adobe subscription or cloud account."
+    ],
+    "trial": [
+      "Pick one real campaign asset and one controlled brand constraint, such as color, crop, or product position.",
+      "Generate three options, then move the best one into a normal edit and document every manual correction.",
+      "Test a generative edit where the original asset must stay recognizable.",
+      "Review the current commercial terms and content-credential information before publishing."
+    ],
+    "checks": [
+      "Verify current plans, generative-credit rules, and commercial-use terms on Adobe official pages.",
+      "Inspect the result for brand accuracy, legibility, and unintended edits.",
+      "Keep a record of the source asset, model, prompt, and human edits when provenance matters."
+    ]
+  },
+  "leonardo-ai": {
+    "research_question": "Can Leonardo AI serve a repeatable asset pipeline, not just one-off image generation?",
+    "best_job": "Generate repeatable visual assets and variations inside a production queue with explicit style controls.",
+    "good_fit": [
+      "You need many image variations for a defined visual system.",
+      "You can test model, style, and seed controls systematically.",
+      "You have a reviewer for composition, rights, and final quality."
+    ],
+    "not_fit": [
+      "You need no-prompt, fully deterministic asset production.",
+      "You cannot manage credits, model choices, or output review at scale.",
+      "You need one premium image rather than a controllable variation set."
+    ],
+    "trial": [
+      "Define one asset family with fixed subject, style, aspect ratio, and a prohibition list.",
+      "Generate several batches and record which settings change consistency.",
+      "Choose the best output and time the post-production needed for production use.",
+      "Compare credit consumption and correction effort across two workflows, not just two pretty images."
+    ],
+    "checks": [
+      "Confirm current plans, credit rules, model availability, and commercial terms on the official site.",
+      "Check output resolution and whether the result needs upscaling or manual correction.",
+      "Keep the prompt, seed, model, and edit history when consistency matters."
+    ]
+  },
+  "ideogram": {
+    "research_question": "Does Ideogram produce usable text-in-image concepts, or does typography still require a design pass?",
+    "best_job": "Explore poster, social, and packaging concepts where readable text is part of the composition.",
+    "good_fit": [
+      "You need fast concepts that combine an image with a short line of text.",
+      "You can test spelling, hierarchy, and composition before using the result.",
+      "You will rebuild final typography in a design tool when precision matters."
+    ],
+    "not_fit": [
+      "You need exact typography, kerning, or brand compliance without manual work.",
+      "You need long paragraphs of reliable text inside an image.",
+      "You need accessible text or a print-ready file directly from the generator."
+    ],
+    "trial": [
+      "Write one short headline, one two-line subhead, and a list of forbidden characters.",
+      "Generate several directions and check spelling, reading order, and contrast at thumbnail size.",
+      "Take the best concept into a normal design tool and measure how much has to be rebuilt.",
+      "Reject any output whose text changes meaning or becomes unreadable on mobile."
+    ],
+    "checks": [
+      "Confirm current plan limits, commercial terms, and available model features on the official site.",
+      "Check every character manually; generated text can be close but still wrong.",
+      "Treat output as a concept until a designer verifies hierarchy, accessibility, and brand fit."
+    ]
+  },
+  "canva-magic-studio": {
+    "research_question": "Does Canva Magic Studio shorten a real design workflow without adding brand or accessibility risk?",
+    "best_job": "Move from brief to a presentation, social asset, or simple design draft inside an accessible browser workflow.",
+    "good_fit": [
+      "You need speed, templates, and collaboration more than specialized creative control.",
+      "A non-designer needs to produce a structured first draft.",
+      "You can review brand, spacing, accessibility, and claims before publishing."
+    ],
+    "not_fit": [
+      "You need advanced layout, custom print production, or exact brand systems.",
+      "You cannot verify the source, license, or accessibility of generated assets.",
+      "You expect AI output to replace design judgment."
+    ],
+    "trial": [
+      "Use one real brief with a required brand color, one legal line, and a mobile format.",
+      "Generate a first draft and compare it with the same brief built manually from an existing template.",
+      "Count the edits needed for hierarchy, spacing, contrast, and copy accuracy.",
+      "Test the export in the exact format and resolution required by the destination."
+    ],
+    "checks": [
+      "Confirm current plan features, asset licensing, and commercial terms on Canva official pages.",
+      "Check contrast, reading order, alt text, and mobile legibility manually.",
+      "Verify every claim, logo, and third-party asset before publishing."
+    ]
+  },
+  "github-copilot": {
+    "research_question": "Does GitHub Copilot reduce review time on real code, or does it mainly move uncertainty into pull requests?",
+    "best_job": "Accelerate repetitive coding, test scaffolding, and code explanation inside an existing review process.",
+    "good_fit": [
+      "Your repository already has tests, review rules, and linting.",
+      "You want help with boilerplate, refactoring, or explaining unfamiliar code.",
+      "You are willing to review every suggested change."
+    ],
+    "not_fit": [
+      "You plan to merge generated code without tests or human review.",
+      "The project contains secrets or proprietary code that cannot be sent to the service.",
+      "You need architectural judgment that depends on undocumented business rules."
+    ],
+    "trial": [
+      "Choose one small issue with existing tests and a clear acceptance condition.",
+      "Record the time to first passing test, the number of review changes, and any security or dependency mistakes.",
+      "Ask Copilot to explain the diff and identify untested branches.",
+      "Compare the result with a manual implementation under the same review standard."
+    ],
+    "checks": [
+      "Confirm plan, editor support, policy controls, and data-handling terms on GitHub official pages.",
+      "Run tests, static analysis, and secret scanning before accepting a change.",
+      "Measure review effort, not lines of code generated."
+    ]
+  },
+  "cursor": {
+    "research_question": "Does Cursor improve navigation and edits in a real repository enough to justify changing editors?",
+    "best_job": "Work across a codebase with AI-assisted navigation, local edits, and multi-file change review.",
+    "good_fit": [
+      "You already use Git and can review multi-file diffs.",
+      "You need help locating code, drafting tests, or applying repetitive edits.",
+      "You can separate useful context from irrelevant repository context."
+    ],
+    "not_fit": [
+      "You want an autonomous agent to ship changes without a review loop.",
+      "Your project cannot be indexed or sent to the configured model provider.",
+      "You do not want to maintain a new editor configuration and workflow."
+    ],
+    "trial": [
+      "Pick one bounded issue that touches two or three files and has tests.",
+      "Time the first useful implementation, then count the files changed unexpectedly.",
+      "Ask for a test plan before accepting code and run the full relevant test suite.",
+      "Compare the review burden with the same task completed using your current editor."
+    ],
+    "checks": [
+      "Verify current privacy, model, and indexing controls on Cursor official pages.",
+      "Inspect every diff and check dependency, security, and licensing implications.",
+      "Keep a clean Git state so generated changes can be compared and reverted."
+    ]
+  },
+  "windsurf": {
+    "research_question": "Does Windsurf keep an AI-assisted code change understandable enough for normal review?",
+    "best_job": "Explore agentic coding and multi-step edits inside a flow that still produces a reviewable Git diff.",
+    "good_fit": [
+      "You want to test agentic editing on a small, well-tested repository.",
+      "You can inspect each change and reverse it with Git.",
+      "You need context discovery across several files."
+    ],
+    "not_fit": [
+      "You need reproducible builds with no variability or external model dependency.",
+      "You cannot review a broad diff or run the full test suite.",
+      "The repository contains secrets or data that cannot leave the machine."
+    ],
+    "trial": [
+      "Choose a small issue with a failing test and a documented completion condition.",
+      "Record the initial plan, number of changed files, and whether the agent touched unrelated code.",
+      "Require a focused diff and a test command before accepting the work.",
+      "Measure time-to-green and review time separately."
+    ],
+    "checks": [
+      "Confirm current data, model, and repository-indexing terms on the official site.",
+      "Run tests and static checks outside the tool as well.",
+      "Reject broad, unexplained edits even when the final test passes."
+    ]
+  },
+  "replit": {
+    "research_question": "Can Replit take a small prototype from prompt to working deployment without hiding the maintenance cost?",
+    "best_job": "Prototype a small app, test an idea, and share a quick deployment with minimal local setup.",
+    "good_fit": [
+      "You need a browser-based prototype rather than a production architecture.",
+      "You can define the smallest testable user flow.",
+      "You will review dependencies, secrets, and deployment behavior before sharing."
+    ],
+    "not_fit": [
+      "You need production reliability, compliance, or a large existing codebase.",
+      "You cannot inspect the generated code or manage cloud costs.",
+      "You need a fully offline or vendor-neutral development environment."
+    ],
+    "trial": [
+      "Define one user flow with three acceptance checks and no real customer data.",
+      "Generate the prototype and trace every external service, secret, and database dependency.",
+      "Test the flow on mobile, sign out, and reload to expose state problems.",
+      "Estimate the monthly cost and maintenance work before treating the prototype as production."
+    ],
+    "checks": [
+      "Confirm current hosting, database, usage, and security terms on Replit official pages.",
+      "Never place production secrets or sensitive data in a prototype.",
+      "Check whether the generated app has migrations, backups, and error handling."
+    ]
+  },
+  "coderabbit": {
+    "research_question": "Does CodeRabbit improve pull-request review quality, or does it add comments that reviewers ignore?",
+    "best_job": "Add an automated first review pass to a repository that already has disciplined human review and CI.",
+    "good_fit": [
+      "You have frequent pull requests and a clear definition of a useful comment.",
+      "You want a first pass on readability, tests, and common defects.",
+      "Reviewers can dismiss false positives without slowing delivery."
+    ],
+    "not_fit": [
+      "The repository has no tests or review standards.",
+      "You cannot share code context with a third-party service.",
+      "The team will treat bot approval as a substitute for human ownership."
+    ],
+    "trial": [
+      "Run it on a set of ten representative pull requests, including one trivial and one risky change.",
+      "Label every comment as valid defect, useful question, style preference, or false positive.",
+      "Compare review time and escaped defects with a control period.",
+      "Keep the service only if reviewers find a measurable improvement."
+    ],
+    "checks": [
+      "Confirm data retention, repository permissions, and model-provider terms on the official site.",
+      "Require human approval for security-sensitive and architecture changes.",
+      "Measure false positives and review latency, not just comment volume."
+    ]
+  },
+  "grammarly": {
+    "research_question": "Does Grammarly improve clarity without flattening the writer voice or leaking context?",
+    "best_job": "Catch grammar, clarity, tone, and consistency problems after the argument and evidence are already written.",
+    "good_fit": [
+      "You need a fast editing pass across everyday writing.",
+      "You can distinguish a useful clarity edit from an unnecessary rewrite.",
+      "Your organization has approved the browser or desktop integration."
+    ],
+    "not_fit": [
+      "You need research, strategy, or fact-checking.",
+      "You cannot allow text to be processed by a third-party writing service.",
+      "You expect the tool to preserve a highly specific literary voice without review."
+    ],
+    "trial": [
+      "Use three passages: one technical, one persuasive, and one intentionally stylized.",
+      "Accept only suggestions that preserve meaning and voice, and record which categories you reject.",
+      "Time the editing pass and check whether the result becomes more generic.",
+      "Review the organization data and browser-extension policy before using sensitive text."
+    ],
+    "checks": [
+      "Confirm current plan, data-handling, and integration terms on Grammarly official pages.",
+      "Do not paste confidential, client, or regulated text into an unapproved account.",
+      "Keep the author responsible for facts, citations, and final voice."
+    ]
+  },
+  "jasper": {
+    "research_question": "Does Jasper reduce campaign-production friction once the strategy and brand rules already exist?",
+    "best_job": "Operate repeatable marketing workflows where a team has already defined the audience, offer, and brand voice.",
+    "good_fit": [
+      "A marketing team produces many related campaign assets.",
+      "Brand voice, claims, and approval rules are documented.",
+      "You need workflow consistency more than experimental creativity."
+    ],
+    "not_fit": [
+      "You have no strategy, source material, or editorial process.",
+      "You need the cheapest general-purpose assistant.",
+      "You expect automation to validate legal, product, or performance claims."
+    ],
+    "trial": [
+      "Take one real campaign brief and one approved source document.",
+      "Run the workflow twice and compare factual consistency, brand fit, and review time.",
+      "Audit every claim and testimonial against the source before publication.",
+      "Calculate the cost per approved asset, including editing and approval time."
+    ],
+    "checks": [
+      "Confirm current plan, seat, usage, and data terms on Jasper official pages.",
+      "Verify claims, testimonials, and competitive statements independently.",
+      "Keep a human owner for brand and legal approval."
+    ]
+  },
+  "copy-ai": {
+    "research_question": "Does Copy.ai make a repetitive go-to-market workflow more reliable than a documented chat prompt?",
+    "best_job": "Standardize repeatable sales and marketing tasks with structured inputs and review states.",
+    "good_fit": [
+      "The same workflow repeats across a team or client set.",
+      "You can define input fields, output format, and approval rules.",
+      "You want automation with a visible review step."
+    ],
+    "not_fit": [
+      "Your tasks are one-off and benefit from open-ended conversation.",
+      "You cannot maintain the workflow, data, or prompt changes.",
+      "You need strategy or source validation rather than production assistance."
+    ],
+    "trial": [
+      "Choose one workflow with ten past examples and a measurable quality checklist.",
+      "Run the workflow on five examples and compare it with a documented prompt in a general assistant.",
+      "Count factual errors, format failures, and human corrections.",
+      "Keep it only if it reduces total production time after maintenance is included."
+    ],
+    "checks": [
+      "Confirm current plans, integrations, and data terms on the official site.",
+      "Check whether the workflow exposes sensitive customer or prospect data.",
+      "Keep an approval step before outbound messages are sent."
+    ]
+  },
+  "surfer-seo": {
+    "research_question": "Does Surfer improve a page usefulness, or only its resemblance to a competitor outline?",
+    "best_job": "Turn search-result research into an editorial brief and a measurable on-page review checklist.",
+    "good_fit": [
+      "You already understand search intent and have original information to add.",
+      "You need a repeatable brief and internal-link checklist.",
+      "You will judge the page by reader usefulness, not only a score."
+    ],
+    "not_fit": [
+      "You plan to generate pages that merely copy competitor headings.",
+      "You have no source of first-hand experience, data, or expert review.",
+      "You cannot maintain content after publication."
+    ],
+    "trial": [
+      "Choose one query with a clear reader problem and a competitor set.",
+      "Build a brief from the search results, then remove every requirement that does not help the reader finish the task.",
+      "Publish a human-reviewed section with original evidence or a concrete example.",
+      "Compare impressions, clicks, and engagement with the page prior version after enough data."
+    ],
+    "checks": [
+      "Confirm current plan limits and data sources on Surfer official pages.",
+      "Verify facts, quotes, and claims against primary sources rather than competitor pages.",
+      "Do not let a content score override search intent, accuracy, or original value."
+    ]
+  },
+  "quillbot": {
+    "research_question": "Does QuillBot improve sentence clarity without changing meaning or hiding plagiarism risk?",
+    "best_job": "Simplify or rephrase selected sentences after the writer has understood and cited the source.",
+    "good_fit": [
+      "You need help with grammar, sentence flow, or paraphrasing a passage you understand.",
+      "You will compare the rewrite with the original for meaning and citations.",
+      "The work is not intended to disguise copied text."
+    ],
+    "not_fit": [
+      "You want to avoid reading the source or citing it.",
+      "The text contains confidential or regulated information.",
+      "You need research, argument development, or fact-checking."
+    ],
+    "trial": [
+      "Use one passage with a technical term, a citation, and a nuanced qualification.",
+      "Compare the rewrite with the original and mark any meaning change or lost caveat.",
+      "Run the final text through the same integrity policy used by the school or publisher.",
+      "Decide whether the rewrite is clearer or merely different."
+    ],
+    "checks": [
+      "Confirm current plan and data terms on QuillBot official pages.",
+      "Keep original citations and verify paraphrases against the source.",
+      "Do not use rewriting to conceal plagiarism or remove attribution."
+    ]
+  },
+  "runway": {
+    "research_question": "Can Runway produce a useful video shot or edit decision quickly enough to fit a real production pipeline?",
+    "best_job": "Explore generated video, editing, or visual effects before a human editor completes the final production.",
+    "good_fit": [
+      "You can use generated clips as concepts or controlled shots.",
+      "You have a human editor for continuity, rights, and final output.",
+      "You can test a clear story beat rather than a vague visual idea."
+    ],
+    "not_fit": [
+      "You need frame-perfect continuity or legal clearance without review.",
+      "You have no edit, color, sound, or rights process.",
+      "You need a low-cost, fully deterministic final master."
+    ],
+    "trial": [
+      "Write one six-second shot with subject, camera movement, duration, and forbidden artifacts.",
+      "Generate several takes and score motion, continuity, text, and editability.",
+      "Move the best take into a normal NLE and measure the work required to make it usable.",
+      "Check current commercial terms and output restrictions before a public campaign."
+    ],
+    "checks": [
+      "Confirm current plans, credit rules, and commercial terms on Runway official pages.",
+      "Inspect every frame for hands, faces, text, continuity, and unintended marks.",
+      "Keep human review for rights, sensitive content, and final delivery."
+    ]
+  },
+  "descript": {
+    "research_question": "Does Descript reduce editing time on a real spoken-word project without creating transcription risk?",
+    "best_job": "Edit spoken-word content through a transcript while keeping a human pass on names, cuts, and final audio.",
+    "good_fit": [
+      "You work with interviews, podcasts, tutorials, or screen recordings.",
+      "Transcript-based editing matches how you already review spoken content.",
+      "You can check speaker labels, names, and cut points."
+    ],
+    "not_fit": [
+      "You need a fully automatic final cut with no editorial review.",
+      "The recording contains sensitive content that cannot be processed by a cloud service.",
+      "You need advanced audio repair or cinema finishing that requires specialist tools."
+    ],
+    "trial": [
+      "Use a two-minute recording with two speakers, a false start, and one proper noun.",
+      "Transcribe, remove the false start, and export a new version.",
+      "Check name accuracy, cut smoothness, turn order, and audio artifacts.",
+      "Record how long the cleanup takes versus editing the same clip manually."
+    ],
+    "checks": [
+      "Confirm current plans, export limits, and data terms on Descript official pages.",
+      "Review the transcript before publishing and listen to every edit at the final export.",
+      "Check whether the destination platform requires captions, loudness, or format changes."
+    ]
+  },
+  "elevenlabs": {
+    "research_question": "Can ElevenLabs produce a usable voiceover while preserving pronunciation, consent, and disclosure requirements?",
+    "best_job": "Create clear voiceover drafts or controlled narration when the text and usage rights are already defined.",
+    "good_fit": [
+      "You need narration for a defined script and can review pronunciation.",
+      "You have the right to use the chosen voice and will disclose synthetic media when required.",
+      "You can test pacing, emphasis, and pronunciation before final export."
+    ],
+    "not_fit": [
+      "You plan to imitate a real person voice without explicit permission.",
+      "You need a legally approved final campaign without human review.",
+      "The script contains sensitive content that cannot be processed by the service."
+    ],
+    "trial": [
+      "Use a short script with one acronym, one number, one name, and one emotional shift.",
+      "Generate two voices and compare pronunciation, pacing, naturalness, and editability.",
+      "Edit one sentence for emphasis and measure how much re-generation is required.",
+      "Document voice source, rights, consent, and disclosure before publishing."
+    ],
+    "checks": [
+      "Confirm current usage, voice, commercial, and disclosure terms on ElevenLabs official pages.",
+      "Do not clone or impersonate a person without documented permission.",
+      "Listen on phone speakers and headphones before final delivery."
+    ]
+  },
+  "synthesia": {
+    "research_question": "Does Synthesia shorten a structured explainer video while keeping review and disclosure clear?",
+    "best_job": "Produce a structured, scripted explainer or training video when a presenter, studio, or translation workflow would otherwise be too slow.",
+    "good_fit": [
+      "The content is scripted, factual, and suitable for a synthetic presenter.",
+      "You can review pronunciation, captions, and brand details.",
+      "You will disclose synthetic media when required."
+    ],
+    "not_fit": [
+      "You need spontaneous performance, complex acting, or documentary footage.",
+      "You cannot approve the script or the avatar representation.",
+      "You need a final master without checking captions, claims, and accessibility."
+    ],
+    "trial": [
+      "Turn one short script with three sections, one number, and one acronym into a draft.",
+      "Check pronunciation, caption timing, scene transitions, and export options.",
+      "Compare the completed draft with a screen-recorded alternative on time and revision cost.",
+      "Review disclosure and rights requirements before publishing."
+    ],
+    "checks": [
+      "Confirm current avatar, language, rights, and commercial terms on Synthesia official pages.",
+      "Review legal, HR, or regulated content with the appropriate expert.",
+      "Check captions, contrast, and mobile readability after export."
+    ]
+  },
+  "notion-ai": {
+    "research_question": "Does Notion AI improve a knowledge workflow enough to justify keeping more content inside Notion?",
+    "best_job": "Summarize, search, and draft inside an existing Notion workspace where permissions and source notes are maintained.",
+    "good_fit": [
+      "Your team already keeps structured notes and documents in Notion.",
+      "You want assistance without moving every task into another chat app.",
+      "You can maintain clean source pages and permissions."
+    ],
+    "not_fit": [
+      "The workspace contains duplicate, outdated, or unpermissioned content.",
+      "You need autonomous project decisions or external fact-checking.",
+      "You need a low-cost standalone writing tool rather than a workspace feature."
+    ],
+    "trial": [
+      "Create a small workspace with one current source, one outdated note, and one missing page.",
+      "Ask for a summary and a list of open questions, then check whether it identifies the outdated source.",
+      "Test permissions with a second account before using team or client data.",
+      "Measure whether the result saves navigation time after correcting stale context."
+    ],
+    "checks": [
+      "Confirm current plan, workspace permission, and data-control terms on Notion official pages.",
+      "Clean and label source pages before asking the assistant to synthesize them.",
+      "Treat generated summaries as drafts until the original pages are checked."
+    ]
+  },
+  "clickup-ai": {
+    "research_question": "Does ClickUp AI reduce project overhead, or does it add another layer to review and maintain?",
+    "best_job": "Turn project notes, tasks, and status updates into clearer summaries and next actions inside ClickUp.",
+    "good_fit": [
+      "The team already works in ClickUp and maintains task hygiene.",
+      "You need help with summaries, status drafts, or task descriptions.",
+      "A project owner reviews all generated changes."
+    ],
+    "not_fit": [
+      "The workspace is disorganized or full of duplicate tasks.",
+      "You cannot audit automated changes or permissions.",
+      "You need strategic portfolio decisions rather than task assistance."
+    ],
+    "trial": [
+      "Choose one project with a clear owner, due date, and three open blockers.",
+      "Ask for a status summary, a risk list, and a draft task breakdown.",
+      "Check every date, owner, dependency, and priority against the live project.",
+      "Measure the cleanup time and compare it with writing the update manually."
+    ],
+    "checks": [
+      "Confirm current plan, AI credit, permission, and data terms on ClickUp official pages.",
+      "Review generated tasks and changes before notifying the team.",
+      "Keep a human owner for priorities, dependencies, and client commitments."
+    ]
+  },
+  "zapier-ai": {
+    "research_question": "Can Zapier AI turn a repetitive workflow into a reliable automation without hiding failure modes?",
+    "best_job": "Draft and connect a repeatable workflow between SaaS tools, with human review for data and failure handling.",
+    "good_fit": [
+      "The process already has clear inputs, outputs, and exception rules.",
+      "You can test with a sandbox account and inspect every run.",
+      "A human owner monitors failures and data quality."
+    ],
+    "not_fit": [
+      "The process is undocumented or changes every time.",
+      "You cannot limit which records and fields enter the automation.",
+      "You expect generated steps to handle compliance, judgement, or sensitive data automatically."
+    ],
+    "trial": [
+      "Map one workflow on paper, including the trigger, transformation, destination, and failure path.",
+      "Build it with test data and run at least ten realistic cases, including missing and duplicate fields.",
+      "Verify permissions, retries, rate limits, and what happens when a step fails.",
+      "Calculate the time saved after monitoring and maintenance are included."
+    ],
+    "checks": [
+      "Confirm current plan, task limits, connector behavior, and data terms on Zapier official pages.",
+      "Never connect production data until permissions and failure handling are tested.",
+      "Keep an audit path and a manual fallback for critical processes."
+    ]
+  },
+  "make": {
+    "research_question": "Does Make give a complex automation more visibility than a simple connector tool?",
+    "best_job": "Visualize and operate multi-step workflows when branches, transformations, and failure paths matter.",
+    "good_fit": [
+      "You need to see the workflow as a diagram.",
+      "Your process has branches, retries, or transformation steps.",
+      "You can test scenarios with controlled data and monitor runs."
+    ],
+    "not_fit": [
+      "You need a one-click automation with no maintenance.",
+      "You cannot inspect API permissions, data mapping, or error logs.",
+      "You have no owner for failed runs and changing SaaS APIs."
+    ],
+    "trial": [
+      "Draw one workflow with a branch, an error path, and a duplicate-data check.",
+      "Build a small version with test data and intentionally break one connection.",
+      "Confirm whether the failure is visible, recoverable, and logged.",
+      "Compare setup and maintenance time with a manual or simpler workflow."
+    ],
+    "checks": [
+      "Confirm current plan, operations, connector, and data terms on Make official pages.",
+      "Test permissions and rate limits before connecting production systems.",
+      "Document every transformation and keep an owner for ongoing maintenance."
+    ]
+  },
+  "gamma": {
+    "research_question": "Does Gamma shorten the path from outline to a presentable deck without compromising accuracy and accessibility?",
+    "best_job": "Turn a defined outline or source document into a fast first draft of a presentation or web document.",
+    "good_fit": [
+      "You already have an outline, audience, and source notes.",
+      "You need a visual first draft rather than a finished legal or financial document.",
+      "You can review hierarchy, claims, accessibility, and export format."
+    ],
+    "not_fit": [
+      "You need exact brand templates or detailed financial formatting.",
+      "You have no source material and expect the tool to invent a credible story.",
+      "You need an accessible, print-correct final file without manual review."
+    ],
+    "trial": [
+      "Take one real outline with a required conclusion, one chart, and one legal footnote.",
+      "Generate a draft and compare the time with building from an existing template.",
+      "Check source accuracy, hierarchy, contrast, chart labels, and mobile readability.",
+      "Export to the required format and fix anything that breaks in the handoff."
+    ],
+    "checks": [
+      "Confirm current plan, export, and data terms on Gamma official pages.",
+      "Verify every claim, chart, and quotation against the source.",
+      "Check accessibility and brand compliance before presenting or publishing."
+    ]
+  },
+  "fathom": {
+    "research_question": "Does Fathom produce meeting notes that are accurate enough to reduce follow-up work?",
+    "best_job": "Capture a structured meeting record and draft next steps while keeping consent, accuracy, and privacy controls visible.",
+    "good_fit": [
+      "You have consent to record and transcribe the call.",
+      "You need a searchable summary, decisions, and action items.",
+      "You will check names, commitments, and sensitive details before sharing."
+    ],
+    "not_fit": [
+      "You cannot obtain participant consent or use the required notice.",
+      "The meeting contains regulated or highly sensitive information that cannot be processed.",
+      "You need a decision record without human confirmation."
+    ],
+    "trial": [
+      "Run one low-risk call with a known agenda and three explicit action items.",
+      "Compare the summary with your own notes for names, dates, decisions, and omissions.",
+      "Check whether the tool captures uncertainty or turns guesses into commitments.",
+      "Review retention, sharing, and deletion settings before using it regularly."
+    ],
+    "checks": [
+      "Confirm current plans, recording rules, retention, and data terms on Fathom official pages.",
+      "Check local consent and workplace policy before recording.",
+      "Send the draft to participants for correction when commitments matter."
+    ]
+  },
+  "otter-ai": {
+    "research_question": "Does Otter.ai reduce note-taking effort without creating a transcript that is unsafe to share?",
+    "best_job": "Create searchable meeting transcripts and summaries when the meeting can be recorded with clear consent.",
+    "good_fit": [
+      "You need a searchable archive of recurring meetings.",
+      "Participants have consented and understand where the data is processed.",
+      "A human reviews action items and names before sharing."
+    ],
+    "not_fit": [
+      "The meeting includes confidential, legal, medical, or client-sensitive material without approval.",
+      "You need perfect speaker attribution with no cleanup.",
+      "You cannot record or store the meeting under local policy."
+    ],
+    "trial": [
+      "Record a short test meeting with two speakers, one acronym, and one action item.",
+      "Compare speaker labels, timestamps, names, and action items with a manual record.",
+      "Export the summary to the real destination and check formatting and permissions.",
+      "Decide whether the transcript is useful enough after cleanup to justify the privacy cost."
+    ],
+    "checks": [
+      "Confirm current plan, retention, sharing, and data terms on Otter official pages.",
+      "Obtain consent and check organizational policy before recording.",
+      "Treat automated action items as drafts until the owner confirms them."
+    ]
+  },
+  "intercom-fin": {
+    "research_question": "Can Intercom Fin resolve support conversations without creating unanswered or unsafe customer experiences?",
+    "best_job": "Deflect routine support questions when the knowledge base, escalation rules, and quality monitoring are mature.",
+    "good_fit": [
+      "You have well-maintained help content and measurable support categories.",
+      "You can define escalation, refund, privacy, and high-risk boundaries.",
+      "You will review transcripts and resolution quality continuously."
+    ],
+    "not_fit": [
+      "The knowledge base is thin, contradictory, or outdated.",
+      "You cannot test sensitive account, payment, or legal scenarios.",
+      "You want automation to replace accountability for customer outcomes."
+    ],
+    "trial": [
+      "Select twenty real support questions across simple, ambiguous, and high-risk categories.",
+      "Measure correct resolution, safe escalation, and hallucinated policy responses.",
+      "Test a customer request that should never be answered automatically.",
+      "Compare resolution quality and cost with the current support workflow."
+    ],
+    "checks": [
+      "Confirm current pricing, data, and deployment terms on Intercom official pages.",
+      "Test privacy, account access, and escalation paths before launch.",
+      "Keep human review and clear fallback paths for unresolved or sensitive cases."
+    ]
+  }
+}

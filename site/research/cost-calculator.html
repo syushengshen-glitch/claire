@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI tool cost calculator: subscription plus correction time | SignalShelf</title>
+  <meta name="description" content="Compare free and paid AI tool plans by including the hidden cost of correction time in a browser-based calculator.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://claire-mu.vercel.app/research/cost-calculator.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script>window.SIGNALSHELF_ADSENSE_CLIENT="ca-pub-1837836558769995";</script>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-shell header-inner">
+    <a class="brand" href="../index.html" aria-label="SignalShelf home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SignalShelf</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav" data-site-nav aria-label="Primary navigation">
+      <a href="../directory.html">Directory</a>
+      <a href="../guides/index.html">Guides</a>
+      <a href="../editorial-policy.html">Method</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header><main id="main"><section class="site-shell page-hero"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Research</a> / Cost calculator</nav><h1>AI tool cost calculator</h1><p>Compare the visible subscription price with the hidden cost of correction time. The calculation runs in your browser and does not send your numbers anywhere.</p></section><section class="site-shell section" style="padding-top:0"><div class="content-grid"><article class="content-card prose"><div class="callout"><strong>Use it with real work:</strong> enter one recurring task, the minutes it takes before correction, and the minutes you spend fixing the output. The calculator turns those assumptions into a monthly comparison, not a prediction.</div><form class="calculator-form" data-cost-form><div class="field-grid"><label>Recurring tasks per month<input type="number" min="0" step="1" value="20" data-cost-tasks></label><label>Minutes per task before correction<input type="number" min="0" step="1" value="25" data-cost-base-minutes></label><label>Correction minutes on free plan<input type="number" min="0" step="1" value="20" data-cost-free-correction></label><label>Correction minutes on paid plan<input type="number" min="0" step="1" value="7" data-cost-paid-correction></label><label>Loaded cost per hour<input type="number" min="0" step="1" value="35" data-cost-hourly></label><label>Subscription per seat per month<input type="number" min="0" step="1" value="20" data-cost-subscription></label><label>Seats<input type="number" min="1" step="1" value="1" data-cost-seats></label></div><button class="button" type="submit">Calculate monthly comparison</button></form><div class="calculator-result" data-cost-result aria-live="polite"><p>Enter your numbers and calculate.</p></div><h2 id="example">A clearly labelled example</h2><p>Suppose a task takes 25 minutes, the free plan adds 20 minutes of correction, the paid plan adds 7 minutes, the loaded hourly cost is $35, and the subscription is $20 per seat. At 20 tasks a month, the paid plan is worth testing only if the saved correction time and the subscription still leave a real surplus. The table below is an illustration, not a claim about any vendor.</p><div class="table-wrap"><table><thead><tr><th>Scenario</th><th>Effort</th><th>Monthly calculation</th></tr></thead><tbody><tr><td>Free plan</td><td>20 tasks × 45 minutes</td><td>15 hours × $35 = $525 in effort</td></tr><tr><td>Paid plan</td><td>20 tasks × 32 minutes + $20</td><td>10.7 hours × $35 + $20 = $394</td></tr><tr><td>Difference</td><td>Saved 4.3 hours</td><td>$131 lower estimated cost</td></tr></tbody></table></div><h2 id="limits">What this calculator cannot know</h2><ul><li>Your hourly cost may be a salary estimate, an opportunity cost, or a billing rate; choose one and state it.</li><li>Subscription prices, seat rules, credits, taxes, and overages change. Verify them on the vendor's official pricing page.</li><li>Correction time is variable and should be measured on your own task, not copied from a demo.</li><li>Privacy, quality, accessibility, and customer risk are not included in the financial result.</li></ul><h2 id="use">A safer decision rule</h2><ol><li>Run the free plan on one real, non-sensitive task.</li><li>Record the first usable result and every minute spent correcting it.</li><li>Repeat with the same input and scoring rule after a paid trial.</li><li>Keep the paid plan only when the saved correction time is repeatable and the total cost is lower after review.</li></ol></article><aside class="side-stack"><div class="side-panel"><h2>Formula used</h2><p><strong>Free monthly effort</strong><br>tasks × (base minutes + free correction minutes) ÷ 60 × hourly cost</p><p><strong>Paid monthly total</strong><br>subscription × seats + tasks × (base minutes + paid correction minutes) ÷ 60 × hourly cost</p></div><div class="side-panel compact"><h2>Privacy</h2><p>The calculator is client-side only. No values are stored or transmitted by SignalShelf.</p></div></aside></div></section></main><footer class="site-footer">
+  <div class="site-shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SignalShelf</span></a>
+        <p>An editorial index of AI tools, built around practical work and clearly labeled advertising.</p>
+      </div>
+      <div><h2>Explore</h2><a href="../directory.html">Tool directory</a><a href="../guides/index.html">Practical guides</a><a href="../research/index.html">Original research</a><a href="../editorial-policy.html">Editorial method</a></div>
+      <div><h2>Company</h2><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../terms.html">Terms</a></div>
+      <div><h2>Trust</h2><a href="../privacy.html">Privacy and cookies</a><a href="../disclosure.html">Affiliate disclosure</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> SignalShelf. Independent editorial project.</span><span>Some links may become affiliate links after disclosure.</span><button class="text-button" type="button" data-manage-consent>Privacy choices</button></div>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script></body>
+</html>

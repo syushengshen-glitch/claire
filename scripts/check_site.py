@@ -2,7 +2,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
 
-SITE = Path(r'C:\Users\syush\Documents\ChatGPT\廣告收入設定\site')
+SITE = Path(__file__).resolve().parents[1] / 'site'
 
 class Links(HTMLParser):
     def __init__(self):

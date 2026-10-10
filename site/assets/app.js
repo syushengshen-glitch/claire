@@ -115,5 +115,60 @@
     node.textContent = String(new Date().getFullYear());
   });
 
+  // AI 工具成本計算器：只用瀏覽器中的數字估算，不傳送資料。
+  const costForm = document.querySelector('[data-cost-form]');
+  if (costForm) {
+    const numberValue = (selector) => Number(costForm.querySelector(selector)?.value || 0);
+    const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+    const renderCost = () => {
+      const tasks = numberValue('[data-cost-tasks]');
+      const baseMinutes = numberValue('[data-cost-base-minutes]');
+      const freeCorrection = numberValue('[data-cost-free-correction]');
+      const paidCorrection = numberValue('[data-cost-paid-correction]');
+      const hourly = numberValue('[data-cost-hourly]');
+      const subscription = numberValue('[data-cost-subscription]');
+      const seats = numberValue('[data-cost-seats]');
+      const freeHours = tasks * (baseMinutes + freeCorrection) / 60;
+      const paidHours = tasks * (baseMinutes + paidCorrection) / 60;
+      const freeCost = freeHours * hourly;
+      const paidCost = subscription * seats + paidHours * hourly;
+      const difference = freeCost - paidCost;
+      const savedHours = freeHours - paidHours;
+      const result = costForm.parentElement?.querySelector('[data-cost-result]') || document.querySelector('[data-cost-result]');
+      if (!result) return;
+      const verdict = difference > 0
+        ? 'The paid plan is cheaper under these assumptions. Verify quality and privacy before subscribing.'
+        : 'The free plan is cheaper under these assumptions. A paid trial needs a quality or capacity reason that is not captured here.';
+      result.innerHTML = '<h3>Monthly comparison</h3><div class="result-grid"><div><strong>' + money.format(freeCost) + '</strong><span>Free plan effort cost</span></div><div><strong>' + money.format(paidCost) + '</strong><span>Paid plan total</span></div><div><strong>' + money.format(Math.abs(difference)) + '</strong><span>' + (difference >= 0 ? 'Estimated saving with paid plan' : 'Estimated extra cost with paid plan') + '</span></div></div><p><strong>' + savedHours.toFixed(1) + ' hours</strong> of correction effort are estimated to be saved each month. ' + verdict + '</p>';
+    };
+    costForm.addEventListener('input', renderCost);
+    costForm.addEventListener('submit', (event) => { event.preventDefault(); renderCost(); });
+    renderCost();
+  }
+
+  // 評估計分板：把主觀印象轉成可重複比較的七項分數。
+  const scoreForm = document.querySelector('[data-scorecard-form]');
+  if (scoreForm) {
+    const scoreInputs = [...scoreForm.querySelectorAll('[data-score]')];
+    const syncScores = () => scoreInputs.forEach((input) => {
+      const output = input.parentElement?.querySelector('output');
+      if (output) output.textContent = input.value;
+    });
+    const renderScore = (event) => {
+      if (event) event.preventDefault();
+      syncScores();
+      const total = scoreInputs.reduce((sum, input) => sum + Number(input.value), 0);
+      const max = scoreInputs.length * 4;
+      const band = total < 14 ? 'Do not subscribe yet' : total <= 21 ? 'Needs a narrower trial' : 'Paid-trial candidate';
+      const result = scoreForm.parentElement?.querySelector('[data-scorecard-result]') || document.querySelector('[data-scorecard-result]');
+      if (!result) return;
+      result.innerHTML = '<p><span class="score-band">' + band + '</span></p><h3>' + total + ' / ' + max + '</h3><p>This score is only valid for the task you tested. Record the date, input, correction time, and privacy review before making a purchase decision.</p>';
+    };
+    scoreInputs.forEach((input) => input.addEventListener('input', () => { syncScores(); }));
+    scoreForm.addEventListener('submit', renderScore);
+    scoreForm.addEventListener('reset', () => window.setTimeout(syncScores, 0));
+    syncScores();
+  }
+
   loadAdSense();
 })();
