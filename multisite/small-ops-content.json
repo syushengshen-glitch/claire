@@ -1,0 +1,1092 @@
+{
+  "brand": "Small Ops Lab",
+  "domain": "small-ops-lab.vercel.app",
+  "tagline": "Practical systems for freelancers and small studios.",
+  "description": "Templates, calculators, and step-by-step guides for client work, quoting, invoicing, delivery, and repeatable operations.",
+  "categories": [
+    {
+      "slug": "client-acquisition",
+      "name": "Client Acquisition",
+      "blurb": "Find qualified clients without spam, vague calls, or unpaid proposals."
+    },
+    {
+      "slug": "quotes-contracts",
+      "name": "Quotes & Contracts",
+      "blurb": "Price the real scope, protect the deposit, and spot risky terms before signing."
+    },
+    {
+      "slug": "invoicing-payments",
+      "name": "Invoicing & Payments",
+      "blurb": "Get paid on time with clear invoices, reminders, and change orders."
+    },
+    {
+      "slug": "project-delivery",
+      "name": "Project Delivery",
+      "blurb": "Run kickoffs, status updates, and handoffs that reduce surprises."
+    },
+    {
+      "slug": "automation-sops",
+      "name": "Automation & SOPs",
+      "blurb": "Turn repeated admin work into documented, testable workflows."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "find-first-five-clients-without-spam",
+      "category": "client-acquisition",
+      "title": "How to find your first five clients without cold-DM spam",
+      "dek": "A warm outreach system built on specific problems, proof, and a low-friction next step.",
+      "problem": "Most beginners send the same generic message to hundreds of strangers, then conclude that outreach does not work. The problem is usually the offer and the list, not the number of messages.",
+      "quick_answer": "Build a list of 30 people or businesses that already show a relevant problem, send a short message that references one observable detail, offer one small useful step, and track every reply in a simple follow-up board.",
+      "sections": [
+        {
+          "h": "Start with evidence, not a fantasy client list",
+          "p": "Collect prospects from places where a problem is visible: a broken booking flow, an outdated portfolio, a job post asking for exactly your skill, a local business with no online ordering, or a founder publicly asking for help. Write down the observable evidence next to the contact. If you cannot point to a reason this person might need help now, the message will read like a mass mailing."
+        },
+        {
+          "h": "Write an offer that can be accepted in one reply",
+          "p": "A first message should not ask for a 30-minute meeting. It should offer a small, concrete next step: a two-question audit, a one-page outline, a short Loom review, or a 15-minute fit check. State what you noticed, what you can help with, and what happens if they reply. Keep it under 120 words."
+        },
+        {
+          "h": "Use the three-touch sequence",
+          "p": "Touch one is the specific observation and offer. Touch two, three business days later, adds one useful idea or example. Touch three, five days after that, closes the loop politely and gives them an easy way to say not now. Do not send more than three touches without a reply, and never pretend the previous messages were not sent."
+        },
+        {
+          "h": "Track conversations, not vanity metrics",
+          "p": "A simple board with columns for prospect, evidence, next action, last contact, and outcome is enough. Track qualified replies, calls booked, proposals sent, and paid projects. Open rate is a weak signal in a small list; a reply that names a real problem is a strong signal."
+        },
+        {
+          "h": "Fix the offer before increasing volume",
+          "p": "If 20 qualified prospects produce no replies, change the problem you are targeting, the proof you show, or the size of the first step. Do not buy a bigger list. A small number of relevant, well-researched conversations produces better clients than hundreds of generic messages."
+        }
+      ],
+      "example": {
+        "title": "A short first-touch message",
+        "lines": [
+          "Subject: Quick note about your booking page",
+          "Hi Maya — I noticed the booking page asks for a phone number but no preferred time window, which usually creates email ping-pong. I build small scheduling fixes for service businesses. If useful, I can send a two-minute outline of the change I would test first. No call needed to see it.",
+          "— Alex"
+        ]
+      },
+      "checklist": [
+        "Can I point to one observable problem for this prospect?",
+        "Is the first step small enough to accept without a meeting?",
+        "Does the message state who I help and what I do?",
+        "Have I scheduled the two follow-ups before sending?",
+        "Am I tracking replies and outcomes, not just sends?"
+      ],
+      "mistakes": [
+        "Sending the same message to everyone and calling it personalization because the name changes.",
+        "Leading with your life story instead of the prospect problem.",
+        "Asking for a 30-minute call before offering any value.",
+        "Following up forever instead of closing the loop after three touches."
+      ],
+      "faq": [
+        {
+          "q": "How many prospects should I contact each week?",
+          "a": "Start with 15 to 30 well-researched prospects. Quality matters more than volume when you are still learning which message produces qualified replies."
+        },
+        {
+          "q": "Should I use a CRM?",
+          "a": "A spreadsheet is enough for the first 50 conversations. Move to a CRM when follow-ups, notes, and multiple people on the team become hard to manage."
+        },
+        {
+          "q": "Is cold email allowed?",
+          "a": "Follow the laws and platform rules that apply to you. This guide focuses on relevant business-to-business outreach with a clear opt-out, not bulk spam."
+        }
+      ],
+      "tool": "outreach-tracker",
+      "related": [
+        "discovery-call-question-script",
+        "referral-request-email-that-works"
+      ]
+    },
+    {
+      "slug": "discovery-call-question-script",
+      "category": "client-acquisition",
+      "title": "A discovery-call script that exposes budget, deadline, and decision-maker",
+      "dek": "Ask better questions, disqualify bad fits early, and leave the call with a clear next step.",
+      "problem": "A friendly call can end with enthusiasm but no budget, no deadline, and no decision process. That is not a sales problem; it is a discovery problem.",
+      "quick_answer": "Use a structured call sheet: current situation, desired outcome, consequence of doing nothing, constraints, budget range, decision process, and next step. Ask, listen, and write down exact words.",
+      "sections": [
+        {
+          "h": "Open with the outcome of the call",
+          "p": "Explain that the goal is to understand whether you are a fit, not to pressure anyone. Ask permission to take notes and to ask a few direct questions. This reduces defensiveness and makes budget and timeline questions feel normal rather than intrusive."
+        },
+        {
+          "h": "Map the current situation and the cost of waiting",
+          "p": "Ask what happens today, who is affected, and what they have already tried. Then ask what happens if the problem stays unresolved for another quarter. A real cost of waiting can be lost revenue, wasted staff time, missed deadlines, compliance risk, or a stalled launch."
+        },
+        {
+          "h": "Ask for a range, not a number",
+          "p": "Instead of asking “What is your budget?”, ask “What range have you set aside for this, and what would make the upper end worthwhile?” If they have no range, ask what similar work has cost before and who approves the spend. A prospect who refuses every budget question is a high-risk proposal."
+        },
+        {
+          "h": "Identify the decision process",
+          "p": "Ask who else needs to agree, what evidence they need, and what happens after the call. If the person on the call cannot approve the work, ask to include the decision-maker before writing a detailed proposal. This single question prevents most unpaid proposal work."
+        },
+        {
+          "h": "Close with one specific next step",
+          "p": "End with a summary in their words, the decision date, and the smallest next step: a written scope, a paid discovery session, a sample, or a second call with the approver. Send the summary the same day so the conversation does not drift."
+        }
+      ],
+      "example": {
+        "title": "Call summary email",
+        "lines": [
+          "Hi Sam — thanks for the call. What I heard: the current intake form loses about 20% of requests, the new site must launch before the October campaign, and Maya approves the final budget. You asked for a fixed-scope proposal with two payment milestones. I will send a one-page scope by Thursday and include the two open questions we listed.",
+          "Next step: review the scope by Monday, then decide whether to book the build week."
+        ]
+      },
+      "checklist": [
+        "Did I learn the current situation in their words?",
+        "Did I ask what happens if nothing changes?",
+        "Do I know the budget range and who approves it?",
+        "Is the deadline tied to a real event?",
+        "Did I confirm one specific next step and date?"
+      ],
+      "mistakes": [
+        "Pitching for most of the call instead of asking questions.",
+        "Writing a detailed proposal before confirming budget and authority.",
+        "Accepting “sometime next quarter” as a deadline.",
+        "Ending without a written summary and a decision date."
+      ],
+      "faq": [
+        {
+          "q": "How long should a discovery call be?",
+          "a": "Twenty to thirty minutes is enough if you have a structured sheet. Longer calls usually mean the scope or decision process is unclear."
+        },
+        {
+          "q": "What if the prospect refuses to discuss budget?",
+          "a": "Offer a paid discovery step or a narrow range of options. If there is still no budget signal or decision process, decline the proposal politely."
+        },
+        {
+          "q": "Should I record the call?",
+          "a": "Only with consent and a clear reason. A written summary is usually safer, easier to correct, and sufficient for a small project."
+        }
+      ],
+      "tool": "discovery-call-sheet",
+      "related": [
+        "find-first-five-clients-without-spam",
+        "quote-fixed-price-without-scope-creep"
+      ]
+    },
+    {
+      "slug": "referral-request-email-that-works",
+      "category": "client-acquisition",
+      "title": "The referral request email that asks for a specific introduction",
+      "dek": "Turn a happy client into one warm introduction without making the request awkward.",
+      "problem": "“Let me know if you know anyone” rarely produces a referral because it puts the thinking and the risk on the client.",
+      "quick_answer": "Ask after a specific win, describe the exact person you help, give the client a forwardable message, and make it easy to say no.",
+      "sections": [
+        {
+          "h": "Ask at the moment of proof",
+          "p": "The best time is right after a result the client can see: a launch that worked, a process that saved time, a report that was accepted, or a problem that stopped recurring. Reference that result so the request feels earned rather than random."
+        },
+        {
+          "h": "Describe one person, not a category",
+          "p": "“Anyone who needs marketing” is too broad. Say “a two-person design studio that keeps losing time on manual client onboarding” or “a local clinic that wants online booking without adding a receptionist.” Specific descriptions are easier to remember and pass along."
+        },
+        {
+          "h": "Write the forwardable message",
+          "p": "Give the client three sentences they can copy: who you help, what problem you solve, and what a first conversation looks like. Remove the burden of writing. Make it clear that there is no obligation and no commission involved."
+        },
+        {
+          "h": "Make saying no easy",
+          "p": "Add a simple opt-out: “If no one comes to mind, no problem at all.” This protects the relationship and makes future requests more likely. Never imply that the referral is expected as part of the project."
+        },
+        {
+          "h": "Follow up once with a useful update",
+          "p": "If they do not reply, send one short update with a new result or a relevant resource. Do not ask again in the same message. If a referral arrives, thank the client and report back on the outcome without sharing confidential details."
+        }
+      ],
+      "example": {
+        "title": "Forwardable referral paragraph",
+        "lines": [
+          "I work with small service businesses that lose leads because their intake process depends on phone tag. I map the current flow, fix the highest-friction step, and leave a documented process the team can run. If that sounds relevant, the first step is a short call to check fit.",
+          "No pressure either way — I appreciate the work we did together regardless."
+        ]
+      },
+      "checklist": [
+        "Am I asking after a visible result?",
+        "Did I name one specific type of client?",
+        "Is the forwardable message short enough to copy?",
+        "Did I make it easy to decline?",
+        "Will I report back on the outcome?"
+      ],
+      "mistakes": [
+        "Asking for a referral before delivering a result.",
+        "Offering a vague category instead of a specific person.",
+        "Asking the client to write the introduction from scratch.",
+        "Following up repeatedly after a clear no."
+      ],
+      "faq": [
+        {
+          "q": "Should I offer a referral fee?",
+          "a": "Only if it is legal and clearly disclosed. Many small clients are more comfortable with a simple thank-you; a fee can make the relationship feel transactional."
+        },
+        {
+          "q": "When should I ask?",
+          "a": "After a delivered result and a positive check-in. Avoid asking during an unresolved problem or a tense project moment."
+        },
+        {
+          "q": "What if they refer someone who is not a fit?",
+          "a": "Thank them, explain the mismatch clearly, and offer to suggest someone better suited. Protect the relationship with the referrer."
+        }
+      ],
+      "tool": "referral-email-builder",
+      "related": [
+        "find-first-five-clients-without-spam",
+        "weekly-client-status-update"
+      ]
+    },
+    {
+      "slug": "quote-fixed-price-without-scope-creep",
+      "category": "quotes-contracts",
+      "title": "How to quote a fixed-price project without absorbing unlimited revisions",
+      "dek": "A repeatable quoting method that prices discovery, revisions, assumptions, and change control.",
+      "problem": "A fixed price is not dangerous by itself. The danger is quoting before the scope, revision limit, assumptions, and change process are defined.",
+      "quick_answer": "Quote the smallest complete outcome, list what is included and excluded, cap revisions, state the client responsibilities, and price any new request through a change order.",
+      "sections": [
+        {
+          "h": "Define the finished outcome before pricing",
+          "p": "Write one sentence that describes what will exist when the project is done: a five-page site, a 30-second video, a monthly report, a working booking flow. If the outcome needs three adjectives and two commas, it is not defined enough to quote."
+        },
+        {
+          "h": "Separate discovery from production",
+          "p": "Charge for the work that reduces uncertainty: stakeholder interviews, content audit, technical review, or a small prototype. A paid discovery step produces a better quote and prevents the client from treating your estimate as a free research project."
+        },
+        {
+          "h": "Cap revisions in the quote, not in a late email",
+          "p": "State the number of revision rounds, what counts as a revision, and how long the client has to respond. A revision changes the current approved direction; a new requirement, new audience, or new deliverable is a change request."
+        },
+        {
+          "h": "Price assumptions and client responsibilities",
+          "p": "List what the client must provide and by when: copy, images, access, feedback, legal review, or a decision-maker. If those inputs arrive late, state how the timeline and price are affected. This turns a future argument into a documented assumption."
+        },
+        {
+          "h": "Use a change order with a range and a decision",
+          "p": "When scope changes, pause work, describe the request, estimate the additional time and cost, and offer two options: add the change, or keep the original scope and log the request. Do not continue working and hope to negotiate later."
+        }
+      ],
+      "example": {
+        "title": "Scope boundary language",
+        "lines": [
+          "Included: five responsive pages, one content-editing session, two revision rounds, and a launch checklist.",
+          "Not included: copywriting, photography, paid ads, third-party subscription fees, and new page templates.",
+          "Client responsibilities: approve the sitemap within three business days and provide final copy before the build week.",
+          "Any request that changes the page count, audience, or approval path will be estimated separately before work starts."
+        ]
+      },
+      "checklist": [
+        "Can I describe the finished outcome in one sentence?",
+        "Have I listed what is excluded as clearly as what is included?",
+        "Is the revision limit and response time written down?",
+        "Are client responsibilities tied to dates?",
+        "Does every new request go through a change order?"
+      ],
+      "mistakes": [
+        "Quoting a broad category instead of a finished deliverable.",
+        "Leaving revisions unlimited because the client seems reasonable.",
+        "Absorbing a change to avoid an awkward conversation.",
+        "Forgetting third-party costs, taxes, travel, or subscription fees."
+      ],
+      "faq": [
+        {
+          "q": "Is fixed-price work always riskier than hourly?",
+          "a": "No. Fixed price works when scope, assumptions, and change control are explicit. Hourly work can also become risky if the client has no decision process."
+        },
+        {
+          "q": "How many revision rounds should I include?",
+          "a": "Two rounds is a common starting point for small projects. The important part is defining what a round includes and what happens next."
+        },
+        {
+          "q": "What if the client refuses change orders?",
+          "a": "That is a scope-risk signal. Either narrow the original promise, move to a time-and-materials agreement, or decline the project."
+        }
+      ],
+      "tool": "quote-builder",
+      "related": [
+        "deposit-and-payment-schedule",
+        "contract-red-flags-for-small-projects"
+      ]
+    },
+    {
+      "slug": "deposit-and-payment-schedule",
+      "category": "quotes-contracts",
+      "title": "Deposit and payment schedule patterns for small projects",
+      "dek": "Choose a deposit, milestones, and final payment that protect both cash flow and trust.",
+      "problem": "A large deposit can scare away a good client, while no deposit can leave you financing the project. The right schedule matches the risk and the delivery timeline.",
+      "quick_answer": "Use a deposit that covers mobilization, tie later payments to visible milestones, keep a final payment before final handoff, and write the schedule into the quote.",
+      "sections": [
+        {
+          "h": "The deposit pays for starting, not for trust",
+          "p": "A deposit covers the work required before the first deliverable: planning, scheduling, setup, research, or reserved capacity. Explain that reason in the quote instead of treating the deposit as a test of the client."
+        },
+        {
+          "h": "Match payments to visible progress",
+          "p": "Think in milestones the client can see: approval of the direction, delivery of the first draft, completion of the build, or launch readiness. Avoid dates that are disconnected from a deliverable, because they turn into collection calls."
+        },
+        {
+          "h": "Keep the final payment before final handoff",
+          "p": "For small projects, release source files, admin access, or the final export after the final payment clears. Say this before the project starts. Do not hold a client’s live business hostage over a disputed extra; separate the dispute from the handoff."
+        },
+        {
+          "h": "Handle long projects with a monthly rhythm",
+          "p": "For retainers or multi-month work, bill on a schedule: monthly in advance, every two weeks, or per sprint. State what happens if work is paused by the client and whether unused hours roll over."
+        },
+        {
+          "h": "Write the schedule where the client will see it",
+          "p": "Put the payment amounts, triggers, due dates, accepted methods, and late-payment terms in the quote and the contract. A payment schedule buried in an email will be forgotten."
+        }
+      ],
+      "example": {
+        "title": "Three-payment schedule",
+        "lines": [
+          "40% deposit — reserves the build week and covers discovery.",
+          "30% at approved design direction — starts production.",
+          "30% before final handoff — releases source files, access, and launch support."
+        ]
+      },
+      "checklist": [
+        "Does the deposit cover the work before the first milestone?",
+        "Is every payment tied to a visible deliverable?",
+        "Is the final payment collected before final handoff?",
+        "Are paused projects and unused hours addressed?",
+        "Is the schedule in both the quote and the contract?"
+      ],
+      "mistakes": [
+        "Starting work with no deposit because the client seems friendly.",
+        "Tying payments to calendar dates that do not match progress.",
+        "Delivering all files before the final payment clears.",
+        "Changing the schedule mid-project without updating the agreement."
+      ],
+      "faq": [
+        {
+          "q": "What deposit percentage is normal?",
+          "a": "Small projects often use 30% to 50%. The right number depends on your setup costs, project length, and the client’s payment process."
+        },
+        {
+          "q": "Should I offer a discount for full prepayment?",
+          "a": "Only if the discount is already priced into your numbers and your cash flow can handle the risk. Do not discount to avoid a payment conversation."
+        },
+        {
+          "q": "Can I charge interest on late payments?",
+          "a": "Only where the law, contract, and client agreement allow it. Use a clear late fee or service pause instead of an unexpected penalty."
+        }
+      ],
+      "tool": "payment-schedule-calculator",
+      "related": [
+        "quote-fixed-price-without-scope-creep",
+        "late-payment-policy-clients-understand"
+      ]
+    },
+    {
+      "slug": "contract-red-flags-for-small-projects",
+      "category": "quotes-contracts",
+      "title": "Contract review checklist: 12 red flags before you sign",
+      "dek": "A plain-language checklist for scope, payment, ownership, termination, and liability.",
+      "problem": "Small projects are often won with a short proposal and a friendly email. That is fine until a payment, ownership, or termination dispute appears.",
+      "quick_answer": "Check the scope, payment trigger, revision limit, ownership, confidentiality, termination, liability, and dispute terms before signing. If a clause is unclear, ask for plain language.",
+      "sections": [
+        {
+          "h": "Scope and acceptance",
+          "p": "The contract should define the deliverable, the acceptance criteria, the revision limit, and how changes are approved. “To the client’s satisfaction” is not an acceptance criterion; it is an unlimited obligation. Replace it with a review period and a specific approval step."
+        },
+        {
+          "h": "Payment and suspension",
+          "p": "Look for the deposit, milestone triggers, due dates, accepted payment methods, late fees, and what happens if the client delays feedback or payment. You need the right to pause work when an invoice is overdue without being in breach of contract."
+        },
+        {
+          "h": "Ownership and portfolio rights",
+          "p": "Clarify when ownership transfers, what happens to drafts and source files, and whether you can show the work in a portfolio. Do not assign all intellectual property before final payment without a clear reason."
+        },
+        {
+          "h": "Termination and liability",
+          "p": "Check the notice period, payment for work completed, kill fee, and what happens to third-party costs. Review whether liability is capped and whether indemnity clauses are mutual or one-sided. This is not legal advice; use a qualified professional for high-risk contracts."
+        },
+        {
+          "h": "Ask for the change before signing",
+          "p": "List the unclear clauses in writing, propose plain-language alternatives, and keep the response. A client who refuses every reasonable clarification is showing you how the project will go."
+        }
+      ],
+      "example": {
+        "title": "Plain-language alternative",
+        "lines": [
+          "Instead of: “Contractor assigns all work product upon creation.”",
+          "Use: “Ownership transfers to Client when the final invoice is paid. Contractor retains the right to display the work in a portfolio unless a written confidentiality agreement says otherwise.”"
+        ]
+      },
+      "checklist": [
+        "Is the deliverable and acceptance step specific?",
+        "Are revisions limited and defined?",
+        "Are payment triggers and late-payment rights clear?",
+        "Does ownership transfer only after payment?",
+        "Is termination payment addressed?",
+        "Is liability capped and understandable?"
+      ],
+      "mistakes": [
+        "Signing a template without reading the termination and ownership clauses.",
+        "Accepting “satisfaction” or “reasonable” as the only acceptance standard.",
+        "Allowing unlimited changes without a change process.",
+        "Assuming a friendly email chain will protect you later."
+      ],
+      "faq": [
+        {
+          "q": "Can I use a free contract template?",
+          "a": "A template can be a starting point, but it must match your jurisdiction, project risk, and business structure. For high-value or regulated work, have a professional review it."
+        },
+        {
+          "q": "What if the client will not sign a contract?",
+          "a": "Use a written proposal with the same scope and payment terms, and decide whether the risk is acceptable. For significant projects, a signed agreement is a reasonable requirement."
+        },
+        {
+          "q": "Should I include a kill fee?",
+          "a": "A kill fee compensates for reserved capacity and work completed if the client cancels early. The amount should match your actual risk, not a punitive number."
+        }
+      ],
+      "tool": "contract-red-flag-checklist",
+      "related": [
+        "quote-fixed-price-without-scope-creep",
+        "scope-change-invoice-without-losing-client"
+      ]
+    },
+    {
+      "slug": "invoice-follow-up-sequence",
+      "category": "invoicing-payments",
+      "title": "Invoice follow-up sequence: day 1, day 7, day 14, day 30",
+      "dek": "A calm reminder system that protects the relationship and the cash flow.",
+      "problem": "Most overdue invoices are not a legal problem yet. They are an attention problem, a process problem, or a sign that the original payment terms were unclear.",
+      "quick_answer": "Send a friendly confirmation when the invoice is issued, a neutral reminder after the due date, a firmer reminder with a new deadline, and a final notice that explains the next step.",
+      "sections": [
+        {
+          "h": "Before the invoice: remove avoidable delays",
+          "p": "Confirm the client’s legal entity, billing contact, purchase-order requirement, and preferred invoice format before the work starts. A perfect reminder sequence cannot fix an invoice sent to the wrong system."
+        },
+        {
+          "h": "Day 0: send the invoice with a clear reference",
+          "p": "State the project name, invoice number, amount, due date, payment method, and the person to contact with a question. Attach the timesheet, milestone evidence, or deliverable reference so the client does not need to ask for proof."
+        },
+        {
+          "h": "Day 1 after due: assume a process delay",
+          "p": "Use a short, neutral message: “The invoice was due yesterday. Has it reached the right queue, or do you need anything from me to process it?” This gives an administrative contact an easy way to help without escalating to a conflict."
+        },
+        {
+          "h": "Day 7: add a new decision date",
+          "p": "Repeat the invoice details, state the new date, and ask who can confirm payment. If work is ongoing, state clearly whether it will pause if the invoice remains unpaid. Keep the wording factual and avoid sarcasm."
+        },
+        {
+          "h": "Day 14 and day 30: escalate the process, not the emotion",
+          "p": "At day 14, copy the agreed late-payment policy and ask for a payment date in writing. At day 30, send a final notice that states the next step, such as pausing work, involving a collections process, or ending future delivery. Do not threaten anything you are not prepared to do."
+        }
+      ],
+      "example": {
+        "title": "Day 7 reminder",
+        "lines": [
+          "Subject: Invoice 1042 — new payment date",
+          "Hi Maya, Invoice 1042 for $2,400 was due on October 5. I have not seen payment or a processing note yet. Could you confirm whether it is scheduled, and by what date? If the invoice needs a purchase order or a different billing contact, tell me and I will resend it today."
+        ]
+      },
+      "checklist": [
+        "Is the invoice sent to the correct billing system?",
+        "Does it include a PO or project reference?",
+        "Are the due date and payment method obvious?",
+        "Does the follow-up ask for a specific action?",
+        "Does the final notice match the written policy?"
+      ],
+      "mistakes": [
+        "Waiting a month before the first reminder.",
+        "Writing an angry message before checking the billing process.",
+        "Threatening collections you will not actually use.",
+        "Continuing new work while the account is overdue without a decision."
+      ],
+      "faq": [
+        {
+          "q": "How soon after the due date should I follow up?",
+          "a": "One business day after the due date is reasonable. It catches administrative delays early and keeps the tone neutral."
+        },
+        {
+          "q": "Should I pause work when an invoice is late?",
+          "a": "If the contract or policy allows it, pause new work after a clear warning. Continue only if there is a written payment commitment and the risk is acceptable."
+        },
+        {
+          "q": "Can I automate these reminders?",
+          "a": "Yes, but keep the messages short and personal enough to answer a question. Automation should trigger the reminder, not remove the ability to respond."
+        }
+      ],
+      "tool": "invoice-followup-generator",
+      "related": [
+        "late-payment-policy-clients-understand",
+        "scope-change-invoice-without-losing-client"
+      ]
+    },
+    {
+      "slug": "late-payment-policy-clients-understand",
+      "category": "invoicing-payments",
+      "title": "How to write a late-payment policy clients actually understand",
+      "dek": "Set expectations before the first invoice, not after the first missed payment.",
+      "problem": "A late-payment policy buried in a contract is easy to ignore. A policy explained in plain language is easier to accept and easier to enforce.",
+      "quick_answer": "State the due date, grace period, late fee or service pause, who to contact, and what happens if the invoice is disputed. Put the same wording in the quote, invoice, and contract.",
+      "sections": [
+        {
+          "h": "Start with the payment norm, not the penalty",
+          "p": "Tell the client how invoices work: when they are issued, how long they have to pay, and which contact handles questions. Most clients are not trying to avoid payment; they are trying to fit your invoice into their process."
+        },
+        {
+          "h": "Use one clear consequence",
+          "p": "Choose the consequence you will actually apply: a late fee, a pause on new work, a removal of the early-payment discount, or a collections step. Do not list five threats you will never use."
+        },
+        {
+          "h": "Explain the grace period",
+          "p": "A short grace period prevents unnecessary conflict when a payment is a few days late. Write the exact number of days and what happens after it ends. If you charge a late fee, state whether it is a flat amount or a percentage and where the law allows it."
+        },
+        {
+          "h": "Separate a dispute from a delay",
+          "p": "Tell the client to contact you immediately if something is wrong with the invoice. A disputed line item should pause the dispute process, not the undisputed portion. This protects the relationship and keeps cash flowing."
+        },
+        {
+          "h": "Repeat the policy in the right places",
+          "p": "Put a short version in the quote, a reminder line on the invoice, and the full version in the contract. Consistent wording makes the policy feel like a normal process rather than a sudden ultimatum."
+        }
+      ],
+      "example": {
+        "title": "Plain-language policy block",
+        "lines": [
+          "Invoices are due within 14 calendar days. If payment is not received after a 3-day grace period, new work may pause until the account is current. If a line item is disputed, contact billing@example.com within 5 days so we can review it while the undisputed balance is paid."
+        ]
+      },
+      "checklist": [
+        "Is the due date and grace period exact?",
+        "Is the consequence one you will actually apply?",
+        "Is there a clear billing contact?",
+        "Are disputes handled separately from delays?",
+        "Does the quote, invoice, and contract use the same wording?"
+      ],
+      "mistakes": [
+        "Writing a punitive policy you are afraid to enforce.",
+        "Changing the terms after the first missed payment.",
+        "Hiding the policy in the last paragraph of a contract.",
+        "Treating a legitimate dispute as a late payment."
+      ],
+      "faq": [
+        {
+          "q": "Are late fees legal?",
+          "a": "Rules vary by jurisdiction and contract type. Check the law that applies to you and keep the fee reasonable and disclosed. This is not legal advice."
+        },
+        {
+          "q": "Should the policy be in the proposal or the contract?",
+          "a": "Put a short summary in the proposal and the full terms in the contract. The invoice should include the due date and the billing contact."
+        },
+        {
+          "q": "What if a long-term client pays late every time?",
+          "a": "Review the payment terms, switch to prepayment or shorter milestones, or decide whether the client is still profitable after the collection effort."
+        }
+      ],
+      "tool": "payment-terms-builder",
+      "related": [
+        "invoice-follow-up-sequence",
+        "deposit-and-payment-schedule"
+      ]
+    },
+    {
+      "slug": "scope-change-invoice-without-losing-client",
+      "category": "invoicing-payments",
+      "title": "How to invoice a scope change without losing the client",
+      "dek": "Turn an awkward request into a documented decision with a clear price and timeline.",
+      "problem": "Scope changes often arrive as casual requests: “Can we also add…?” If the request is absorbed, the project margin disappears. If it is refused bluntly, the relationship suffers.",
+      "quick_answer": "Acknowledge the request, restate the original scope, describe the impact, offer two options, and ask for a written decision before work continues.",
+      "sections": [
+        {
+          "h": "Respond before you start the extra work",
+          "p": "When a new request arrives, thank the client for the idea and say you will check the impact on scope, timeline, and cost. This small pause prevents you from doing unpaid work while you decide how to price it."
+        },
+        {
+          "h": "Show the original boundary",
+          "p": "Quote the relevant line from the signed scope or quote. This is not an accusation; it is a reminder. “The current scope includes two revision rounds and five pages; this request adds a new page template and a content migration.”"
+        },
+        {
+          "h": "Quantify the impact in client language",
+          "p": "Translate the change into additional hours, a new deadline, a dependency, or a risk. If the client cares about launch date, say what the change does to launch date. If they care about budget, show the additional cost."
+        },
+        {
+          "h": "Offer two real options",
+          "p": "Option A: add the change with a price and a new deadline. Option B: keep the original scope and log the request for a phase two. A third option can be a smaller version of the request that fits the current budget. Avoid an open-ended “we will figure it out later.”"
+        },
+        {
+          "h": "Get approval in writing and update the invoice",
+          "p": "Ask the client to reply with the chosen option and the approval. Then issue a change order or an updated invoice before the work starts. If the client delays the decision, keep the original timeline and scope."
+        }
+      ],
+      "example": {
+        "title": "Change-order email",
+        "lines": [
+          "Thanks for the request. The current quote covers five pages and two revision rounds. Adding a sixth page with a booking form requires about six extra hours and moves the launch by three business days. Option A: add it for $900 and move the launch to October 24. Option B: keep the current scope and plan the booking page for phase two. Reply with A or B and I will update the schedule."
+        ]
+      },
+      "checklist": [
+        "Did I pause before doing the extra work?",
+        "Did I quote the original scope accurately?",
+        "Did I describe the impact in time, cost, and risk?",
+        "Did I offer a real alternative?",
+        "Do I have written approval before starting?"
+      ],
+      "mistakes": [
+        "Absorbing the change to avoid conflict.",
+        "Saying no without offering an alternative.",
+        "Giving a verbal estimate that the client treats as final.",
+        "Starting the work before the change order is approved."
+      ],
+      "faq": [
+        {
+          "q": "What if the change is small?",
+          "a": "Small changes still consume time. Use a light change log for minor items and a formal change order when the cost or timeline impact is material."
+        },
+        {
+          "q": "Can I bundle changes into one invoice?",
+          "a": "Yes, if each change is itemized and approved. A bundled invoice without descriptions makes future disputes harder to resolve."
+        },
+        {
+          "q": "What if the client refuses to pay for the change?",
+          "a": "Do not start the work. Keep the original scope and document the decision. If the relationship is otherwise good, offer a future phase instead of an unpaid exception."
+        }
+      ],
+      "tool": "change-order-generator",
+      "related": [
+        "quote-fixed-price-without-scope-creep",
+        "invoice-follow-up-sequence"
+      ]
+    },
+    {
+      "slug": "project-kickoff-checklist",
+      "category": "project-delivery",
+      "title": "Project kickoff checklist: 18 items to confirm before work starts",
+      "dek": "Set the goal, owners, inputs, and decisions before the first hour of production.",
+      "problem": "Projects rarely fail because nobody knows how to do the work. They fail because the goal, owner, inputs, or decision path was never confirmed.",
+      "quick_answer": "Run a 45-minute kickoff that confirms the outcome, scope, owners, inputs, milestones, communication rhythm, and change process. Send the written summary the same day.",
+      "sections": [
+        {
+          "h": "Confirm the outcome in one sentence",
+          "p": "Ask the client to state what success looks like and who will judge it. Write the answer in their words. If two stakeholders describe different outcomes, resolve that before production; otherwise you will build two projects."
+        },
+        {
+          "h": "Name every owner and input",
+          "p": "List who approves the direction, who provides content or access, who answers technical questions, and who signs off on completion. For each input, add a due date. An unowned input is a future delay."
+        },
+        {
+          "h": "Map the milestones and the decision gates",
+          "p": "Define the sequence of visible milestones and the decision required at each one. A milestone is not “work continues”; it is a deliverable that can be approved, rejected, or revised."
+        },
+        {
+          "h": "Agree on the communication rhythm",
+          "p": "Decide where updates live, how often they are sent, who receives them, and what counts as urgent. A weekly written update plus a shared task board prevents most surprise meetings."
+        },
+        {
+          "h": "Restate scope, change control, and next steps",
+          "p": "Close by repeating what is included, what is excluded, how changes are approved, and the first three tasks with owners and dates. Send the summary within one business day and ask for corrections."
+        }
+      ],
+      "example": {
+        "title": "Kickoff summary skeleton",
+        "lines": [
+          "Outcome: a five-page site that can take bookings without phone tag.",
+          "Owners: Maya approves design, Sam provides final copy, Alex owns build.",
+          "Milestones: sitemap approved Oct 8; design direction Oct 12; build complete Oct 20.",
+          "Rhythm: written update every Friday; urgent issues by email with URGENT in the subject.",
+          "Change control: new pages or integrations are quoted before work begins."
+        ]
+      },
+      "checklist": [
+        "Is the outcome written in the client’s words?",
+        "Does every input have an owner and a date?",
+        "Is each milestone a visible deliverable?",
+        "Is the communication rhythm agreed?",
+        "Are scope and change control restated in writing?"
+      ],
+      "mistakes": [
+        "Starting production before the decision-maker is identified.",
+        "Leaving content, access, or approvals without owners.",
+        "Using vague milestones such as “work continues.”",
+        "Skipping the written kickoff summary."
+      ],
+      "faq": [
+        {
+          "q": "How long should a kickoff take?",
+          "a": "Forty-five minutes is enough for a small project if you prepare the checklist. Complex projects may need a separate discovery workshop."
+        },
+        {
+          "q": "What if the client cannot join?",
+          "a": "Reschedule or require a written answer to the checklist. Starting without the decision-maker creates avoidable rework."
+        },
+        {
+          "q": "Should I record the kickoff?",
+          "a": "Only with consent. A written summary with owners and dates is usually more useful and easier to correct."
+        }
+      ],
+      "tool": "kickoff-agenda-builder",
+      "related": [
+        "weekly-client-status-update",
+        "project-handoff-and-closeout"
+      ]
+    },
+    {
+      "slug": "weekly-client-status-update",
+      "category": "project-delivery",
+      "title": "Weekly client status update that reduces surprise meetings",
+      "dek": "A short, repeatable update that makes progress, blockers, and decisions visible.",
+      "problem": "Clients ask for more meetings when they cannot see progress, blockers, or the next decision. A predictable written update solves most of that problem.",
+      "quick_answer": "Send a five-part update every week: progress since last week, next week, blockers, decisions needed, and budget or timeline status.",
+      "sections": [
+        {
+          "h": "Lead with the status, not the story",
+          "p": "Start with one line: on track, at risk, or blocked. Clients should not have to read three paragraphs to discover that a deadline moved. If the status changed, explain the cause and the recovery plan."
+        },
+        {
+          "h": "Report progress the client can verify",
+          "p": "Link to the deliverable, the task board, or the approval. “Worked on the site” is not a status. “Homepage draft is ready for review; booking flow is next” is verifiable."
+        },
+        {
+          "h": "Separate blockers from work in progress",
+          "p": "List anything waiting on the client, a vendor, or a decision. Add the owner and the impact if the blocker is not resolved by a date. Do not hide a blocker to look efficient; it will surface later with more cost."
+        },
+        {
+          "h": "Make the decision request explicit",
+          "p": "Ask for one decision at a time, with a recommended option and a deadline. Attach the evidence needed to decide. If no decision is needed, say “no decision needed this week,” which reduces unnecessary replies."
+        },
+        {
+          "h": "Keep budget and timeline visible",
+          "p": "Add a simple line for time or budget used and the forecast to completion. A small variance early is easier to discuss than a large overrun at the end. If the forecast changed, explain what changed it."
+        }
+      ],
+      "example": {
+        "title": "Weekly update template",
+        "lines": [
+          "Status: on track.",
+          "Done: sitemap approved; homepage draft ready for review.",
+          "Next: booking page build; need final copy by Wednesday.",
+          "Blockers: waiting on logo files (Sam, due Tuesday).",
+          "Decisions: choose booking provider A or B by Thursday — recommendation is A for lower setup cost.",
+          "Budget: 18 of 40 hours used; forecast remains 40 hours."
+        ]
+      },
+      "checklist": [
+        "Does the first line state on track, at risk, or blocked?",
+        "Can the client verify the progress through a link or deliverable?",
+        "Does every blocker have an owner and a date?",
+        "Is the decision request specific and recommended?",
+        "Are budget and timeline visible?"
+      ],
+      "mistakes": [
+        "Sending an update only when something goes wrong.",
+        "Burying a blocker in the middle of a long message.",
+        "Asking for three decisions in one paragraph.",
+        "Reporting hours without a forecast."
+      ],
+      "faq": [
+        {
+          "q": "How long should the update be?",
+          "a": "Aim for a five-minute read: one status line, short bullets, and one clear decision request. Long updates are usually a sign that the project plan is unclear."
+        },
+        {
+          "q": "Should I send updates if nothing changed?",
+          "a": "Yes, but keep it short. “No change; next milestone remains Friday” prevents the client from wondering whether work stopped."
+        },
+        {
+          "q": "What if the client never reads the update?",
+          "a": "Ask which format and channel work for them, and confirm the decision deadline in a separate short message when a response is required."
+        }
+      ],
+      "tool": "status-update-generator",
+      "related": [
+        "project-kickoff-checklist",
+        "project-handoff-and-closeout"
+      ]
+    },
+    {
+      "slug": "project-handoff-and-closeout",
+      "category": "project-delivery",
+      "title": "Project handoff and closeout: what to deliver and what to keep",
+      "dek": "A clean closeout protects access, payment, future work, and your reputation.",
+      "problem": "A project is not finished when the last deliverable is approved. It is finished when access, files, payment, and support expectations are settled.",
+      "quick_answer": "Use a closeout checklist: final payment, files and access, credentials transfer, documentation, support window, feedback, and future-work options.",
+      "sections": [
+        {
+          "h": "Confirm final payment and the ownership trigger",
+          "p": "Check the contract for the exact moment ownership or final files transfer. If payment is outstanding, follow the agreed process instead of releasing everything and hoping to collect later."
+        },
+        {
+          "h": "Deliver the files in the agreed format",
+          "p": "Provide the final source files, exports, documentation, and a short readme that explains what each file is. If the client expected editable files, confirm that they open and are usable, not just present."
+        },
+        {
+          "h": "Transfer access safely",
+          "p": "Use a shared password manager or the platform’s transfer flow. Do not send credentials in plain text. Remove your own access only after the client confirms they can log in and the final payment is complete."
+        },
+        {
+          "h": "Define the support window",
+          "p": "State what is covered after launch, for how long, and how new requests are handled. A 14-day bug-fix window plus a separate support plan prevents “quick questions” from becoming permanent free work."
+        },
+        {
+          "h": "Close the loop and ask for the next step",
+          "p": "Send a short closeout summary with results, files, and support terms. Ask for feedback, a testimonial if appropriate, and one specific referral. Offer a maintenance or phase-two option with a clear scope."
+        }
+      ],
+      "example": {
+        "title": "Closeout email skeleton",
+        "lines": [
+          "The site is live and the final invoice is paid. Attached: source files, export, credentials transfer note, and a two-page handoff guide.",
+          "Support: bug fixes are covered for 14 days. New features or content changes can be quoted separately.",
+          "If you have five minutes, a short testimonial would help. If a specific person comes to mind who needs the same fix, I am happy to send a one-paragraph introduction."
+        ]
+      },
+      "checklist": [
+        "Is the final payment confirmed?",
+        "Are files delivered in an openable, agreed format?",
+        "Was access transferred without plain-text credentials?",
+        "Is the support window written down?",
+        "Did I ask for feedback and a specific next step?"
+      ],
+      "mistakes": [
+        "Releasing all files before final payment clears.",
+        "Sending passwords in an email or chat message.",
+        "Leaving support expectations undefined.",
+        "Ending the project with no feedback or future-work conversation."
+      ],
+      "faq": [
+        {
+          "q": "Should I keep a copy of the final files?",
+          "a": "Keep only what the contract and privacy rules allow. If you keep files for future work, say how long they are stored and how they are protected."
+        },
+        {
+          "q": "What if the client asks for extra work after launch?",
+          "a": "Treat it as a change request or a new project. Offer a small support plan, a fixed-fee task, or a phase-two quote."
+        },
+        {
+          "q": "Is a testimonial request appropriate?",
+          "a": "Yes, after a successful closeout. Ask for specific feedback and make it easy to decline."
+        }
+      ],
+      "tool": "handoff-checklist",
+      "related": [
+        "project-kickoff-checklist",
+        "referral-request-email-that-works"
+      ]
+    },
+    {
+      "slug": "simple-sop-template-for-any-task",
+      "category": "automation-sops",
+      "title": "A simple SOP template for any repeated task",
+      "dek": "Write a process someone else can run without asking you five questions.",
+      "problem": "Most small teams do not need a complex process wiki. They need one page that states the trigger, owner, inputs, steps, exceptions, and definition of done.",
+      "quick_answer": "Use a one-page SOP with seven fields: purpose, trigger, owner, inputs, steps, exceptions, and done. Test it on a real task and revise the page where the runner gets stuck.",
+      "sections": [
+        {
+          "h": "Start with the trigger",
+          "p": "A process starts when something happens: a signed quote, a new support ticket, a monthly date, or a failed payment. If the trigger is vague, the process will be skipped. Write the exact event and how the owner is notified."
+        },
+        {
+          "h": "Name one owner, not a team",
+          "p": "A team cannot be accountable. Name the person responsible for running the process, the person who approves an exception, and the backup. If no one owns the process, it will quietly disappear."
+        },
+        {
+          "h": "Separate inputs from steps",
+          "p": "Inputs are the information, access, or files required before the first step. Steps are the actions. Keeping them separate makes it obvious when a process is blocked by missing information rather than a broken procedure."
+        },
+        {
+          "h": "Write the exceptions before they happen",
+          "p": "List the top five situations where the normal path does not apply: a refund, a missing approval, a data error, a VIP client, or a system outage. For each one, state what the owner should do and who to notify."
+        },
+        {
+          "h": "Define done and schedule a review",
+          "p": "“Done” should be observable: the invoice is logged, the client receives the file, the ticket is closed, the backup is verified. Add a review date and an owner for updates. An SOP without a review date becomes fiction."
+        }
+      ],
+      "example": {
+        "title": "One-page SOP fields",
+        "lines": [
+          "Purpose: send the monthly client report.",
+          "Trigger: the first business day of the month.",
+          "Owner: operations lead; backup: account manager.",
+          "Inputs: analytics export, project notes, open issues.",
+          "Steps: validate data, draft summary, review numbers, send, log delivery.",
+          "Exceptions: missing analytics access, client request to pause, data discrepancy.",
+          "Done: report delivered and logged; client question assigned to an owner."
+        ]
+      },
+      "checklist": [
+        "Is the trigger a specific event?",
+        "Does one person own the process?",
+        "Are inputs listed separately from steps?",
+        "Are the top exceptions covered?",
+        "Is “done” observable and reviewable?"
+      ],
+      "mistakes": [
+        "Writing a long policy instead of a runnable procedure.",
+        "Assigning the process to a team with no owner.",
+        "Leaving exceptions to the runner’s judgment.",
+        "Publishing the SOP without testing it on a real task."
+      ],
+      "faq": [
+        {
+          "q": "How long should an SOP be?",
+          "a": "One page is enough for most small tasks. If it is longer, split it into separate processes with their own triggers."
+        },
+        {
+          "q": "What tool should I use?",
+          "a": "A document, a shared note, or a task template can work. The tool matters less than the trigger, owner, and definition of done."
+        },
+        {
+          "q": "How often should I review it?",
+          "a": "Review quarterly or after a failure, a team change, or a tool migration. Assign the review to a named owner."
+        }
+      ],
+      "tool": "sop-builder",
+      "related": [
+        "automate-invoice-reminders",
+        "client-onboarding-automation"
+      ]
+    },
+    {
+      "slug": "automate-invoice-reminders",
+      "category": "automation-sops",
+      "title": "How to automate invoice reminders without sounding robotic",
+      "dek": "Build a reminder sequence that escalates the process while keeping the relationship human.",
+      "problem": "A reminder that sounds like a collection agency damages the relationship. A reminder that never escalates leaves the invoice unpaid.",
+      "quick_answer": "Map the payment process, choose the trigger and escalation events, write four short messages, test them with a real invoice, and keep a human review step before the final notice.",
+      "sections": [
+        {
+          "h": "Map the manual process first",
+          "p": "Write down what happens today: when the invoice is issued, how it is delivered, who receives it, what happens after the due date, and how exceptions are handled. Automating a broken process only makes the failure faster."
+        },
+        {
+          "h": "Choose automation triggers, not dates alone",
+          "p": "Use events such as invoice issued, due date passed, payment received, or dispute opened. Event-driven reminders handle early payments, partial payments, and bank holidays better than a fixed calendar schedule."
+        },
+        {
+          "h": "Write four short messages",
+          "p": "Prepare a friendly pre-due note, a neutral day-one reminder, a firm day-seven reminder with a new date, and a final notice that states the next step. Each message should ask for one action and include the invoice link."
+        },
+        {
+          "h": "Keep a human review gate",
+          "p": "Automate the first three reminders if the account is in good standing. Pause automation when a dispute, promised payment, or sensitive relationship appears, and let a person send the final notice."
+        },
+        {
+          "h": "Test with a real invoice and measure the result",
+          "p": "Run the sequence on one invoice with a known due date. Check the timing, wording, links, and payment status. Track days-to-payment, reminder-to-payment rate, and the number of messages that required a manual reply."
+        }
+      ],
+      "example": {
+        "title": "Automation map",
+        "lines": [
+          "Trigger: invoice issued → send delivery confirmation immediately.",
+          "Trigger: due date + 1 business day → send neutral reminder.",
+          "Trigger: due date + 7 days → send firmer reminder and new payment date.",
+          "Trigger: due date + 30 days → pause automation and request human review.",
+          "Trigger: payment received → stop sequence, update records, send receipt."
+        ]
+      },
+      "checklist": [
+        "Did I map the manual process first?",
+        "Are the triggers based on real events?",
+        "Is each message short and actionable?",
+        "Is there a human review gate for disputes or final notices?",
+        "Am I measuring days-to-payment and reply rate?"
+      ],
+      "mistakes": [
+        "Automating an unclear or inconsistent process.",
+        "Sending the same message regardless of payment history.",
+        "Removing the human step from a sensitive or disputed invoice.",
+        "Never checking whether the automation actually improves collection time."
+      ],
+      "faq": [
+        {
+          "q": "Can I automate all payment reminders?",
+          "a": "Automate the early, routine reminders. Keep a human review for disputes, final notices, and high-value clients."
+        },
+        {
+          "q": "What tool should I use?",
+          "a": "Use the invoicing tool’s built-in reminders first. Add a workflow tool only when you need event logic the invoicing tool cannot handle."
+        },
+        {
+          "q": "How do I avoid sounding cold?",
+          "a": "Write in plain language, acknowledge the client’s process, ask one question, and avoid threats you will not enforce."
+        }
+      ],
+      "tool": "invoice-reminder-automation-map",
+      "related": [
+        "invoice-follow-up-sequence",
+        "simple-sop-template-for-any-task"
+      ]
+    },
+    {
+      "slug": "client-onboarding-automation",
+      "category": "automation-sops",
+      "title": "Client onboarding automation: the five steps worth automating",
+      "dek": "Automate the repeatable preparation so the first human conversation stays human.",
+      "problem": "Onboarding automation often starts with a flashy welcome sequence and ignores the tasks that actually delay the project: collecting inputs, confirming owners, and setting up access.",
+      "quick_answer": "Automate the checklist, intake form, folder and task creation, access request, and reminder schedule. Keep the kickoff, exception handling, and relationship decisions human.",
+      "sections": [
+        {
+          "h": "Start with the signed agreement trigger",
+          "p": "Onboarding should begin when the agreement is signed and the deposit is received, not when someone remembers to send a welcome email. Use that event to create the project record and assign the owner."
+        },
+        {
+          "h": "Automate the intake, not the relationship",
+          "p": "Send a structured intake form that collects the goal, audience, brand assets, access needs, decision-maker, and preferred communication channel. Keep the kickoff call for questions and alignment, not for typing basic data."
+        },
+        {
+          "h": "Create the workspace consistently",
+          "p": "Create the same folder structure, task list, naming convention, and permissions for every new client. Consistent structure makes handoffs easier and prevents files from getting lost in chat."
+        },
+        {
+          "h": "Request access through a safe channel",
+          "p": "Use a password manager or a platform invitation instead of emailing credentials. Track which access is pending and who owns each request. Do not start work that depends on an input that has not arrived."
+        },
+        {
+          "h": "Schedule the first checkpoints and review the flow",
+          "p": "Create the kickoff reminder, first-status-update date, and milestone review. After the first three clients, review where onboarding slowed down and change one step at a time."
+        }
+      ],
+      "example": {
+        "title": "Five-step onboarding flow",
+        "lines": [
+          "Signed agreement and deposit received → create project record and owner.",
+          "Intake form sent automatically → client submits goals, assets, access needs.",
+          "Workspace created → folders, task list, naming convention, permissions.",
+          "Access requested → secure invitations tracked with owners and due dates.",
+          "Checkpoints scheduled → kickoff, first update, first milestone review."
+        ]
+      },
+      "checklist": [
+        "Does onboarding start from a signed agreement and deposit?",
+        "Does the intake form collect the information the team actually needs?",
+        "Is the workspace structure consistent for every client?",
+        "Is access requested securely and tracked?",
+        "Are the first checkpoints scheduled automatically?"
+      ],
+      "mistakes": [
+        "Automating a welcome email while inputs are still collected by hand.",
+        "Letting each project invent its own folder structure.",
+        "Emailing passwords or access codes.",
+        "Never reviewing where clients get stuck during onboarding."
+      ],
+      "faq": [
+        {
+          "q": "What should stay manual?",
+          "a": "The kickoff conversation, exception handling, pricing decisions, and any relationship-sensitive issue should stay with a person."
+        },
+        {
+          "q": "What tool should I start with?",
+          "a": "Use your existing project tool and form tool first. Add a workflow platform only when the manual steps are stable and the volume justifies it."
+        },
+        {
+          "q": "How do I measure onboarding?",
+          "a": "Track time from signature to kickoff, percentage of inputs received on time, access delays, and the number of manual follow-ups required."
+        }
+      ],
+      "tool": "onboarding-flow-builder",
+      "related": [
+        "simple-sop-template-for-any-task",
+        "automate-invoice-reminders"
+      ]
+    }
+  ]
+}

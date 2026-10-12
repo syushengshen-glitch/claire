@@ -1,0 +1,54 @@
+
+/* Small Ops Lab 專屬主題：溫暖紙張、深海軍藍與警示黃，和十個 SignalStack 站明顯區隔。 */
+.theme-ops {
+  --ink: #102a43;
+  --paper: #fbfaf7;
+  --paper-deep: #f3efe7;
+  --muted: #5d6b7a;
+  --line: rgba(16, 42, 67, 0.16);
+  --blue: #1f5f8b;
+  --blue-dark: #13415f;
+  --coral: #d97706;
+  --gold: #f7b32b;
+  --font-display: Georgia, 'Times New Roman', serif;
+  background: var(--paper);
+}
+.theme-ops .site-header { background: rgba(251, 250, 247, 0.94); }
+.theme-ops .brand-mark { background: var(--ink); }
+.theme-ops .brand-mark span { background: var(--gold); }
+.theme-ops .hero { border-bottom: 1px solid var(--line); }
+.theme-ops .hero-note { color: var(--coral); }
+.theme-ops .button { background: var(--ink); color: #fff; }
+.theme-ops .button.secondary { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.theme-ops .pill { display: inline-block; margin-bottom: 14px; padding: 5px 10px; border-radius: 999px; background: #fff2cf; color: #7a4a00; font-size: .75rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.theme-ops .ad-slot { display: grid; place-items: center; min-height: 110px; margin: 26px 0; border: 1px dashed var(--line); border-radius: 12px; background: repeating-linear-gradient(135deg, rgba(16,42,67,.03), rgba(16,42,67,.03) 10px, transparent 10px, transparent 20px); color: var(--muted); text-align: center; }
+.theme-ops .ad-rail { min-height: 260px; }
+.theme-ops .ad-label { display: block; margin-bottom: 8px; font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.theme-ops .ad-space { font-size: .82rem; }
+.theme-ops .example-box { margin: 24px 0; padding: 22px; border: 1px solid var(--line); border-left: 6px solid var(--gold); border-radius: 12px; background: #fff; }
+.theme-ops .example-box h3 { margin-top: 0; font-size: 1.12rem; }
+.theme-ops .example-box p { margin: 0 0 10px; padding: 10px 12px; border-radius: 8px; background: var(--paper-deep); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9rem; }
+.theme-ops .checklist { list-style: none; padding-left: 0; }
+.theme-ops .checklist li { position: relative; padding-left: 30px; }
+.theme-ops .checklist li::before { content: '☐'; position: absolute; left: 0; color: var(--coral); font-weight: 800; }
+.theme-ops .note { margin: 26px 0; padding: 20px 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper-deep); }
+.theme-ops .note strong { display: block; margin-bottom: 6px; }
+.theme-ops .tool-form { margin: 26px 0; padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper-deep); }
+.theme-ops .field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.theme-ops .field-grid label { display: grid; gap: 6px; font-weight: 700; }
+.theme-ops .field-grid input, .theme-ops .field-grid select, .theme-ops .field-grid textarea { width: 100%; padding: 11px 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); font: inherit; }
+.theme-ops .field-grid textarea { resize: vertical; }
+.theme-ops .calculator-result { margin: 22px 0; padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.theme-ops .calculator-result h3 { margin-top: 0; }
+.theme-ops .result-lines p { margin: 0 0 8px; }
+.theme-ops .result-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.theme-ops .result-grid > div { padding: 14px; border-radius: 10px; background: var(--paper-deep); }
+.theme-ops .result-grid strong { display: block; font-size: 1.3rem; }
+.theme-ops .result-grid span { color: var(--muted); font-size: .8rem; }
+.theme-ops .category-card { background: #fff; }
+.theme-ops .site-footer { background: var(--ink); color: #dbe7f0; }
+.theme-ops .site-footer a { color: #fff; }
+@media (max-width: 760px) {
+  .theme-ops .field-grid, .theme-ops .result-grid { grid-template-columns: 1fr; }
+  .theme-ops .ad-rail { min-height: 120px; }
+}

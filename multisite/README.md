@@ -41,3 +41,29 @@
 - Each site needs its own ownership verification, ads.txt check, and Google review.
 - Auto Ads must be enabled separately for each site after it is added to AdSense.
 - The starter content is not sufficient for approval by itself. Each site needs original tests, screenshots, and more content before review.
+
+
+## Small Ops Lab
+
+- 獨立站台：`sites/small-ops-lab`
+- 主題：自由工作者與小型工作室的營運流程
+- 5 個分類、15 篇原創指南、15 個模板或計算器頁面
+- 產生器：`multisite/build_small_ops_lab.py`
+- 內容資料：`multisite/small-ops-content.json`
+- 樣式與工具：`multisite/themes/ops.css`、`multisite/themes/ops-tools.js`
+- 使用同一個 AdSense publisher ID：`ca-pub-1837836558769995`
+- 通過 AdSense 審查前，廣告位只顯示 Advertisement 標籤
+
+重新建置：
+
+```powershell
+& 'C:\Users\syush\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' `
+  'C:\Users\syush\.codex\worktrees\1ea4\廣告收入設定\multisite\build_small_ops_lab.py'
+```
+
+瀏覽器測試：
+
+```powershell
+& 'C:\Users\syush\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' `
+  'C:\Users\syush\.codex\worktrees\1ea4\廣告收入設定\multisite\test_small_ops_lab.js'
+```

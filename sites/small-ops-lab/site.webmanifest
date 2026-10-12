@@ -1,0 +1,8 @@
+{
+  "name": "Small Ops Lab",
+  "short_name": "Small Ops Lab",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ee",
+  "theme_color": "#102a43"
+}
