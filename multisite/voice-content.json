@@ -1,0 +1,1113 @@
+{
+  "brand": "VoiceSignal Lab",
+  "domain": "signalstack-voice-lab.vercel.app",
+  "tagline": "Practical voice, narration, dubbing, and audio workflow research.",
+  "description": "Original guides and tools for choosing voices, preparing narration, dubbing and localizing audio, cleaning up recordings, and handling consent and disclosure.",
+  "categories": [
+    {
+      "slug": "voice-casting",
+      "name": "Voice Casting",
+      "blurb": "Choose a voice by audience, context, accent, and emotional range without relying on stereotypes."
+    },
+    {
+      "slug": "narration",
+      "name": "Narration & Scripts",
+      "blurb": "Turn a script into a paced, pronounceable, production-ready voice performance."
+    },
+    {
+      "slug": "dubbing-localization",
+      "name": "Dubbing & Localization",
+      "blurb": "Adapt meaning, timing, names, and cultural context across languages."
+    },
+    {
+      "slug": "audio-editing",
+      "name": "Audio Editing",
+      "blurb": "Clean, edit, loudness-match, caption, and deliver audio that survives real playback."
+    },
+    {
+      "slug": "consent-rights",
+      "name": "Consent, Rights & Disclosure",
+      "blurb": "Document voice rights, cloning consent, synthetic media disclosure, and platform rules."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "choose-voice-for-brand-narration",
+      "category": "voice-casting",
+      "title": "How to choose a voice for brand narration",
+      "dek": "A casting matrix that separates audience, emotion, authority, pace, and accent from personal taste.",
+      "problem": "Voice selection often starts with a subjective favorite. The result can sound polished but wrong for the audience, the product, or the place where the audio will be heard.",
+      "quick_answer": "Define the listening context, the emotional job, the trust level, the pace, and the accent requirement before listening to demos. Score candidates on those criteria, then test the best two in the actual edit.",
+      "sections": [
+        {
+          "h": "Write the listening brief before the audition",
+          "p": "State who hears the audio, where they hear it, how long they listen, and what they should do next. A voice for a 20-second social ad is not the same as a voice for a 40-minute training module. Include the device, background noise, and whether the listener can replay the audio."
+        },
+        {
+          "h": "Separate warmth from authority",
+          "p": "Warmth signals closeness and reassurance; authority signals expertise and control. A voice can have both, but most performances lean one way. Decide which one the message needs first, because a warm performance can make a technical claim sound less credible while an authoritative performance can make a friendly product sound distant."
+        },
+        {
+          "h": "Test accent and pronunciation against the real audience",
+          "p": "Accent is not a decoration. It affects comprehension, trust, and whether the listener feels the message is for them. Use the actual brand names, product names, numbers, and regional terms in the audition. Do not ask a voice actor to fake a dialect they do not own unless the brief and ethical review justify it."
+        },
+        {
+          "h": "Score the voice in context, not in isolation",
+          "p": "Put the shortlisted voices over the real music, ambience, and visuals. Listen on a phone speaker, headphones, and a laptop. Score comprehension, emotional fit, pacing, consistency, pronunciation, and the amount of editing required. A beautiful isolated demo can fail once it sits under a busy soundtrack."
+        },
+        {
+          "h": "Document the decision and the alternate",
+          "p": "Record why the chosen voice fits and which alternate is acceptable. Note the required tone, pace, pronunciation, accent, and usage rights. A clear casting record makes future episodes, translations, and pickups much easier."
+        }
+      ],
+      "example": {
+        "title": "Casting matrix fields",
+        "lines": [
+          "Audience: operations managers listening on a laptop during work.",
+          "Emotional job: calm confidence, not hype.",
+          "Pace: measured, with clear pauses around numbers.",
+          "Trust cues: plain language, no exaggerated emphasis.",
+          "Test words: product name, three numbers, one acronym, one regional term."
+        ]
+      },
+      "checklist": [
+        "Is the listening context described?",
+        "Did I choose warmth or authority as the primary job?",
+        "Does the audition use real names and numbers?",
+        "Did I listen in the final playback environment?",
+        "Is the alternate and decision recorded?"
+      ],
+      "mistakes": [
+        "Choosing a voice because it sounds impressive in a demo.",
+        "Ignoring accent and pronunciation until the final edit.",
+        "Using a fake dialect for authenticity.",
+        "Scoring voices without music, ambience, or the final visuals."
+      ],
+      "faq": [
+        {
+          "q": "Should the brand owner’s voice be used?",
+          "a": "Only if it fits the job and the owner is comfortable. Founder voice can build trust, but it may not scale across languages or long series."
+        },
+        {
+          "q": "How many voices should I audition?",
+          "a": "Three to five shortlisted voices are enough for most projects. More options often produce decision fatigue rather than a better fit."
+        },
+        {
+          "q": "Can AI voices be used for brand narration?",
+          "a": "Yes, when the voice rights, disclosure, quality, and platform rules are handled. Label synthetic media when required and never clone a person without permission."
+        }
+      ],
+      "tool": "voice-casting-scorecard",
+      "related": [
+        "voice-audition-script-builder",
+        "accent-and-representation-checklist"
+      ]
+    },
+    {
+      "slug": "voice-audition-script-builder",
+      "category": "voice-casting",
+      "title": "The voice audition script that reveals range and pronunciation",
+      "dek": "A six-beat audition that tests clarity, warmth, authority, pacing, names, and emotional control.",
+      "problem": "A generic paragraph reveals whether a voice sounds pleasant, but not whether it can carry the actual script, pronounce the brand names, or shift tone without losing control.",
+      "quick_answer": "Build a short audition with six beats: neutral explanation, warm welcome, firm instruction, technical term, emotional turn, and closing call to action. Include real names and numbers.",
+      "sections": [
+        {
+          "h": "Make every line test a production decision",
+          "p": "The audition should answer questions you will face in the edit: Can the voice stay clear at speed? Does it sound credible when giving a warning? Can it soften without becoming childish? Can it pronounce the product name consistently? Each line should have a purpose."
+        },
+        {
+          "h": "Include the hard words early",
+          "p": "Put the product name, acronym, number, currency, date, and regional term in the first half of the script. If the voice struggles there, the rest of the performance is less useful. Ask for the pronunciation you expect and let the actor offer an alternative if the brief is wrong."
+        },
+        {
+          "h": "Test a controlled emotional shift",
+          "p": "Write one sentence that moves from neutral information to a cautious warning. Listen for whether the shift feels motivated or performed. A strong audition shows restraint; not every line needs to be pushed."
+        },
+        {
+          "h": "Ask for two paces of the same passage",
+          "p": "A normal read and a 15% faster read reveal whether clarity survives compression. Video and social teams often need a shorter cut. If the voice only works at one speed, the editing options are limited."
+        },
+        {
+          "h": "Score consistency and editability",
+          "p": "Listen for consistent volume, breath control, mouth noise, and ending consonants. Ask whether the delivery can be cut into smaller segments without sounding stitched together. A beautiful take that cannot be edited is not a production-ready take."
+        }
+      ],
+      "example": {
+        "title": "Six-beat audition",
+        "lines": [
+          "Neutral: “The new dashboard gives your team one place to review open requests.”",
+          "Warm: “Welcome back — let’s pick up where we left off.”",
+          "Firm: “Do not share the access code outside your organization.”",
+          "Technical: “The export uses AES-256 encryption and expires after 24 hours.”",
+          "Emotional turn: “If a client name appears in the wrong report, stop and check the source before sending.”",
+          "Close: “Start with one workflow today.”"
+        ]
+      },
+      "checklist": [
+        "Does every line test a real production decision?",
+        "Are hard names and numbers included?",
+        "Is there one controlled emotional shift?",
+        "Did I ask for a faster version?",
+        "Can the delivery be edited into short segments?"
+      ],
+      "mistakes": [
+        "Using a generic paragraph with no brand-specific words.",
+        "Asking for “energy” without defining the context.",
+        "Testing only one pace.",
+        "Ignoring mouth noise, breaths, and ending consonants."
+      ],
+      "faq": [
+        {
+          "q": "How long should an audition be?",
+          "a": "Sixty to ninety seconds is usually enough to test range, pronunciation, and editability without asking for unpaid full production."
+        },
+        {
+          "q": "Should I provide direction in the audition?",
+          "a": "Yes. A short direction note helps compare how each voice responds to feedback, not just how it sounds alone."
+        },
+        {
+          "q": "Can I use the audition recording in the final project?",
+          "a": "Only if the voice provider has agreed to that use and the rights are documented. An audition is not automatically a production license."
+        }
+      ],
+      "tool": "voice-audition-builder",
+      "related": [
+        "choose-voice-for-brand-narration",
+        "narration-pacing-and-runtime"
+      ]
+    },
+    {
+      "slug": "accent-and-representation-checklist",
+      "category": "voice-casting",
+      "title": "Accent and representation checklist for voice casting",
+      "dek": "Use accent as a casting requirement, not a costume, and document the reason for every choice.",
+      "problem": "A voice can unintentionally signal a stereotype, misrepresent a region, or make a community sound like a caricature. The problem is rarely one accent; it is an undisclosed casting decision made without context.",
+      "quick_answer": "Define the accent requirement, ask whether the voice authentically belongs to the community, test comprehension with the intended audience, and avoid asking performers to fake a dialect for decoration.",
+      "sections": [
+        {
+          "h": "Ask why the accent is needed",
+          "p": "An accent may support comprehension, local relevance, character identity, or brand recognition. Write the reason. If the only reason is “it sounds more authentic,” the brief is not specific enough to guide a responsible choice."
+        },
+        {
+          "h": "Prefer lived experience when identity matters",
+          "p": "If the script represents a specific region or community, a performer with that lived experience is usually better positioned to make the language sound natural. This is not a universal rule, but it should be the default when authenticity is part of the promise."
+        },
+        {
+          "h": "Test comprehension with the actual audience",
+          "p": "Play the audition for people who resemble the intended listener, not only the internal team. Ask what they understood, what felt forced, and whether any word carried an unintended meaning. Record the answers instead of relying on a single opinion."
+        },
+        {
+          "h": "Check the script for stereotypes",
+          "p": "Read the script without the voice. Are regional references, idioms, or character descriptions doing real work, or are they performing an identity? Remove anything that treats a community as a punchline or a decorative style."
+        },
+        {
+          "h": "Document the casting rationale",
+          "p": "Record the accent, dialect, language variety, performer background when relevant, audience test, and approval. This protects the project from accidental misrepresentation and makes future localization decisions consistent."
+        }
+      ],
+      "example": {
+        "title": "Representation note",
+        "lines": [
+          "Accent requirement: Taiwanese Mandarin for a local customer-support module.",
+          "Reason: the audience is in Taiwan and the script includes local service terms.",
+          "Test: five target users listened on phone speakers and confirmed the pronunciation of three product names.",
+          "Constraint: no exaggerated regional stereotype; the performance should sound like a normal workplace explanation."
+        ]
+      },
+      "checklist": [
+        "Is the reason for the accent written down?",
+        "Does the performer fit the language variety?",
+        "Did target listeners test comprehension?",
+        "Did we remove decorative stereotypes?",
+        "Is the casting rationale recorded?"
+      ],
+      "mistakes": [
+        "Casting an accent only because it sounds “international.”",
+        "Asking one performer to imitate several unrelated dialects.",
+        "Testing with the internal team only.",
+        "Treating a community as a style reference rather than an audience."
+      ],
+      "faq": [
+        {
+          "q": "Is it ever appropriate to use an accent outside the performer’s background?",
+          "a": "Acting can involve accent work, but the decision should be transparent, respectful, and appropriate to the context. For commercial narration where identity is the point, lived experience is usually safer."
+        },
+        {
+          "q": "Should I include accent labels in the brief?",
+          "a": "Use precise language such as language variety, region, and reference recordings. Avoid vague labels that conflate nationality, ethnicity, and accent."
+        },
+        {
+          "q": "How do I handle mixed audiences?",
+          "a": "Choose the primary audience and test an alternate. You may need separate recordings rather than one voice trying to represent everyone."
+        }
+      ],
+      "tool": "accent-casting-brief",
+      "related": [
+        "choose-voice-for-brand-narration",
+        "localization-qc-checklist"
+      ]
+    },
+    {
+      "slug": "narration-pacing-and-runtime",
+      "category": "narration",
+      "title": "Narration pacing and runtime: how to estimate a voice track before recording",
+      "dek": "Use word count, pauses, emphasis, and language differences to predict runtime and avoid a rushed edit.",
+      "problem": "A script that looks short can run long once punctuation, names, numbers, breaths, and music transitions are added. Recording without a runtime plan creates awkward cuts or rushed delivery.",
+      "quick_answer": "Estimate runtime from words per minute, add time for pauses and difficult terms, test one real paragraph, then refine the script before the full record.",
+      "sections": [
+        {
+          "h": "Start with a measured paragraph, not a global guess",
+          "p": "Read 100 to 150 words in the intended tone at the intended pace. Time it. That sample is more useful than a generic words-per-minute rule because pace changes with genre, punctuation, and emotional density."
+        },
+        {
+          "h": "Add explicit pause budgets",
+          "p": "Count pauses that carry meaning: after a section title, before a number, after a warning, between list items, and before a call to action. Add a short estimate for each. Music and sound design need transitions too."
+        },
+        {
+          "h": "Flag pronunciation-heavy sections",
+          "p": "Names, acronyms, dates, currencies, and technical terms take longer than their character count suggests. Add rehearsal time and mark the words that need a pronunciation decision before recording."
+        },
+        {
+          "h": "Test the edit points",
+          "p": "Read the script with the actual section breaks. If a sentence cannot be cut at the intended point, rewrite it. Good narration is not only spoken well; it is structured so a producer can shorten it without losing meaning."
+        },
+        {
+          "h": "Lock the runtime before translation",
+          "p": "If the script will be dubbed, the translation needs a timing target. A runtime estimate that ignores dubbing can force translators to compress meaning or distort natural speech. Share the target duration with the localization team."
+        }
+      ],
+      "example": {
+        "title": "Runtime worksheet",
+        "lines": [
+          "100-word sample: 42 seconds at the selected pace.",
+          "Full script: 340 words → about 143 seconds.",
+          "Add 15 seconds for section pauses and 10 seconds for the call to action.",
+          "Target runtime: 2 minutes 48 seconds; short cut target: 2 minutes 15 seconds."
+        ]
+      },
+      "checklist": [
+        "Did I measure a real paragraph at the intended pace?",
+        "Are meaningful pauses budgeted separately?",
+        "Are difficult names and numbers marked?",
+        "Can the script be cut at clear section boundaries?",
+        "Does the localization team know the target runtime?"
+      ],
+      "mistakes": [
+        "Using one words-per-minute rule for every genre.",
+        "Forgetting pauses, music transitions, and breaths.",
+        "Assuming translated narration will fit the same time.",
+        "Recording without a short-cut version in mind."
+      ],
+      "faq": [
+        {
+          "q": "What is a normal narration speed?",
+          "a": "There is no universal speed. Conversational explainers often sit around 130 to 160 words per minute, but the right pace depends on audience, genre, and language."
+        },
+        {
+          "q": "Should I cut words or speed up the voice?",
+          "a": "Cut words first. Speeding up the voice can reduce clarity and make the read sound unnatural, especially on mobile speakers."
+        },
+        {
+          "q": "How do I estimate pauses?",
+          "a": "Count each meaningful pause and assign a short duration based on the edit. A two-second transition is different from a 400-millisecond breath."
+        }
+      ],
+      "tool": "narration-pacing-calculator",
+      "related": [
+        "script-format-for-voice-production",
+        "pronunciation-guide-for-names"
+      ]
+    },
+    {
+      "slug": "pronunciation-guide-for-names",
+      "category": "narration",
+      "title": "How to build a pronunciation guide for names, brands, and acronyms",
+      "dek": "Turn a pronunciation disagreement into a documented, testable delivery decision.",
+      "problem": "A client says the brand name one way, the writer says another, and the voice actor guesses. The final file sounds polished but still says the most important word incorrectly.",
+      "quick_answer": "Create one pronunciation list with the written form, phonetic cue, language, preferred recording, and owner. Approve the list before the full session and store it with the project.",
+      "sections": [
+        {
+          "h": "List every word that can be said differently",
+          "p": "Include product names, people, places, acronyms, numbers, currencies, dates, and foreign terms. Add the language variety and the intended audience. If the same word has different pronunciations in different markets, make separate entries."
+        },
+        {
+          "h": "Use a cue the voice actor can repeat",
+          "p": "A dictionary phonetic spelling may be enough, but a short reference recording is often clearer. Include syllable stress, vowel sound, and any silent letters. Avoid vague instructions such as “say it naturally” when the client has a required pronunciation."
+        },
+        {
+          "h": "Assign one approval owner",
+          "p": "The producer should collect input, but one person must approve the final pronunciation. Otherwise the voice actor receives conflicting notes and the most important name becomes a committee decision."
+        },
+        {
+          "h": "Test the word inside a real sentence",
+          "p": "A name can be correct in isolation but awkward at the pace of the script. Put it into the actual line, record it, and listen on a phone speaker. Check that the stress does not distort the surrounding grammar."
+        },
+        {
+          "h": "Store the approved guide with the project",
+          "p": "The guide should travel with the script, glossary, and rights notes. Future episodes, translations, and pickups should use the same reference rather than starting the debate again."
+        }
+      ],
+      "example": {
+        "title": "Pronunciation entry",
+        "lines": [
+          "Written: Kalla",
+          "Phonetic cue: KAH-lah (first syllable stressed).",
+          "Reference: client recording 0:03–0:05.",
+          "Owner: brand lead.",
+          "Note: do not pronounce it like “caller.”"
+        ]
+      },
+      "checklist": [
+        "Are all ambiguous words listed?",
+        "Is there a repeatable phonetic or audio cue?",
+        "Does one owner approve the final pronunciation?",
+        "Was the word tested inside a real sentence?",
+        "Is the guide stored with the project?"
+      ],
+      "mistakes": [
+        "Relying on the writer’s guess.",
+        "Approving a pronunciation after the full record.",
+        "Using one entry for several language markets.",
+        "Forgetting to test the word at the final pace."
+      ],
+      "faq": [
+        {
+          "q": "Should I use IPA?",
+          "a": "IPA can be precise, but not every voice actor or client reads it. Pair it with a reference recording and a plain-language cue."
+        },
+        {
+          "q": "What if the client is unsure?",
+          "a": "Ask for a recording, not another written explanation. If the client still cannot decide, the producer should choose an interim standard and mark it for future review."
+        },
+        {
+          "q": "How many pickups should I budget?",
+          "a": "For a pronunciation-heavy script, budget a short pickup window. It is cheaper than re-recording the full piece."
+        }
+      ],
+      "tool": "pronunciation-guide-builder",
+      "related": [
+        "script-format-for-voice-production",
+        "narration-pacing-and-runtime"
+      ]
+    },
+    {
+      "slug": "script-format-for-voice-production",
+      "category": "narration",
+      "title": "A script format that makes voice production easier",
+      "dek": "Separate spoken lines, direction, pronunciation, timing, and version notes without confusing the performer.",
+      "problem": "A screenplay format is not always the best format for a voice session. When direction, legal text, and spoken words are mixed together, performers read the wrong thing or miss a revision.",
+      "quick_answer": "Use one column or block for spoken text, a separate style for performance direction, inline pronunciation notes, version labels, and a change log. Keep the latest approved script in one place.",
+      "sections": [
+        {
+          "h": "Make the spoken words unmistakable",
+          "p": "The performer should be able to read the spoken copy without sorting through production notes. Use a clear visual style for spoken text and a different style for direction. Do not put critical pronunciation guidance inside a sentence that might be read aloud."
+        },
+        {
+          "h": "Separate direction from performance",
+          "p": "Direction should describe the intention: “calm, slower, reassure the listener.” Avoid stacking adjectives that contradict each other. If a line needs a specific pause or emphasis, mark it with a symbol or a short note."
+        },
+        {
+          "h": "Version every script",
+          "p": "Use a date, version number, and change log. Highlight changed lines and remove old versions from the recording folder. The most common studio error is recording from a stale copy while the client reviews a newer one."
+        },
+        {
+          "h": "Mark legal and disclosure lines",
+          "p": "Synthetic-media disclosure, sponsor language, and regulated claims may need exact wording. Label them as locked copy. Do not let a performer improvise around them."
+        },
+        {
+          "h": "Add a short pre-session checklist",
+          "p": "At the top of the script, include pronunciation guide link, runtime target, tone reference, required takes, file naming, and approval owner. This reduces setup questions and keeps the session focused on performance."
+        }
+      ],
+      "example": {
+        "title": "Script block",
+        "lines": [
+          "VERSION: ep-014-v3 · approved 2026-10-28",
+          "TONE: calm, conversational, no hard sell.",
+          "SPOKEN: “The update is available today.”",
+          "DIRECTION: pause briefly before “today”; do not stress “available.”",
+          "PRONUNCIATION: Kalla = KAH-lah.",
+          "LOCKED LEGAL: “This narration contains a synthetic voice.”"
+        ]
+      },
+      "checklist": [
+        "Are spoken words visually separate from direction?",
+        "Is there a version number and change log?",
+        "Are locked lines clearly labeled?",
+        "Is the pronunciation guide linked?",
+        "Does the script state the runtime target?"
+      ],
+      "mistakes": [
+        "Mixing legal text into normal direction.",
+        "Sending several “final” versions without labels.",
+        "Using vague tone words with no reference.",
+        "Forgetting the pronunciation and runtime notes."
+      ],
+      "faq": [
+        {
+          "q": "Should I use a table or a document?",
+          "a": "Use whichever the performer can read comfortably. The important part is consistent separation between spoken text and direction."
+        },
+        {
+          "q": "How should revisions be marked?",
+          "a": "Use a change log, a new version number, and a clear highlight for changed lines. Do not rely on a chat message as the source of truth."
+        },
+        {
+          "q": "Can AI read my formatted script?",
+          "a": "Often yes, but remove stage directions and keep pronunciation notes in a separate field or a clearly marked format the tool can handle."
+        }
+      ],
+      "tool": "voice-script-template",
+      "related": [
+        "narration-pacing-and-runtime",
+        "pronunciation-guide-for-names"
+      ]
+    },
+    {
+      "slug": "dubbing-vs-subtitling",
+      "category": "dubbing-localization",
+      "title": "Dubbing vs subtitling: how to choose for the audience and the medium",
+      "dek": "Compare comprehension, cost, timing, accessibility, and the kind of attention the viewer can give.",
+      "problem": "Teams often choose dubbing because it feels premium, or subtitles because they are cheaper. Neither choice is automatically better; the right format depends on audience, platform, content, and whether viewers can look at the screen.",
+      "quick_answer": "Choose subtitles when viewers can read and the original performance matters; choose dubbing when viewers need to listen while doing something else, cannot read comfortably, or the market expects localized voices. Test the choice with a short scene.",
+      "sections": [
+        {
+          "h": "Start with the viewer context",
+          "p": "Are viewers watching on a phone while commuting, following a training module at a desk, or listening in a second language? Subtitles demand visual attention. Dubbing competes with music, lip sync, and cultural adaptation. The context decides which cost is more acceptable."
+        },
+        {
+          "h": "Check the platform and market norm",
+          "p": "Some platforms and markets expect dubbing for entertainment; others prefer subtitles. A training video for employees may require dubbing for accessibility, while a documentary audience may value the original voices. Do not assume one format travels everywhere."
+        },
+        {
+          "h": "Compare the real production cost",
+          "p": "Subtitling requires translation, timing, QA, and sometimes caption styling. Dubbing requires translation for performance, casting, recording, direction, lip-sync adaptation, mixing, and multilingual QC. A low per-minute voice rate can hide substantial review work."
+        },
+        {
+          "h": "Test comprehension and emotional fit",
+          "p": "Produce the same two-minute scene in both formats. Ask target viewers what they understood, what felt unnatural, and whether they missed visual information. The winning format is the one that preserves the message with the least audience effort."
+        },
+        {
+          "h": "Consider a hybrid",
+          "p": "Subtitles can carry on-screen text and names while dubbing carries the main narration. Some projects benefit from dubbing plus captions. Treat accessibility and localization as related but separate decisions."
+        }
+      ],
+      "example": {
+        "title": "Decision example",
+        "lines": [
+          "Product training for employees who must watch while taking notes: dubbing plus captions.",
+          "Founder interview for an international audience that values the original voice: subtitles.",
+          "Short social ad on mute-first platforms: on-screen text plus a narrated version.",
+          "Children’s content where reading load is high: dubbing with reviewed cultural adaptation."
+        ]
+      },
+      "checklist": [
+        "Is the viewer able to read the screen?",
+        "Does the market expect dubbing or subtitles?",
+        "Did I compare total production and QA cost?",
+        "Did I test comprehension with target viewers?",
+        "Do captions remain available for accessibility?"
+      ],
+      "mistakes": [
+        "Choosing dubbing only because it sounds premium.",
+        "Ignoring the extra acting, casting, and QC work in dubbing.",
+        "Assuming subtitles preserve the same emotional experience.",
+        "Forgetting accessibility and platform expectations."
+      ],
+      "faq": [
+        {
+          "q": "Is dubbing always more expensive?",
+          "a": "Usually, but not always. Dubbing often has more production stages; subtitles can also become expensive when timing, styling, and multilingual QA are done carefully."
+        },
+        {
+          "q": "Can I use AI dubbing for every language?",
+          "a": "Only after checking voice rights, pronunciation, cultural adaptation, and platform disclosure rules. A synthetic voice does not remove the need for localization review."
+        },
+        {
+          "q": "Should I provide both?",
+          "a": "If the audience and budget allow, providing dubbing plus captions improves accessibility and lets viewers choose their preferred mode."
+        }
+      ],
+      "tool": "dubbing-vs-subtitles-decision",
+      "related": [
+        "localization-qc-checklist",
+        "dubbing-cost-estimator"
+      ]
+    },
+    {
+      "slug": "localization-qc-checklist",
+      "category": "dubbing-localization",
+      "title": "Localization QC checklist for dubbed and subtitled audio",
+      "dek": "Check meaning, names, numbers, timing, lip sync, cultural context, and disclosure before release.",
+      "problem": "A translated script can be grammatically correct and still fail: a name is pronounced differently, a number is read incorrectly, a joke does not travel, or the voice no longer fits the character.",
+      "quick_answer": "Run separate reviews for source meaning, target-language naturalness, performance, timing, technical audio, on-screen text, and disclosure. Use a native reviewer who has the source and context.",
+      "sections": [
+        {
+          "h": "Review meaning before style",
+          "p": "Compare the target script with the source, not only with the previous translation. Check omissions, added claims, changed uncertainty, and lost caveats. A smoother sentence that changes the meaning is still a defect."
+        },
+        {
+          "h": "Check names, numbers, and units",
+          "p": "Listen to every name, acronym, date, price, unit, and legal phrase in context. Confirm whether the target market uses the same currency, date format, or measurement system. Numbers are a common source of serious errors."
+        },
+        {
+          "h": "Review performance and lip sync",
+          "p": "Listen for unnatural pauses, misplaced emphasis, emotion that does not match the scene, and mouth movement that clearly conflicts with the audio. Perfect lip sync is not always possible, but the performance should not fight the picture."
+        },
+        {
+          "h": "Check cultural and visual context",
+          "p": "Review idioms, gestures, images, flags, gestures, and examples. A line can be translated correctly and still be culturally confusing. Ask a native reviewer who knows the target audience, not just the language."
+        },
+        {
+          "h": "Verify technical audio and disclosure",
+          "p": "Check levels, clipping, sibilance, music balance, subtitle timing, and synthetic-voice disclosure. The final QC should happen in the playback environment and format the audience will receive."
+        }
+      ],
+      "example": {
+        "title": "QC defect log",
+        "lines": [
+          "00:42 — price read as 15 dollars; source says 50.",
+          "01:18 — product name stress differs from approved guide.",
+          "02:03 — joke literalized; reviewer suggests cultural equivalent.",
+          "03:11 — subtitle remains on screen after the speaker changes."
+        ]
+      },
+      "checklist": [
+        "Did a native reviewer compare source and target meaning?",
+        "Are all names, numbers, units, and legal lines checked?",
+        "Does the performance fit the scene and timing?",
+        "Are visual and cultural references appropriate?",
+        "Are audio, captions, and disclosure checked in the final format?"
+      ],
+      "mistakes": [
+        "Reviewing only the target language for grammar.",
+        "Letting one reviewer handle language, performance, and technical QC alone.",
+        "Ignoring on-screen text and visual context.",
+        "Testing only on headphones instead of the target device."
+      ],
+      "faq": [
+        {
+          "q": "Who should approve the translation?",
+          "a": "A native target-language reviewer with access to the source and context should approve meaning. The client or subject expert should approve product and legal claims."
+        },
+        {
+          "q": "Do I need lip sync for every language?",
+          "a": "Not always. Decide based on format and audience. Dubbing can prioritize natural performance over exact mouth shapes, but the trade-off should be intentional."
+        },
+        {
+          "q": "How many QC passes?",
+          "a": "At least two: a meaning and performance review, then a technical and final-format review. High-risk content may need a third subject-matter review."
+        }
+      ],
+      "tool": "localization-qc-scorecard",
+      "related": [
+        "dubbing-vs-subtitling",
+        "dubbing-cost-estimator"
+      ]
+    },
+    {
+      "slug": "dubbing-cost-estimator",
+      "category": "dubbing-localization",
+      "title": "How to estimate dubbing cost without forgetting the review work",
+      "dek": "Budget translation, casting, recording, direction, editing, mixing, QC, and project management separately.",
+      "problem": "A per-minute voice quote can look affordable until translation, adaptation, casting, editing, and multilingual QC are added. The real budget is the total work required to produce an approved version.",
+      "quick_answer": "Estimate each language separately: source preparation, translation, adaptation, voice recording, direction, editing and mixing, QC, and project management. Add a revision buffer and test one short scene before quoting the full series.",
+      "sections": [
+        {
+          "h": "Separate translation from adaptation",
+          "p": "A literal translation is not a dubbing script. The adaptation must fit the timing, character voice, and cultural context. Budget for a separate adaptation or transcreation pass, especially for humor, jargon, and tight timing."
+        },
+        {
+          "h": "Budget casting and direction",
+          "p": "Each language may need a different voice, audition, and director. A voice that fits the original may not fit the localized version. Include rehearsal and pickup time, not only the final recorded minutes."
+        },
+        {
+          "h": "Include editing, mixing, and QC",
+          "p": "Dubbing requires comping, noise reduction, music and effects balancing, loudness matching, subtitle or caption checks, and native-language review. These steps are part of the deliverable, not overhead."
+        },
+        {
+          "h": "Estimate by approved minutes, not raw footage",
+          "p": "A 30-minute interview may require cutting to 18 minutes before dubbing. Quote the approved runtime plus a revision allowance. Raw footage can hide significant editing and adaptation work."
+        },
+        {
+          "h": "Run a paid pilot scene",
+          "p": "Produce one short scene before quoting the series. Measure actual time for adaptation, recording, QC, and revisions. The pilot reveals whether the budget and schedule are realistic."
+        }
+      ],
+      "example": {
+        "title": "Per-language budget fields",
+        "lines": [
+          "Approved runtime: 18 minutes.",
+          "Translation and adaptation: 1.5 days.",
+          "Casting and audition: 3 candidates.",
+          "Recording and direction: 3 hours.",
+          "Editing, mixing, QC: 1 day.",
+          "Revision buffer: 15%."
+        ]
+      },
+      "checklist": [
+        "Is the runtime based on the approved cut?",
+        "Are translation and adaptation separate line items?",
+        "Are casting, direction, and pickups included?",
+        "Are editing, mixing, and native QC included?",
+        "Is there a revision buffer?"
+      ],
+      "mistakes": [
+        "Quoting only voice recording minutes.",
+        "Using raw footage instead of the approved runtime.",
+        "Skipping native-language QC.",
+        "Forgetting music, captions, and loudness work."
+      ],
+      "faq": [
+        {
+          "q": "How much does dubbing cost per minute?",
+          "a": "It varies too widely to give one number. Market, language, voice, rights, adaptation, and QC change the total. Use a line-item estimate rather than a single rate."
+        },
+        {
+          "q": "Can AI dubbing lower the cost?",
+          "a": "It can reduce some recording time, but translation, adaptation, voice rights, pronunciation, and QC remain. A lower recording cost does not remove the other work."
+        },
+        {
+          "q": "What causes the biggest overruns?",
+          "a": "Late script changes, poor source audio, unclear pronunciation, and insufficient native QC are common causes. A pilot scene helps expose them early."
+        }
+      ],
+      "tool": "dubbing-cost-estimator",
+      "related": [
+        "dubbing-vs-subtitling",
+        "localization-qc-checklist"
+      ]
+    },
+    {
+      "slug": "voice-cleanup-checklist",
+      "category": "audio-editing",
+      "title": "Voice cleanup checklist: fix the recording before reaching for AI",
+      "dek": "A practical order for noise, clicks, plosives, breaths, sibilance, and room problems.",
+      "problem": "Teams often stack noise reduction, de-essing, and AI enhancement until the voice sounds metallic. The original recording, edit decisions, and monitoring environment determine most of the quality.",
+      "quick_answer": "Fix the room and gain first, edit obvious clicks and mistakes, then use light noise reduction, de-essing, EQ, and compression only where needed. Check on phone speakers and headphones.",
+      "sections": [
+        {
+          "h": "Start with the source and the room",
+          "p": "Reflections, fan noise, and a poor microphone position cannot be fully repaired later. Record a 30-second room tone and a test sentence. If the room is the problem, move the microphone, add soft furnishings, or choose a quieter space before processing."
+        },
+        {
+          "h": "Set gain and check for clipping",
+          "p": "Leave headroom and avoid clipping at the interface. A normalized file is not the same as a well-recorded file. Check the waveform and listen for distortion on loud consonants and emotional peaks."
+        },
+        {
+          "h": "Edit the performance before the tone",
+          "p": "Remove false starts, long pauses, mouth clicks, and obvious mistakes. Keep breaths that sound natural unless they distract. Heavy-handed removal can make the voice sound unnatural and create audible gaps."
+        },
+        {
+          "h": "Use processing in small, deliberate steps",
+          "p": "High-pass filter rumble, use gentle noise reduction, control sibilance, then shape tone with EQ and compression. A/B every change at matched loudness. If the voice becomes thinner or metallic, back off."
+        },
+        {
+          "h": "Check the final mix in the real playback context",
+          "p": "Listen on a phone speaker, laptop, headphones, and the destination platform. Check intelligibility under music, level consistency across speakers, captions, and the final loudness target. Export a test file and play it back through the actual app."
+        }
+      ],
+      "example": {
+        "title": "Cleanup order",
+        "lines": [
+          "Choose a quiet room and set input gain with headroom.",
+          "Record room tone and a test sentence.",
+          "Edit mistakes, clicks, and distracting breaths.",
+          "Apply gentle noise reduction, de-essing, EQ, and compression.",
+          "Check phone, laptop, headphones, and final platform loudness."
+        ]
+      },
+      "checklist": [
+        "Did I fix the room and microphone position first?",
+        "Is there no clipping or interface distortion?",
+        "Are mistakes and clicks edited before processing?",
+        "Did I A/B every processor at matched loudness?",
+        "Did I check the final file on phone speakers?"
+      ],
+      "mistakes": [
+        "Using heavy noise reduction to hide a bad room.",
+        "Removing every breath and making speech sound robotic.",
+        "Applying EQ and compression without a reference.",
+        "Exporting without checking the destination platform."
+      ],
+      "faq": [
+        {
+          "q": "How much noise reduction is safe?",
+          "a": "Use the least amount that solves the audible problem. If the voice starts sounding hollow or metallic, reduce the strength or improve the source."
+        },
+        {
+          "q": "Should I remove all breaths?",
+          "a": "No. Natural breaths help speech sound human. Remove only the ones that distract, are unusually loud, or interrupt the intended pacing."
+        },
+        {
+          "q": "Is AI voice enhancement a replacement for editing?",
+          "a": "No. It can help with residual noise or clarity, but it cannot recover a clipped recording or remove poor edit decisions."
+        }
+      ],
+      "tool": "audio-cleanup-checklist",
+      "related": [
+        "loudness-for-podcast-and-video",
+        "captions-and-subtitle-timing"
+      ]
+    },
+    {
+      "slug": "loudness-for-podcast-and-video",
+      "category": "audio-editing",
+      "title": "Loudness for podcast and video: LUFS, peaks, and platform delivery",
+      "dek": "A plain-language loudness workflow that avoids quiet exports, clipped peaks, and inconsistent episodes.",
+      "problem": "A mix can sound fine in the editor and quiet on a phone or loud on a streaming platform. Loudness is a relationship between average level, peaks, and the playback target.",
+      "quick_answer": "Choose the platform target, measure integrated loudness and true peaks, keep dynamics appropriate for the format, and test the final export in the app where people will listen.",
+      "sections": [
+        {
+          "h": "Separate loudness from peak level",
+          "p": "Integrated loudness describes the average perceived level over time; true peak catches inter-sample peaks that can clip after encoding. A track can be loud enough on average and still clip at the peaks. Measure both."
+        },
+        {
+          "h": "Use a target suited to the format",
+          "p": "Podcasts, social video, training modules, and broadcast have different norms and platform guidance. Pick a target, document it, and keep a consistent internal standard. Do not use one master for every platform without checking the destination."
+        },
+        {
+          "h": "Preserve useful dynamics",
+          "p": "Compression can make speech easier to hear in noisy environments, but too much reduces emotional range and creates fatigue. A calm narration and a high-energy ad need different movement, even if both target the same average loudness."
+        },
+        {
+          "h": "Check across speakers and devices",
+          "p": "Listen on phone speakers, laptop speakers, and headphones. Check the quietest important word and the loudest sound effect. If the voice disappears under music, adjust the mix rather than simply raising the master."
+        },
+        {
+          "h": "Measure the final encoded file",
+          "p": "Encoding can change peaks. Export the final format, re-import it, and measure again. Keep a QC note with the integrated loudness, true peak, target platform, and date."
+        }
+      ],
+      "example": {
+        "title": "Delivery note fields",
+        "lines": [
+          "Platform: client learning portal",
+          "Integrated loudness target: documented in the delivery spec",
+          "True peak limit: below clipping",
+          "Music level: reviewed under speech",
+          "QC: phone speaker, laptop, headphones"
+        ]
+      },
+      "checklist": [
+        "Did I choose a platform-specific loudness target?",
+        "Did I measure integrated loudness and true peak?",
+        "Does the mix preserve useful dynamics?",
+        "Does speech remain intelligible under music?",
+        "Did I measure the final encoded file?"
+      ],
+      "mistakes": [
+        "Normalizing peaks instead of measuring loudness.",
+        "Using one master for every platform.",
+        "Over-compressing until the voice is fatiguing.",
+        "Checking only in headphones."
+      ],
+      "faq": [
+        {
+          "q": "What LUFS should I use?",
+          "a": "It depends on the platform and format. Use the platform’s current delivery guidance, document the target, and keep it consistent within a series."
+        },
+        {
+          "q": "Why does my export clip after encoding?",
+          "a": "Lossy encoding can raise peaks. Leave headroom, control true peaks, and test the final encoded file rather than the editing project."
+        },
+        {
+          "q": "Should I master every episode identically?",
+          "a": "Use a standard, but adjust for content. A quiet interview and a high-energy promo may need different dynamic treatment even with the same target."
+        }
+      ],
+      "tool": "loudness-delivery-checklist",
+      "related": [
+        "voice-cleanup-checklist",
+        "captions-and-subtitle-timing"
+      ]
+    },
+    {
+      "slug": "captions-and-subtitle-timing",
+      "category": "audio-editing",
+      "title": "Captions and subtitle timing: a QC workflow for spoken audio",
+      "dek": "Balance reading speed, line breaks, sync, speaker changes, and visual obstruction.",
+      "problem": "A transcript is not a subtitle. Captions must be timed, segmented, and checked against the performance while remaining readable on a phone.",
+      "quick_answer": "Create a transcript, segment it by meaning and timing, check characters per second, keep line breaks natural, and review the final captions in the actual player.",
+      "sections": [
+        {
+          "h": "Segment by meaning, not character count alone",
+          "p": "A subtitle should not split a name, a negation, or a two-word phrase that only makes sense together. Start from sentence meaning, then adjust the timing and length so the viewer can read comfortably."
+        },
+        {
+          "h": "Check reading speed on the smallest screen",
+          "p": "A dense caption may fit on a desktop but fail on a phone. Measure characters per second and review line length. Shorten redundant wording rather than shrinking the font or flashing text."
+        },
+        {
+          "h": "Identify speakers and non-speech audio",
+          "p": "When several people speak, use speaker labels consistently. Include meaningful non-speech audio such as [laughs] only when it affects understanding. Check that captions match the final mix and not an earlier script."
+        },
+        {
+          "h": "Keep captions clear of the visual subject",
+          "p": "Check the safe area on the actual frame. Captions should not cover faces, product names, charts, or calls to action. If the video has burned-in text, the caption placement may need a separate layout."
+        },
+        {
+          "h": "Review the exported captions in the player",
+          "p": "Import the final caption file into the destination player and watch the whole piece. Check sync drift, line breaks, gaps, overlaps, punctuation, and accessibility settings. A correct text file can still display badly."
+        }
+      ],
+      "example": {
+        "title": "Caption defect examples",
+        "lines": [
+          "Line break splits “KAH-lah” across two lines.",
+          "Caption appears before the speaker starts by 1.5 seconds.",
+          "Two speakers share one caption with no labels.",
+          "Caption covers the product price in the lower third."
+        ]
+      },
+      "checklist": [
+        "Are captions segmented by meaning?",
+        "Is reading speed comfortable on a phone?",
+        "Are speaker changes and meaningful sounds labeled?",
+        "Do captions avoid important visuals?",
+        "Did I watch the final captions in the target player?"
+      ],
+      "mistakes": [
+        "Publishing the raw transcript without timing.",
+        "Using character count as the only segmentation rule.",
+        "Ignoring speaker labels in interviews.",
+        "Checking captions only in the editing application."
+      ],
+      "faq": [
+        {
+          "q": "What is a good caption reading speed?",
+          "a": "It depends on the audience and platform, but lower reading speeds generally improve comprehension. Test on a phone and follow the destination platform’s guidance."
+        },
+        {
+          "q": "Should I caption sound effects?",
+          "a": "Caption meaningful sounds that affect understanding. Do not clutter the screen with every background noise."
+        },
+        {
+          "q": "Can auto-captions be published directly?",
+          "a": "Only after editing names, punctuation, speaker labels, timing, and sync. Auto-captions are a draft, not a finished accessibility deliverable."
+        }
+      ],
+      "tool": "subtitle-cps-calculator",
+      "related": [
+        "localization-qc-checklist",
+        "voice-cleanup-checklist"
+      ]
+    },
+    {
+      "slug": "voice-cloning-consent-checklist",
+      "category": "consent-rights",
+      "title": "Voice cloning consent checklist: permission, scope, and revocation",
+      "dek": "Document who approved the voice, what it may be used for, where it can appear, and when permission ends.",
+      "problem": "A recorded sample is not the same as permission to create a synthetic likeness. Voice cloning raises identity, privacy, employment, and fraud risks that a generic release may not cover.",
+      "quick_answer": "Obtain explicit written consent for cloning, define the allowed uses and markets, set an expiry or review date, record compensation, provide a revocation path, and never use the voice outside the agreed scope.",
+      "sections": [
+        {
+          "h": "Separate recording consent from cloning consent",
+          "p": "Consent to record a voiceover for one project does not automatically permit training a synthetic voice. The consent should explicitly mention cloning, model training, synthesis, and the intended outputs. Use plain language and a separate signature if the risk is material."
+        },
+        {
+          "h": "Define the exact allowed use",
+          "p": "List the projects, brands, channels, languages, duration, and territories where the synthetic voice may appear. State whether political, adult, medical, financial, or sensitive content is excluded. If the scope is broad, explain why and compensate accordingly."
+        },
+        {
+          "h": "Document compensation and ownership",
+          "p": "Clarify whether the person is paid a one-time fee, a usage fee, a royalty, or nothing. State who owns the model and generated outputs, and what happens if the relationship ends. Do not hide a broad rights grab inside a recording release."
+        },
+        {
+          "h": "Provide review and revocation",
+          "p": "Give the voice owner a way to request corrections, pause new uses, or revoke consent where the law and contract allow. Define how existing published content will be handled. A revocation path reduces the risk of an indefinite, uncontrolled synthetic identity."
+        },
+        {
+          "h": "Secure the model and generated files",
+          "p": "Restrict who can access the voice model, samples, and generation tools. Log generations, review outputs, and remove access when the project ends. A cloned voice is sensitive identity data, not just another media asset."
+        }
+      ],
+      "example": {
+        "title": "Consent scope fields",
+        "lines": [
+          "Voice owner and date of consent.",
+          "Permitted projects: internal training videos only.",
+          "Excluded uses: political, adult, medical, financial, endorsements.",
+          "Territory and duration: Taiwan, 12 months.",
+          "Review date and revocation contact.",
+          "Access list for the model and generated files."
+        ]
+      },
+      "checklist": [
+        "Does the consent explicitly mention cloning and model training?",
+        "Are allowed and excluded uses listed?",
+        "Are territory, duration, and compensation clear?",
+        "Is there a review or revocation path?",
+        "Is access to the model and outputs controlled?"
+      ],
+      "mistakes": [
+        "Treating a normal voiceover release as cloning consent.",
+        "Using an open-ended “all media forever” clause without discussion.",
+        "Leaving the model accessible to the whole organization indefinitely.",
+        "Assuming a synthetic voice cannot harm the person it resembles."
+      ],
+      "faq": [
+        {
+          "q": "Is voice cloning always illegal?",
+          "a": "No, but the law varies by jurisdiction and use case. Identity, privacy, consumer protection, employment, and platform rules can all apply. Obtain informed consent and legal review for commercial use."
+        },
+        {
+          "q": "Can I clone my own voice?",
+          "a": "Usually with proper security and disclosure, but check the platform terms and the rights of any people or copyrighted material in the recording."
+        },
+        {
+          "q": "What if the voice owner wants to revoke later?",
+          "a": "Follow the agreed revocation process, stop new generations, review existing uses, and document the action. The contract and applicable law determine what is required."
+        }
+      ],
+      "tool": "voice-cloning-consent-builder",
+      "related": [
+        "synthetic-voice-disclosure-guide",
+        "licensed-voice-and-music-checklist"
+      ]
+    },
+    {
+      "slug": "synthetic-voice-disclosure-guide",
+      "category": "consent-rights",
+      "title": "Synthetic voice disclosure: when and how to tell the audience",
+      "dek": "A practical disclosure workflow for ads, training, podcasts, social video, and customer-facing audio.",
+      "problem": "Audiences may assume a voice is human, especially when the performance is convincing. In some contexts that assumption creates deception, even when the voice rights are valid.",
+      "quick_answer": "Disclose when the audience could reasonably be misled about whether a person is speaking, when platform rules require it, or when the content could affect trust or safety. Use plain language in the audio, on-screen text, and description.",
+      "sections": [
+        {
+          "h": "Identify the deception risk",
+          "p": "A synthetic narrator reading a generic product description has a different risk from a cloned founder endorsing a financial product. Ask whether the audience would change their interpretation if they knew the voice was synthetic. If yes, disclosure is likely needed."
+        },
+        {
+          "h": "Use more than one channel",
+          "p": "Place the disclosure where the audience will encounter it: spoken at the start or end, on-screen text, video description, podcast notes, and metadata when the platform supports it. One hidden line in a footer is not meaningful disclosure."
+        },
+        {
+          "h": "Write plain-language disclosure",
+          "p": "Say what is synthetic and what is not. “This narration uses a synthetic voice” is clearer than “AI-enabled media experience.” If a real person’s likeness or voice is involved, say so accurately and only with permission."
+        },
+        {
+          "h": "Check platform and market rules",
+          "p": "Advertising platforms, social networks, app stores, broadcasters, and local regulators may have specific disclosure formats. Rules can change, so verify the current requirement before publishing."
+        },
+        {
+          "h": "Keep a disclosure record",
+          "p": "Save the final wording, placement, date, platform, and approval. If the content is edited or republished, confirm the disclosure still travels with it. Disclosure is part of the media asset, not a one-time email."
+        }
+      ],
+      "example": {
+        "title": "Disclosure examples",
+        "lines": [
+          "Audio: “This narration was created with a synthetic voice.”",
+          "On-screen: “Synthetic voice · Human-reviewed script”",
+          "Description: “This video uses an AI-generated narrator. Product claims were reviewed by the brand team.”"
+        ]
+      },
+      "checklist": [
+        "Could the audience be misled about whether a person is speaking?",
+        "Does the platform require a specific disclosure?",
+        "Is the disclosure in the audio, visual, and description?",
+        "Is the wording plain and accurate?",
+        "Is the disclosure recorded with the final asset?"
+      ],
+      "mistakes": [
+        "Hiding disclosure in a footer or metadata only.",
+        "Using vague terms that do not say the voice is synthetic.",
+        "Assuming a cloned voice is automatically disclosed by the platform.",
+        "Removing disclosure when republishing a clip."
+      ],
+      "faq": [
+        {
+          "q": "Does every AI voice need disclosure?",
+          "a": "Not always. The requirement depends on the context, deception risk, platform, and law. If the audience could reasonably think a real person is speaking, disclose."
+        },
+        {
+          "q": "Should the disclosure be at the start?",
+          "a": "For high-risk content, put it where the audience will see or hear it before acting. For low-risk entertainment, an on-screen label and description may be enough, but verify platform rules."
+        },
+        {
+          "q": "Does disclosure replace consent?",
+          "a": "No. Disclosure explains the synthetic nature; consent addresses the rights of any real voice or likeness used."
+        }
+      ],
+      "tool": "synthetic-voice-disclosure-builder",
+      "related": [
+        "voice-cloning-consent-checklist",
+        "licensed-voice-and-music-checklist"
+      ]
+    },
+    {
+      "slug": "licensed-voice-and-music-checklist",
+      "category": "consent-rights",
+      "title": "Licensed voice and music checklist for commercial audio",
+      "dek": "Check the license scope, media, territory, duration, edits, and platform before publishing.",
+      "problem": "A voice or music track can be legal for one use and illegal for another. Teams often download an asset and assume the license covers advertising, editing, or unlimited distribution.",
+      "quick_answer": "Keep the license with the project, confirm the permitted media and territory, check whether editing and synthetic use are allowed, and verify that the final placement matches the license.",
+      "sections": [
+        {
+          "h": "Match the license to the actual use",
+          "p": "A license for a personal video may not cover a paid ad. A music license for online use may not cover broadcast. A voice sample may be limited to one project. Read the permitted media, audience, territory, and duration."
+        },
+        {
+          "h": "Check editing and derivative rights",
+          "p": "Confirm whether you can cut, pitch, process, remix, loop, or combine the asset with synthetic generation. Some licenses prohibit altering the voice or using it to train a model. Keep the exact asset and license version."
+        },
+        {
+          "h": "Verify music and sound-effect rights separately",
+          "p": "A voice license does not cover the background music. A stock music license may not cover a brand campaign. Check each layer of the mix, including sound effects and samples embedded in the track."
+        },
+        {
+          "h": "Record attribution and disclosure requirements",
+          "p": "Some licenses require credit, a link, or a disclosure. Others prohibit implying endorsement. Put the required credit in the deliverable and check that the platform supports it."
+        },
+        {
+          "h": "Archive the final asset and proof",
+          "p": "Store the license, receipt, source URL, download date, final edit, and publishing destinations. If a claim or takedown arrives, you need to show that the exact use was permitted."
+        }
+      ],
+      "example": {
+        "title": "License record fields",
+        "lines": [
+          "Asset name and creator.",
+          "License type and version.",
+          "Permitted media: paid social, no broadcast.",
+          "Territory: worldwide online.",
+          "Duration: 12 months.",
+          "Editing: allowed; model training prohibited."
+        ]
+      },
+      "checklist": [
+        "Does the license cover the intended media and territory?",
+        "Are editing and synthetic-use rights clear?",
+        "Are music and sound effects licensed separately?",
+        "Are credit or disclosure requirements met?",
+        "Is the license archived with the final asset?"
+      ],
+      "mistakes": [
+        "Assuming a free download is free for commercial use.",
+        "Using a personal-use track in a paid ad.",
+        "Editing a voice sample beyond the license scope.",
+        "Failing to keep the receipt and license version."
+      ],
+      "faq": [
+        {
+          "q": "Can I use a licensed voice to train a model?",
+          "a": "Only if the license explicitly permits model training or synthetic use. A standard voiceover license usually does not."
+        },
+        {
+          "q": "What if the license changes after I download?",
+          "a": "Keep the version that applied at download time and check whether the provider reserves the right to change terms. Archive the receipt and terms."
+        },
+        {
+          "q": "Do I need a lawyer for every license?",
+          "a": "Not for routine low-risk assets, but high-value campaigns, broad rights, and synthetic voice use deserve professional review."
+        }
+      ],
+      "tool": "licensed-audio-checklist",
+      "related": [
+        "voice-cloning-consent-checklist",
+        "synthetic-voice-disclosure-guide"
+      ]
+    }
+  ]
+}

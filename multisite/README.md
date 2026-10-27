@@ -67,3 +67,17 @@
 & 'C:\Users\syush\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' `
   'C:\Users\syush\.codex\worktrees\1ea4\廣告收入設定\multisite\test_small_ops_lab.js'
 ```
+
+
+## VoiceSignal Lab 重建
+
+- 網站目錄：`sites/voice`
+- 5 個分類：Voice Casting、Narration & Scripts、Dubbing & Localization、Audio Editing、Consent, Rights & Disclosure
+- 15 篇深度指南
+- 15 個模板或互動工具，其中 6 個是瀏覽器端互動工具
+- 專屬紫／薄荷青主題
+- 互動工具包含：聲音選角、旁白節奏、配音預算、字幕速度、聲音複製同意書、合成語音揭露
+- 產生器：`multisite/build_voice_lab.py`
+- 內容：`multisite/voice-content.json`
+- 樣式與工具：`multisite/themes/voice.css`、`multisite/themes/voice-tools.js`
+- 測試：`multisite/test_voice_lab.js`
