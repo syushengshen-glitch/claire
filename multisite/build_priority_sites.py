@@ -62,10 +62,15 @@ def build_priority_site(site):
     home = home.replace('Starter articles for this niche. Add original tests and screenshots before publication.', f'50 practical guides and article briefs for {bm.esc(site["audience"])}.')
     home_path.write_text(home, encoding='utf-8')
     return {**base, 'articles':len(articles)}
-
 results = []
-for slug in ['coding','career']:
+for slug in ['coding']:
     site = next(item for item in bm.SITES if item['slug'] == slug)
     results.append(build_priority_site(site))
 (ROOT / 'multisite' / 'priority-build-report.json').write_text(json.dumps(results, indent=2), encoding='utf-8')
 print(json.dumps(results, indent=2))
+
+# CareerSignal 使用獨立的深度內容產生器，避免舊模板頁在重跑時復活。
+career_spec = importlib.util.spec_from_file_location('build_career_site', ROOT / 'multisite' / 'build_career_site.py')
+career_module = importlib.util.module_from_spec(career_spec)
+career_spec.loader.exec_module(career_module)
+career_module.main()

@@ -68,7 +68,6 @@
   'C:\Users\syush\.codex\worktrees\1ea4\廣告收入設定\multisite\test_small_ops_lab.js'
 ```
 
-
 ## VoiceSignal Lab 重建
 
 - 網站目錄：`sites/voice`
@@ -81,3 +80,15 @@
 - 內容：`multisite/voice-content.json`
 - 樣式與工具：`multisite/themes/voice.css`、`multisite/themes/voice-tools.js`
 - 測試：`multisite/test_voice_lab.js`
+
+## CareerSignal 深度內容
+
+`signalstack-career-lab` 不再使用 50 篇模板頁。請使用專用產生器重建：
+
+```powershell
+& 'C:\Users\syush\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' `
+  'C:\Users\syush\Documents\ChatGPT\廣告收入設定\multisite\build_career_site.py'
+```
+
+這會產生 6 篇獨立指南、5 篇工具頁、新版首頁與信任頁，並只把完成頁面放進 sitemap。重跑 `build_priority_sites.py` 時也會自動呼叫此產生器，避免舊頁面復活。
+
